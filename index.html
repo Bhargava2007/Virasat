@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= productName %></title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="<%= productDescription %>" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover<% } %>"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data: https:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;<% if (ctx.dev) { %> connect-src 'self' ws://localhost:*; worker-src 'self' blob:;<% } %>"
+    />
+
+    <meta name="theme-color" content="#1A1A2E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="icons/favicon-128x128.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- quasar:entry-point -->
+  </body>
+</html>

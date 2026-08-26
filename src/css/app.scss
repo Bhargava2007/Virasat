@@ -1,0 +1,214 @@
+
+:root {
+  --color-primary: #b84b2a;
+  --color-secondary: #2c3e73;
+  --color-accent: #d4a017;
+  --color-dark: #4a2c1e;
+  --color-purple: #6c4ba0;
+  --color-cream: #fff3ec;
+  --color-surface: #fdf8f5;
+  --color-surface-card: #ffffff;
+  --color-text: #2c1e18;
+  --color-text-secondary: #6e5d54;
+  --font-heading: 'Outfit', sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-soft: 0 4px 16px rgba(74, 44, 30, 0.06);
+  --shadow-medium: 0 6px 24px rgba(74, 44, 30, 0.12);
+  --shadow-elevated: 0 12px 36px rgba(74, 44, 30, 0.18);
+  --gradient-primary: linear-gradient(135deg, #b84b2a 0%, #d4a017 100%);
+  --gradient-secondary: linear-gradient(135deg, #2c3e73 0%, #6c4ba0 100%);
+  --gradient-heritage: linear-gradient(
+    165deg,
+    #4a2c1e 0%,
+    #7a331c 40%,
+    #b84b2a 100%
+  );
+  --gradient-culture: linear-gradient(
+    165deg,
+    #3c245c 0%,
+    #2c3e73 50%,
+    #6c4ba0 100%
+  );
+  --gradient-hero: linear-gradient(165deg, #fff3ec 0%, #fdf8f5 100%);
+}
+
+body,
+html {
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.text-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.text-section-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.heritage-card {
+  background: var(--color-surface-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.heritage-card:active {
+  transform: scale(0.98);
+}
+.heritage-card--elevated {
+  box-shadow: var(--shadow-medium);
+}
+
+.section-spacing {
+  padding: 24px 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.demo-badge {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(196, 99, 42, 0.12);
+  color: #c4632a;
+}
+
+.glass-surface {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+*:not(.leaflet-tile):not(.leaflet-tile-container):not(.leaflet-tile-pane):not(.leaflet-map-pane):not(.leaflet-layer) {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Thin, subtle scrollbars matching the palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Discovery Utilities */
+
+.discovery-page {
+  background: var(--color-surface);
+  min-height: 100vh;
+  padding-bottom: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: none;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+}
+
+.chip-scroll-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 16px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.category-scroll-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 16px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+
+  &__icon {
+    font-size: 48px;
+    color: var(--color-text-secondary);
+    opacity: 0.4;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  &__title {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 8px;
+  }
+
+  &__subtitle {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+}
+
+/* Leaflet: prevent global img rules from breaking tile images */
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+}
