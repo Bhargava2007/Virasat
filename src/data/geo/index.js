@@ -84,12 +84,25 @@ export function getUnmappedRecords() {
       let type = 'unverified'
       let label = 'Precise location not yet verified'
 
-      const text = `${c.name} ${c.shortDescription} ${c.region || ''} ${c.culturalSignificance || ''}`.toLowerCase()
+      const text =
+        `${c.name} ${c.shortDescription} ${c.region || ''} ${c.culturalSignificance || ''}`.toLowerCase()
 
-      if (text.includes('statewide') | text.includes('across rajasthan') | text.includes('across tamil nadu') | text.includes('across karnataka') | text.includes('state-wide')) {
+      if (
+        text.includes('statewide') |
+        text.includes('across rajasthan') |
+        text.includes('across tamil nadu') |
+        text.includes('across karnataka') |
+        text.includes('state-wide')
+      ) {
         type = 'statewide'
         label = 'Statewide tradition'
-      } else if (c.region || text.includes('coastal') | text.includes('region') | text.includes('district') | text.includes('belt')) {
+      } else if (
+        c.region ||
+        text.includes('coastal') |
+          text.includes('region') |
+          text.includes('district') |
+          text.includes('belt')
+      ) {
         type = 'regional'
         label = 'Regional tradition'
       }

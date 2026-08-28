@@ -17,8 +17,18 @@
   mix-blend-mode: luminosity;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 30%, black 100%);
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 30%, black 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 30%,
+    black 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 30%,
+    black 100%
+  );
 }
 img {
   width: 100%;

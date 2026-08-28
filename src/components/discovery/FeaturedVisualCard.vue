@@ -36,7 +36,9 @@
         <h4 class="featured-visual-card__title">{{ item.name }}</h4>
         <div class="featured-visual-card__meta">
           <span>{{ categoryName }}</span>
-          <span v-if="stateName" class="featured-visual-card__bullet">• {{ stateName }}</span>
+          <span v-if="stateName" class="featured-visual-card__bullet"
+            >• {{ stateName }}</span
+          >
         </div>
       </div>
     </div>
@@ -81,7 +83,8 @@ const navigateToDetail = () => {
 }
 
 const categoryObj = computed(() => {
-  const cats = props.type === 'heritage' ? heritageCategories : cultureCategories
+  const cats =
+    props.type === 'heritage' ? heritageCategories : cultureCategories
   return cats.find(c => c.slug === props.item.category) || {}
 })
 
@@ -89,14 +92,27 @@ const stateObj = computed(() => {
   return states.find(s => s.slug === props.item.state) || {}
 })
 
-const categoryName = computed(() => props.item.categoryName || categoryObj.value.shortName || categoryObj.value.name || '')
-const stateName = computed(() => props.item.stateName || stateObj.value.name || '')
+const categoryName = computed(
+  () =>
+    props.item.categoryName ||
+    categoryObj.value.shortName ||
+    categoryObj.value.name ||
+    ''
+)
+const stateName = computed(
+  () => props.item.stateName || stateObj.value.name || ''
+)
 
 const containerStyle = computed(() => {
   if (props.type === 'heritage') {
-    return { background: 'linear-gradient(160deg, #7A331C 0%, #4A2C1E 50%, #2C1E18 100%)' }
+    return {
+      background:
+        'linear-gradient(160deg, #7A331C 0%, #4A2C1E 50%, #2C1E18 100%)'
+    }
   }
-  return { background: 'linear-gradient(160deg, #3C245C 0%, #2C3E73 60%, #1A1A2E 100%)' }
+  return {
+    background: 'linear-gradient(160deg, #3C245C 0%, #2C3E73 60%, #1A1A2E 100%)'
+  }
 })
 </script>
 
@@ -173,7 +189,12 @@ const containerStyle = computed(() => {
   &__gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.05) 100%);
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.35) 60%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
     z-index: 1;
   }
 

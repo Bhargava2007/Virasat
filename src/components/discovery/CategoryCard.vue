@@ -6,17 +6,16 @@
     :aria-pressed="selected"
     @click="$emit('select', category)"
   >
-    <div
-      class="category-card__icon-wrap"
-      :style="iconWrapStyles"
-    >
+    <div class="category-card__icon-wrap" :style="iconWrapStyles">
       <q-icon
         :name="category.icon"
         size="20px"
         :style="{ color: category.color }"
       />
     </div>
-    <span class="category-card__name">{{ category.shortName || category.name }}</span>
+    <span class="category-card__name">{{
+      category.shortName || category.name
+    }}</span>
   </button>
 </template>
 

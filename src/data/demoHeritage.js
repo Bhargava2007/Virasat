@@ -36,13 +36,70 @@ function createRecord(id, slug, name, category, state, image = null) {
 }
 
 export const demoHeritage = [
-  createRecord('dh-1', 'hampi', 'Hampi', 'unesco-heritage-sites', 'karnataka', '/images/hampi.png'),
-  createRecord('dh-2', 'mysore-palace', 'Mysore Palace', 'palaces', 'karnataka'),
-  createRecord('dh-3', 'badami-cave-temples', 'Badami Cave Temples', 'archaeological-sites', 'karnataka'),
-  createRecord('dh-4', 'amber-fort', 'Amber Fort', 'forts', 'rajasthan', '/images/amber-fort.png'),
-  createRecord('dh-5', 'hawa-mahal', 'Hawa Mahal', 'traditional-architecture', 'rajasthan'),
-  createRecord('dh-6', 'albert-hall-museum', 'Albert Hall Museum', 'museums', 'rajasthan'),
-  createRecord('dh-7', 'brihadeeswarar-temple', 'Brihadeeswarar Temple', 'historic-religious-structures', 'tamil-nadu', '/images/brihadeeswarar-temple.png'),
-  createRecord('dh-8', 'mahabalipuram', 'Mahabalipuram', 'monuments', 'tamil-nadu'),
-  createRecord('dh-9', 'fort-st-george', 'Fort St. George', 'historic-places', 'tamil-nadu')
+  createRecord(
+    'dh-1',
+    'hampi',
+    'Hampi',
+    'unesco-heritage-sites',
+    'karnataka',
+    '/images/hampi.png'
+  ),
+  createRecord(
+    'dh-2',
+    'mysore-palace',
+    'Mysore Palace',
+    'palaces',
+    'karnataka'
+  ),
+  createRecord(
+    'dh-3',
+    'badami-cave-temples',
+    'Badami Cave Temples',
+    'archaeological-sites',
+    'karnataka'
+  ),
+  createRecord(
+    'dh-4',
+    'amber-fort',
+    'Amber Fort',
+    'forts',
+    'rajasthan',
+    '/images/amber-fort.png'
+  ),
+  createRecord(
+    'dh-5',
+    'hawa-mahal',
+    'Hawa Mahal',
+    'traditional-architecture',
+    'rajasthan'
+  ),
+  createRecord(
+    'dh-6',
+    'albert-hall-museum',
+    'Albert Hall Museum',
+    'museums',
+    'rajasthan'
+  ),
+  createRecord(
+    'dh-7',
+    'brihadeeswarar-temple',
+    'Brihadeeswarar Temple',
+    'historic-religious-structures',
+    'tamil-nadu',
+    '/images/brihadeeswarar-temple.png'
+  ),
+  createRecord(
+    'dh-8',
+    'mahabalipuram',
+    'Mahabalipuram',
+    'monuments',
+    'tamil-nadu'
+  ),
+  createRecord(
+    'dh-9',
+    'fort-st-george',
+    'Fort St. George',
+    'historic-places',
+    'tamil-nadu'
+  )
 ]

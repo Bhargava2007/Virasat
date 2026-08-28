@@ -39,7 +39,11 @@
 
         <!-- Floating Top Bar -->
         <div class="detail-hero__top-bar">
-          <button class="back-circle-btn" aria-label="Go back" @click="handleBack">
+          <button
+            class="back-circle-btn"
+            aria-label="Go back"
+            @click="handleBack"
+          >
             <q-icon name="arrow_back" size="20px" />
           </button>
           <div v-if="isVerified" class="verified-pill">
@@ -51,7 +55,10 @@
         <!-- Hero Title Block -->
         <div class="detail-hero__title-block">
           <div class="detail-hero__tags">
-            <span class="category-chip" :style="{ backgroundColor: categoryColor }">
+            <span
+              class="category-chip"
+              :style="{ backgroundColor: categoryColor }"
+            >
               <q-icon :name="categoryIcon" size="13px" class="q-mr-xs" />
               {{ categoryName }}
             </span>
@@ -72,6 +79,28 @@
 
       <!-- MAIN BODY CONTENT -->
       <main class="detail-body">
+        <!-- PASSPORT & SAVE ACTIONS -->
+        <div class="passport-action-bar q-mb-lg row no-wrap q-gutter-x-sm">
+          <q-btn
+            :outline="!isExplored"
+            :unelevated="isExplored"
+            :color="isExplored ? 'positive' : 'primary'"
+            :icon="isExplored ? 'check_circle' : 'explore'"
+            :label="isExplored ? 'Explored ✓' : 'Mark as Explored'"
+            class="col rounded-btn text-weight-bold"
+            style="border-radius: 12px; padding: 10px"
+            @click="toggleExplore"
+          />
+          <q-btn
+            outline
+            :color="isSaved ? 'secondary' : 'grey-7'"
+            :icon="isSaved ? 'bookmark' : 'bookmark_border'"
+            class="rounded-btn"
+            style="border-radius: 12px; width: 48px"
+            @click="toggleSave"
+          />
+        </div>
+
         <!-- UNESCO World Heritage Banner (If Applicable) -->
         <div v-if="record.unescoStatus" class="unesco-banner">
           <div class="unesco-banner__icon">
@@ -92,7 +121,9 @@
           <div v-if="record.historicalPeriod" class="meta-badge-row q-mt-md">
             <div class="meta-badge">
               <span class="meta-badge__label">Historical Period</span>
-              <span class="meta-badge__value">{{ record.historicalPeriod }}</span>
+              <span class="meta-badge__value">{{
+                record.historicalPeriod
+              }}</span>
             </div>
           </div>
         </section>
@@ -144,11 +175,16 @@
         <!-- RELATED LIVING CULTURE (Heritage ↔ Culture Connections) -->
         <section v-if="relatedCultureList.length > 0" class="detail-section">
           <h2 class="detail-section__heading">
-            <q-icon name="palette" size="20px" class="section-icon text-purple" />
+            <q-icon
+              name="palette"
+              size="20px"
+              class="section-icon text-purple"
+            />
             Connected Living Culture
           </h2>
           <p class="detail-section__subtext">
-            Living traditions, arts and festivals associated with {{ record.name }}.
+            Living traditions, arts and festivals associated with
+            {{ record.name }}.
           </p>
           <div class="related-grid">
             <RelatedContentCard
@@ -163,7 +199,11 @@
         <!-- RELATED HERITAGE SITES -->
         <section v-if="relatedHeritageList.length > 0" class="detail-section">
           <h2 class="detail-section__heading">
-            <q-icon name="account_balance" size="20px" class="section-icon text-terracotta" />
+            <q-icon
+              name="account_balance"
+              size="20px"
+              class="section-icon text-terracotta"
+            />
             Related Heritage Sites
           </h2>
           <div class="related-grid">
@@ -177,19 +217,28 @@
         </section>
 
         <!-- SOURCES & VERIFICATION METADATA -->
-        <section v-if="record.sources && record.sources.length > 0" class="detail-section sources-section">
+        <section
+          v-if="record.sources && record.sources.length > 0"
+          class="detail-section sources-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="menu_book" size="18px" class="section-icon" />
             Verified Source Attribution
           </h2>
           <div class="source-list">
-            <div v-for="(src, idx) in record.sources" :key="idx" class="source-card">
+            <div
+              v-for="(src, idx) in record.sources"
+              :key="idx"
+              class="source-card"
+            >
               <div class="source-card__icon">
                 <q-icon name="verified_user" size="18px" />
               </div>
               <div class="source-card__content">
                 <h5 class="source-card__title">{{ src.sourceName }}</h5>
-                <span class="source-card__type">{{ src.sourceType }} Source</span>
+                <span class="source-card__type"
+                  >{{ src.sourceType }} Source</span
+                >
               </div>
               <a
                 v-if="src.sourceUrl"
@@ -211,26 +260,60 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { allHeritage } from '@/data/heritage.js'
 import { allCulture } from '@/data/culture.js'
 import { heritageCategories } from '@/data/heritageCategories.js'
 import { states } from '@/data/states.js'
 import { getRecordImage } from '@/utils/mediaHelper.js'
+import { usePassportStore } from '@/stores/passportStore.js'
+import { useSavedStore } from '@/stores/savedStore.js'
+import { useQuasar } from 'quasar'
 
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
 import RelatedContentCard from '@/components/discovery/RelatedContentCard.vue'
 
 const route = useRoute()
 const router = useRouter()
+const $q = useQuasar()
+const passport = usePassportStore()
+const savedStore = useSavedStore()
 const heroImageError = ref(false)
 
 const record = computed(() => {
   return allHeritage.find(h => h.slug === route.params.slug) || null
 })
 
-const isVerified = computed(() => record.value?.verificationStatus === 'verified')
+const isExplored = computed(() => {
+  return record.value ? passport.hasExploredHeritage(record.value.id) : false
+})
+
+const toggleExplore = () => {
+  if (record.value) passport.toggleHeritage(record.value.id)
+}
+
+const isSaved = computed(() => {
+  return record.value ? savedStore.isSaved(record.value.id) : false
+})
+
+const toggleSave = async () => {
+  if (record.value) {
+    const success = await savedStore.toggleSave(record.value.id, 'heritage')
+    if (!success) {
+      $q.notify({ type: 'warning', message: 'Sign in to save items.' })
+    } else {
+      $q.notify({
+        type: 'positive',
+        message: isSaved.value ? 'Saved' : 'Removed from saved items'
+      })
+    }
+  }
+}
+
+const isVerified = computed(
+  () => record.value?.verificationStatus === 'verified'
+)
 
 const handleBack = () => {
   if (window.history.length > 1) {
@@ -252,10 +335,14 @@ const stateObj = computed(() => {
   return states.find(s => s.slug === record.value.state) || {}
 })
 
-const categoryName = computed(() => record.value?.categoryName || categoryObj.value.name || 'Heritage')
+const categoryName = computed(
+  () => record.value?.categoryName || categoryObj.value.name || 'Heritage'
+)
 const categoryIcon = computed(() => categoryObj.value.icon || 'account_balance')
 const categoryColor = computed(() => categoryObj.value.color || '#B84B2A')
-const stateName = computed(() => record.value?.stateName || stateObj.value.name || 'India')
+const stateName = computed(
+  () => record.value?.stateName || stateObj.value.name || 'India'
+)
 
 // Resolve Related Culture Records
 const relatedCultureList = computed(() => {
@@ -267,7 +354,8 @@ const relatedCultureList = computed(() => {
 
 // Resolve Related Heritage Records
 const relatedHeritageList = computed(() => {
-  if (!record.value || !Array.isArray(record.value.relatedHeritageIds)) return []
+  if (!record.value || !Array.isArray(record.value.relatedHeritageIds))
+    return []
   return record.value.relatedHeritageIds
     .map(id => allHeritage.find(h => h.id === id))
     .filter(Boolean)

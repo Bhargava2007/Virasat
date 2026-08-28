@@ -23,9 +23,13 @@ import L from 'leaflet'
 // Fix Leaflet's broken default icon URLs in Vite bundlers
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: new URL('leaflet/dist/images/marker-icon-2x.png', import.meta.url).href,
+  iconRetinaUrl: new URL(
+    'leaflet/dist/images/marker-icon-2x.png',
+    import.meta.url
+  ).href,
   iconUrl: new URL('leaflet/dist/images/marker-icon.png', import.meta.url).href,
-  shadowUrl: new URL('leaflet/dist/images/marker-shadow.png', import.meta.url).href,
+  shadowUrl: new URL('leaflet/dist/images/marker-shadow.png', import.meta.url)
+    .href
 })
 
 const props = defineProps({
@@ -52,9 +56,18 @@ let resizeObserver = null
 
 // State Bounding Boxes for Smooth Camera Focus
 const STATE_BOUNDS = {
-  karnataka: [[11.5, 74.0], [18.5, 78.5]],
-  rajasthan: [[23.0, 69.5], [30.5, 78.0]],
-  'tamil-nadu': [[8.0, 76.0], [13.5, 80.5]]
+  karnataka: [
+    [11.5, 74.0],
+    [18.5, 78.5]
+  ],
+  rajasthan: [
+    [23.0, 69.5],
+    [30.5, 78.0]
+  ],
+  'tamil-nadu': [
+    [8.0, 76.0],
+    [13.5, 80.5]
+  ]
 }
 
 // Multiple tile providers for fallback
@@ -65,7 +78,8 @@ const TILE_PROVIDERS = [
     options: {
       maxZoom: 20,
       subdomains: 'abcd',
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }
   },
   {
@@ -74,7 +88,8 @@ const TILE_PROVIDERS = [
     options: {
       maxZoom: 19,
       subdomains: 'abc',
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }
   }
 ]
@@ -129,7 +144,10 @@ function updateMarkers() {
 
   // Smoothly adjust map view based on state bounds or active markers
   if (props.selectedState && STATE_BOUNDS[props.selectedState]) {
-    mapInstance.fitBounds(STATE_BOUNDS[props.selectedState], { padding: [30, 30], maxZoom: 9 })
+    mapInstance.fitBounds(STATE_BOUNDS[props.selectedState], {
+      padding: [30, 30],
+      maxZoom: 9
+    })
   } else if (validLatLngs.length > 0) {
     const bounds = L.latLngBounds(validLatLngs)
     mapInstance.fitBounds(bounds, { padding: [40, 40], maxZoom: 8 })
@@ -148,7 +166,9 @@ function tryLoadTiles(providerIndex = 0) {
 
   // If first tile errors, try next provider
   tileLayer.on('tileerror', () => {
-    console.warn(`[Map] Tile provider "${provider.name}" failed, trying next...`)
+    console.warn(
+      `[Map] Tile provider "${provider.name}" failed, trying next...`
+    )
     tileLayer.remove()
     tryLoadTiles(providerIndex + 1)
   })
@@ -201,9 +221,13 @@ onBeforeUnmount(() => {
   }
 })
 
-watch(() => [props.records, props.selectedState, props.selectedRecordId], () => {
-  updateMarkers()
-}, { deep: true })
+watch(
+  () => [props.records, props.selectedState, props.selectedRecordId],
+  () => {
+    updateMarkers()
+  },
+  { deep: true }
+)
 </script>
 
 <style lang="scss">

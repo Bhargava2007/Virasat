@@ -1,5 +1,8 @@
 <template>
-  <div class="search-bar" :class="{ 'search-bar--dark': dark, 'search-bar--light': !dark }">
+  <div
+    class="search-bar"
+    :class="{ 'search-bar--dark': dark, 'search-bar--light': !dark }"
+  >
     <q-icon name="search" size="20px" class="search-bar__icon" />
     <input
       type="text"

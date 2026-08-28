@@ -39,7 +39,11 @@
 
         <!-- Floating Top Bar -->
         <div class="detail-hero__top-bar">
-          <button class="back-circle-btn" aria-label="Go back" @click="handleBack">
+          <button
+            class="back-circle-btn"
+            aria-label="Go back"
+            @click="handleBack"
+          >
             <q-icon name="arrow_back" size="20px" />
           </button>
           <div v-if="isVerified" class="verified-pill">
@@ -51,7 +55,10 @@
         <!-- Hero Title Block -->
         <div class="detail-hero__title-block">
           <div class="detail-hero__tags">
-            <span class="category-chip" :style="{ backgroundColor: categoryColor }">
+            <span
+              class="category-chip"
+              :style="{ backgroundColor: categoryColor }"
+            >
               <q-icon :name="categoryIcon" size="13px" class="q-mr-xs" />
               {{ categoryName }}
             </span>
@@ -72,14 +79,40 @@
 
       <!-- MAIN BODY CONTENT -->
       <main class="detail-body">
+        <!-- PASSPORT & SAVE ACTIONS -->
+        <div class="passport-action-bar q-mb-lg row no-wrap q-gutter-x-sm">
+          <q-btn
+            :outline="!isExplored"
+            :unelevated="isExplored"
+            :color="isExplored ? 'positive' : 'primary'"
+            :icon="isExplored ? 'check_circle' : 'explore'"
+            :label="isExplored ? 'Explored ✓' : 'Mark as Explored'"
+            class="col rounded-btn text-weight-bold"
+            style="border-radius: 12px; padding: 10px"
+            @click="toggleExplore"
+          />
+          <q-btn
+            outline
+            :color="isSaved ? 'secondary' : 'grey-7'"
+            :icon="isSaved ? 'bookmark' : 'bookmark_border'"
+            class="rounded-btn"
+            style="border-radius: 12px; width: 48px"
+            @click="toggleSave"
+          />
+        </div>
+
         <!-- UNESCO Intangible Cultural Heritage Banner (If Applicable) -->
         <div v-if="record.unescoIntangibleStatus" class="unesco-ich-banner">
           <div class="unesco-ich-banner__icon">
             <q-icon name="stars" size="24px" />
           </div>
           <div class="unesco-ich-banner__info">
-            <h4 class="unesco-ich-banner__title">UNESCO Intangible Cultural Heritage</h4>
-            <p class="unesco-ich-banner__text">{{ record.unescoIntangibleStatus }}</p>
+            <h4 class="unesco-ich-banner__title"
+              >UNESCO Intangible Cultural Heritage</h4
+            >
+            <p class="unesco-ich-banner__text">{{
+              record.unescoIntangibleStatus
+            }}</p>
           </div>
         </div>
 
@@ -89,7 +122,9 @@
             <q-icon name="verified" size="22px" />
           </div>
           <div class="gi-badge-card__info">
-            <span class="gi-badge-card__label">Geographical Indication (GI)</span>
+            <span class="gi-badge-card__label"
+              >Geographical Indication (GI)</span
+            >
             <span class="gi-badge-card__val">{{ record.giStatus }}</span>
           </div>
         </div>
@@ -102,14 +137,19 @@
           <!-- Community Tag (If Supplied) -->
           <div v-if="record.community" class="meta-badge-row q-mt-md">
             <div class="meta-badge">
-              <span class="meta-badge__label">Associated Community / Performers</span>
+              <span class="meta-badge__label"
+                >Associated Community / Performers</span
+              >
               <span class="meta-badge__value">{{ record.community }}</span>
             </div>
           </div>
         </section>
 
         <!-- KEY ELEMENTS SECTION -->
-        <section v-if="record.keyElements && record.keyElements.length > 0" class="detail-section">
+        <section
+          v-if="record.keyElements && record.keyElements.length > 0"
+          class="detail-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="category" size="20px" class="section-icon" />
             Key Elements & Characteristics
@@ -120,7 +160,11 @@
               :key="idx"
               class="element-pill"
             >
-              <q-icon name="check_circle" size="13px" class="q-mr-xs text-purple" />
+              <q-icon
+                name="check_circle"
+                size="13px"
+                class="q-mr-xs text-purple"
+              />
               {{ elem }}
             </span>
           </div>
@@ -145,13 +189,20 @@
         </section>
 
         <!-- RELATED PLACES (If Supplied) -->
-        <section v-if="record.relatedPlaces && record.relatedPlaces.length > 0" class="detail-section">
+        <section
+          v-if="record.relatedPlaces && record.relatedPlaces.length > 0"
+          class="detail-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="pin_drop" size="20px" class="section-icon" />
             Associated Places & Regions
           </h2>
           <div class="place-chips">
-            <span v-for="(place, idx) in record.relatedPlaces" :key="idx" class="place-chip">
+            <span
+              v-for="(place, idx) in record.relatedPlaces"
+              :key="idx"
+              class="place-chip"
+            >
               <q-icon name="place" size="13px" class="q-mr-xs" />
               {{ place }}
             </span>
@@ -159,13 +210,20 @@
         </section>
 
         <!-- RELATED FESTIVALS (If Supplied) -->
-        <section v-if="record.relatedFestivals && record.relatedFestivals.length > 0" class="detail-section">
+        <section
+          v-if="record.relatedFestivals && record.relatedFestivals.length > 0"
+          class="detail-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="festival" size="20px" class="section-icon" />
             Associated Festivals
           </h2>
           <div class="festival-chips">
-            <span v-for="(fest, idx) in record.relatedFestivals" :key="idx" class="festival-chip">
+            <span
+              v-for="(fest, idx) in record.relatedFestivals"
+              :key="idx"
+              class="festival-chip"
+            >
               <q-icon name="celebration" size="13px" class="q-mr-xs" />
               {{ fest }}
             </span>
@@ -192,7 +250,11 @@
         <!-- RELATED HERITAGE SITES (Culture ↔ Heritage Connections) -->
         <section v-if="relatedHeritageList.length > 0" class="detail-section">
           <h2 class="detail-section__heading">
-            <q-icon name="account_balance" size="20px" class="section-icon text-terracotta" />
+            <q-icon
+              name="account_balance"
+              size="20px"
+              class="section-icon text-terracotta"
+            />
             Connected Heritage Sites
           </h2>
           <p class="detail-section__subtext">
@@ -211,7 +273,11 @@
         <!-- RELATED LIVING CULTURE -->
         <section v-if="relatedCultureList.length > 0" class="detail-section">
           <h2 class="detail-section__heading">
-            <q-icon name="palette" size="20px" class="section-icon text-purple" />
+            <q-icon
+              name="palette"
+              size="20px"
+              class="section-icon text-purple"
+            />
             Related Cultural Traditions
           </h2>
           <div class="related-grid">
@@ -225,19 +291,28 @@
         </section>
 
         <!-- SOURCES & VERIFICATION METADATA -->
-        <section v-if="record.sources && record.sources.length > 0" class="detail-section sources-section">
+        <section
+          v-if="record.sources && record.sources.length > 0"
+          class="detail-section sources-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="menu_book" size="18px" class="section-icon" />
             Verified Source Attribution
           </h2>
           <div class="source-list">
-            <div v-for="(src, idx) in record.sources" :key="idx" class="source-card">
+            <div
+              v-for="(src, idx) in record.sources"
+              :key="idx"
+              class="source-card"
+            >
               <div class="source-card__icon">
                 <q-icon name="verified_user" size="18px" />
               </div>
               <div class="source-card__content">
                 <h5 class="source-card__title">{{ src.sourceName }}</h5>
-                <span class="source-card__type">{{ src.sourceType }} Source</span>
+                <span class="source-card__type"
+                  >{{ src.sourceType }} Source</span
+                >
               </div>
               <a
                 v-if="src.sourceUrl"
@@ -259,26 +334,67 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { allCulture } from '@/data/culture.js'
 import { allHeritage } from '@/data/heritage.js'
 import { cultureCategories } from '@/data/cultureCategories.js'
 import { states } from '@/data/states.js'
 import { getRecordImage } from '@/utils/mediaHelper.js'
+import { usePassportStore } from '@/stores/passportStore.js'
+import { useSavedStore } from '@/stores/savedStore.js'
+import { useQuasar } from 'quasar'
 
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
 import RelatedContentCard from '@/components/discovery/RelatedContentCard.vue'
 
 const route = useRoute()
 const router = useRouter()
+const $q = useQuasar()
+const passport = usePassportStore()
+const savedStore = useSavedStore()
 const heroImageError = ref(false)
+const record = ref(null)
 
-const record = computed(() => {
-  return allCulture.find(c => c.slug === route.params.slug) || null
+onMounted(() => {
+  const slug = route.params.slug
+  const found = allCulture.find(c => c.slug === slug)
+  if (found) {
+    record.value = found
+  } else {
+    router.replace({ name: 'error-not-found' })
+  }
 })
 
-const isVerified = computed(() => record.value?.verificationStatus === 'verified')
+const isExplored = computed(() => {
+  return record.value ? passport.hasExploredCulture(record.value.id) : false
+})
+
+const toggleExplore = () => {
+  if (record.value) passport.toggleCulture(record.value.id)
+}
+
+const isSaved = computed(() => {
+  return record.value ? savedStore.isSaved(record.value.id) : false
+})
+
+const toggleSave = async () => {
+  if (record.value) {
+    const success = await savedStore.toggleSave(record.value.id, 'culture')
+    if (!success) {
+      $q.notify({ type: 'warning', message: 'Sign in to save items.' })
+    } else {
+      $q.notify({
+        type: 'positive',
+        message: isSaved.value ? 'Saved' : 'Removed from saved items'
+      })
+    }
+  }
+}
+
+const isVerified = computed(
+  () => record.value?.verificationStatus === 'verified'
+)
 
 const handleBack = () => {
   if (window.history.length > 1) {
@@ -300,14 +416,19 @@ const stateObj = computed(() => {
   return states.find(s => s.slug === record.value.state) || {}
 })
 
-const categoryName = computed(() => record.value?.categoryName || categoryObj.value.name || 'Culture')
+const categoryName = computed(
+  () => record.value?.categoryName || categoryObj.value.name || 'Culture'
+)
 const categoryIcon = computed(() => categoryObj.value.icon || 'palette')
 const categoryColor = computed(() => categoryObj.value.color || '#6C4BA0')
-const stateName = computed(() => record.value?.stateName || stateObj.value.name || 'India')
+const stateName = computed(
+  () => record.value?.stateName || stateObj.value.name || 'India'
+)
 
 // Resolve Related Heritage Records
 const relatedHeritageList = computed(() => {
-  if (!record.value || !Array.isArray(record.value.relatedHeritageIds)) return []
+  if (!record.value || !Array.isArray(record.value.relatedHeritageIds))
+    return []
   return record.value.relatedHeritageIds
     .map(id => allHeritage.find(h => h.id === id))
     .filter(Boolean)

@@ -5,7 +5,9 @@
     :aria-label="state.name"
     :aria-pressed="selected"
     @click="$emit('select', state)"
-    :style="selected ? { backgroundColor: activeColor, borderColor: activeColor } : {}"
+    :style="
+      selected ? { backgroundColor: activeColor, borderColor: activeColor } : {}
+    "
   >
     <q-icon v-if="icon" :name="icon" size="14px" class="state-chip__icon" />
     <span>{{ state.name }}</span>

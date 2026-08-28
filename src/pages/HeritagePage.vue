@@ -63,7 +63,9 @@
     <!-- Counter & Results -->
     <section class="section-spacing results-section">
       <div class="counter-heading">
-        <span class="counter-heading__text">{{ filteredRecords.length }} sites found</span>
+        <span class="counter-heading__text"
+          >{{ filteredRecords.length }} sites found</span
+        >
       </div>
 
       <div v-if="filteredRecords.length > 0" class="record-list">
@@ -76,7 +78,9 @@
       <div v-else class="empty-state">
         <q-icon name="search_off" class="empty-state__icon" />
         <h3 class="empty-state__title">No heritage sites found</h3>
-        <p class="empty-state__subtitle">Try adjusting your filters or search</p>
+        <p class="empty-state__subtitle"
+          >Try adjusting your filters or search</p
+        >
       </div>
     </section>
   </q-page>

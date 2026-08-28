@@ -33,13 +33,58 @@ function createRecord(id, slug, name, category, state, image = null) {
 }
 
 export const demoCulture = [
-  createRecord('dc-1', 'yakshagana', 'Yakshagana', 'classical-folk-dance', 'karnataka', '/images/yakshagana.png'),
+  createRecord(
+    'dc-1',
+    'yakshagana',
+    'Yakshagana',
+    'classical-folk-dance',
+    'karnataka',
+    '/images/yakshagana.png'
+  ),
   createRecord('dc-2', 'bidriware', 'Bidriware', 'handicrafts', 'karnataka'),
-  createRecord('dc-3', 'mysore-dasara', 'Mysore Dasara', 'festivals', 'karnataka'),
-  createRecord('dc-4', 'ghoomar', 'Ghoomar', 'classical-folk-dance', 'rajasthan', '/images/ghoomar.png'),
-  createRecord('dc-5', 'rajasthani-miniature-painting', 'Rajasthani Miniature Painting', 'traditional-arts', 'rajasthan'),
-  createRecord('dc-6', 'bandhani', 'Bandhani', 'clothing-textiles', 'rajasthan'),
-  createRecord('dc-7', 'bharatanatyam', 'Bharatanatyam', 'classical-folk-dance', 'tamil-nadu', '/images/bharatanatyam.png'),
-  createRecord('dc-8', 'tanjore-painting', 'Tanjore Painting', 'traditional-arts', 'tamil-nadu'),
+  createRecord(
+    'dc-3',
+    'mysore-dasara',
+    'Mysore Dasara',
+    'festivals',
+    'karnataka'
+  ),
+  createRecord(
+    'dc-4',
+    'ghoomar',
+    'Ghoomar',
+    'classical-folk-dance',
+    'rajasthan',
+    '/images/ghoomar.png'
+  ),
+  createRecord(
+    'dc-5',
+    'rajasthani-miniature-painting',
+    'Rajasthani Miniature Painting',
+    'traditional-arts',
+    'rajasthan'
+  ),
+  createRecord(
+    'dc-6',
+    'bandhani',
+    'Bandhani',
+    'clothing-textiles',
+    'rajasthan'
+  ),
+  createRecord(
+    'dc-7',
+    'bharatanatyam',
+    'Bharatanatyam',
+    'classical-folk-dance',
+    'tamil-nadu',
+    '/images/bharatanatyam.png'
+  ),
+  createRecord(
+    'dc-8',
+    'tanjore-painting',
+    'Tanjore Painting',
+    'traditional-arts',
+    'tamil-nadu'
+  ),
   createRecord('dc-9', 'pongal', 'Pongal', 'festivals', 'tamil-nadu')
 ]

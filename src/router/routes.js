@@ -34,6 +34,11 @@ const routes = [
         component: () => import('@/pages/CulturalTrailsPage.vue')
       },
       {
+        path: 'trails/:slug',
+        name: 'trail-detail',
+        component: () => import('@/pages/TrailDetailPage.vue')
+      },
+      {
         path: 'explore',
         name: 'explore',
         component: () => import('@/pages/ExplorePage.vue')

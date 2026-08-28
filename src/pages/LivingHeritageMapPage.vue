@@ -3,14 +3,19 @@
     <!-- Header Bar -->
     <header class="map-header">
       <div class="map-header__top">
-        <button class="back-btn" aria-label="Back to Explore" @click="handleBack">
+        <button
+          class="back-btn"
+          aria-label="Back to Explore"
+          @click="handleBack"
+        >
           <q-icon name="arrow_back" size="20px" />
         </button>
 
         <div class="map-header__title-block">
           <h1 class="map-header__title">Living Heritage Map</h1>
           <span class="map-header__counter">
-            {{ filteredMappedRecords.length }} mapped pins • {{ unmappedCount }} regional/unmapped
+            {{ filteredMappedRecords.length }} mapped pins •
+            {{ unmappedCount }} regional/unmapped
           </span>
         </div>
 
@@ -128,7 +133,9 @@
         <div v-else class="empty-state">
           <q-icon name="map" class="empty-state__icon" />
           <h3 class="empty-state__title">No mapped pins found</h3>
-          <p class="empty-state__subtitle">Try adjusting your filters or search query</p>
+          <p class="empty-state__subtitle"
+            >Try adjusting your filters or search query</p
+          >
         </div>
       </div>
     </main>
@@ -141,14 +148,19 @@
           <div>
             <h3 class="unmapped-header__title">
               Regional & Statewide Traditions
-              <span class="unmapped-count-badge">{{ filteredUnmappedRecords.length }}</span>
+              <span class="unmapped-count-badge">{{
+                filteredUnmappedRecords.length
+              }}</span>
             </h3>
             <p class="unmapped-header__sub">
               Cultural traditions & sites without single-point coordinates
             </p>
           </div>
         </div>
-        <q-icon :name="showUnmapped ? 'expand_less' : 'expand_more'" size="24px" />
+        <q-icon
+          :name="showUnmapped ? 'expand_less' : 'expand_more'"
+          size="24px"
+        />
       </div>
 
       <div v-if="showUnmapped" class="unmapped-body q-mt-sm">
@@ -160,9 +172,18 @@
             @click="navigateToDetail(uItem)"
           >
             <div class="unmapped-card__top">
-              <span class="unmapped-badge" :class="`unmapped-badge--${uItem.unmappedType}`">
+              <span
+                class="unmapped-badge"
+                :class="`unmapped-badge--${uItem.unmappedType}`"
+              >
                 <q-icon
-                  :name="uItem.unmappedType === 'statewide' ? 'public' : uItem.unmappedType === 'regional' ? 'map' : 'location_off'"
+                  :name="
+                    uItem.unmappedType === 'statewide'
+                      ? 'public'
+                      : uItem.unmappedType === 'regional'
+                        ? 'map'
+                        : 'location_off'
+                  "
                   size="11px"
                   class="q-mr-xs"
                 />
@@ -176,14 +197,17 @@
 
             <div class="unmapped-card__footer">
               <span class="unmapped-card__btn">
-                Explore {{ uItem.recordType === 'heritage' ? 'Heritage' : 'Culture' }}
+                Explore
+                {{ uItem.recordType === 'heritage' ? 'Heritage' : 'Culture' }}
                 <q-icon name="arrow_forward" size="12px" class="q-ml-xs" />
               </span>
             </div>
           </div>
         </div>
         <div v-else class="empty-state text-center q-pa-md">
-          <span class="text-caption text-grey-7">No unmapped records match current filters</span>
+          <span class="text-caption text-grey-7"
+            >No unmapped records match current filters</span
+          >
         </div>
       </div>
     </section>
@@ -298,7 +322,9 @@ const filteredUnmappedRecords = computed(() => {
 const unmappedMatchNotice = computed(() => {
   if (!searchQuery.value.trim()) return ''
   const q = searchQuery.value.toLowerCase().trim()
-  const match = allUnmapped.find(u => u.name && u.name.toLowerCase().includes(q))
+  const match = allUnmapped.find(
+    u => u.name && u.name.toLowerCase().includes(q)
+  )
   if (match && filteredMappedRecords.value.length === 0) {
     return `Verified record found ("${match.name}"), but precise map location is not available yet.`
   }

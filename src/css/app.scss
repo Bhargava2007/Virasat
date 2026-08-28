@@ -1,4 +1,3 @@
-
 :root {
   --color-primary: #b84b2a;
   --color-secondary: #2c3e73;
@@ -113,7 +112,9 @@ h6 {
   -webkit-backdrop-filter: blur(16px);
 }
 
-*:not(.leaflet-tile):not(.leaflet-tile-container):not(.leaflet-tile-pane):not(.leaflet-map-pane):not(.leaflet-layer) {
+*:not(.leaflet-tile):not(.leaflet-tile-container):not(.leaflet-tile-pane):not(
+    .leaflet-map-pane
+  ):not(.leaflet-layer) {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

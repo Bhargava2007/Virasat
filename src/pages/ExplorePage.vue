@@ -41,7 +41,9 @@
           </div>
           <div class="entry-card__body">
             <h2 class="entry-card__title">Heritage</h2>
-            <p class="entry-card__text">Monuments, forts, heritage sites & more</p>
+            <p class="entry-card__text"
+              >Monuments, forts, heritage sites & more</p
+            >
           </div>
           <div class="entry-card__arrow">
             <q-icon name="chevron_right" size="18px" />
@@ -61,13 +63,18 @@
           </div>
         </router-link>
 
-        <router-link to="/explore/map" class="entry-card entry-card--map full-width-card">
+        <router-link
+          to="/explore/map"
+          class="entry-card entry-card--map full-width-card"
+        >
           <div class="entry-card__icon-wrap">
             <q-icon name="map" size="22px" />
           </div>
           <div class="entry-card__body">
             <h2 class="entry-card__title">Living Heritage Map</h2>
-            <p class="entry-card__text">Explore India visually through an interactive map.</p>
+            <p class="entry-card__text"
+              >Explore India visually through an interactive map.</p
+            >
           </div>
           <div class="entry-card__arrow">
             <q-icon name="chevron_right" size="18px" />
@@ -78,7 +85,11 @@
 
     <!-- Explore by Category -->
     <section class="section-spacing">
-      <SectionHeader title="Explore by Category" actionLabel="View all" actionTo="/heritage" />
+      <SectionHeader
+        title="Explore by Category"
+        actionLabel="View all"
+        actionTo="/heritage"
+      />
       <div class="category-tiles-row">
         <CategoryCard
           v-for="cat in featuredHeritageCats"
@@ -117,7 +128,11 @@
 
     <!-- Featured Heritage -->
     <section class="section-spacing">
-      <SectionHeader title="Featured Heritage" actionLabel="View all" actionTo="/heritage" />
+      <SectionHeader
+        title="Featured Heritage"
+        actionLabel="View all"
+        actionTo="/heritage"
+      />
       <div v-if="filteredHeritage.length > 0" class="featured-scroll-row">
         <FeaturedVisualCard
           v-for="item in filteredHeritage"
@@ -135,7 +150,11 @@
 
     <!-- Living Culture -->
     <section class="section-spacing">
-      <SectionHeader title="Living Culture" actionLabel="View all" actionTo="/culture" />
+      <SectionHeader
+        title="Living Culture"
+        actionLabel="View all"
+        actionTo="/culture"
+      />
       <div v-if="filteredCulture.length > 0" class="featured-scroll-row">
         <FeaturedVisualCard
           v-for="item in filteredCulture"
@@ -147,7 +166,9 @@
       <div v-else class="empty-state">
         <q-icon name="search_off" class="empty-state__icon" />
         <h3 class="empty-state__title">No results found</h3>
-        <p class="empty-state__subtitle">Try adjusting your filters or search</p>
+        <p class="empty-state__subtitle"
+          >Try adjusting your filters or search</p
+        >
       </div>
     </section>
 
@@ -353,7 +374,9 @@ const filteredCulture = computed(() => filterRecords(allCulture))
   flex-direction: column;
   justify-content: space-between;
   min-height: 135px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &__icon-wrap {
     width: 40px;
@@ -475,7 +498,7 @@ const filteredCulture = computed(() => filterRecords(allCulture))
     margin-bottom: 0;
     margin-right: 16px;
   }
-  
+
   .entry-card__arrow {
     position: relative;
     bottom: auto;

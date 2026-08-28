@@ -91,10 +91,14 @@ const stateObj = computed(() => {
   return states.find(s => s.slug === props.item.state) || {}
 })
 
-const categoryName = computed(() => props.item.categoryName || categoryObj.value.name || 'Heritage')
+const categoryName = computed(
+  () => props.item.categoryName || categoryObj.value.name || 'Heritage'
+)
 const categoryIcon = computed(() => categoryObj.value.icon || 'account_balance')
 const categoryColor = computed(() => categoryObj.value.color || '#B84B2A')
-const stateName = computed(() => props.item.stateName || stateObj.value.name || 'India')
+const stateName = computed(
+  () => props.item.stateName || stateObj.value.name || 'India'
+)
 </script>
 
 <style scoped lang="scss">

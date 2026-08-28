@@ -2,6 +2,8 @@
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file
 
 import { defineConfig } from '#q-app'
+import { config } from 'dotenv'
+const parsedEnv = config().parsed || {}
 
 export default defineConfig((/* ctx */) => {
   return {
@@ -11,14 +13,14 @@ export default defineConfig((/* ctx */) => {
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: ['app.scss'],
 
-    extras: [
-      'roboto-font',
-      'material-icons',
-      'material-icons-outlined'
-    ],
+    extras: ['roboto-font', 'material-icons', 'material-icons-outlined'],
 
     build: {
-      vueRouterMode: 'hash'
+      vueRouterMode: 'history',
+      env: {
+        VITE_SUPABASE_URL: parsedEnv.VITE_SUPABASE_URL,
+        VITE_SUPABASE_PUBLISHABLE_KEY: parsedEnv.VITE_SUPABASE_PUBLISHABLE_KEY
+      }
     },
 
     devServer: {
@@ -27,7 +29,7 @@ export default defineConfig((/* ctx */) => {
 
     framework: {
       config: {},
-      plugins: []
+      plugins: ['Notify', 'Dialog']
     },
 
     animations: [],

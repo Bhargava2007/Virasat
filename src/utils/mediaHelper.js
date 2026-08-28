@@ -25,7 +25,11 @@ export function getRecordImage(record) {
   }
 
   // 2. Check explicitly provided record image string
-  if (record.image && typeof record.image === 'string' && record.image.trim() !== '') {
+  if (
+    record.image &&
+    typeof record.image === 'string' &&
+    record.image.trim() !== ''
+  ) {
     return record.image
   }
 

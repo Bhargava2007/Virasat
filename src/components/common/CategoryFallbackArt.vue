@@ -1,14 +1,26 @@
 <template>
-  <div
-    class="category-fallback-art"
-    :style="{ background: theme.bg }"
-  >
+  <div class="category-fallback-art" :style="{ background: theme.bg }">
     <!-- Geometric Overlay Pattern -->
-    <svg class="category-fallback-art__pattern" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">
+    <svg
+      class="category-fallback-art__pattern"
+      viewBox="0 0 400 300"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
       <defs>
-        <pattern id="heritage-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <pattern
+          id="heritage-grid"
+          width="40"
+          height="40"
+          patternUnits="userSpaceOnUse"
+        >
           <circle cx="20" cy="20" r="1.5" fill="rgba(255,255,255,0.15)" />
-          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+          <path
+            d="M 40 0 L 0 0 0 40"
+            fill="none"
+            stroke="rgba(255,255,255,0.06)"
+            stroke-width="1"
+          />
         </pattern>
       </defs>
       <rect width="100%" height="100%" fill="url(#heritage-grid)" />
@@ -29,10 +41,16 @@
 
     <!-- Center Icon & Label Badge -->
     <div class="category-fallback-art__content">
-      <div class="category-fallback-art__icon-circle" :style="{ color: theme.accent }">
+      <div
+        class="category-fallback-art__icon-circle"
+        :style="{ color: theme.accent }"
+      >
         <q-icon :name="theme.icon" size="36px" />
       </div>
-      <span class="category-fallback-art__label" :style="{ color: theme.accent }">
+      <span
+        class="category-fallback-art__label"
+        :style="{ color: theme.accent }"
+      >
         {{ theme.label }}
       </span>
     </div>
@@ -54,7 +72,9 @@ const props = defineProps({
   }
 })
 
-const theme = computed(() => getCategoryVisualTheme(props.categorySlug, props.recordType))
+const theme = computed(() =>
+  getCategoryVisualTheme(props.categorySlug, props.recordType)
+)
 </script>
 
 <style scoped lang="scss">

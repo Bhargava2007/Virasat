@@ -67,7 +67,9 @@ const router = useRouter()
 const imageError = ref(false)
 
 const imageUrl = computed(() => getRecordImage(props.item))
-const typeIcon = computed(() => (props.type === 'heritage' ? 'account_balance' : 'palette'))
+const typeIcon = computed(() =>
+  props.type === 'heritage' ? 'account_balance' : 'palette'
+)
 
 const handleImageError = () => {
   imageError.value = true
@@ -80,7 +82,8 @@ const navigateToDetail = () => {
 }
 
 const categoryObj = computed(() => {
-  const cats = props.type === 'heritage' ? heritageCategories : cultureCategories
+  const cats =
+    props.type === 'heritage' ? heritageCategories : cultureCategories
   return cats.find(c => c.slug === props.item.category) || {}
 })
 
@@ -88,8 +91,12 @@ const stateObj = computed(() => {
   return states.find(s => s.slug === props.item.state) || {}
 })
 
-const categoryName = computed(() => props.item.categoryName || categoryObj.value.name || '')
-const stateName = computed(() => props.item.stateName || stateObj.value.name || 'India')
+const categoryName = computed(
+  () => props.item.categoryName || categoryObj.value.name || ''
+)
+const stateName = computed(
+  () => props.item.stateName || stateObj.value.name || 'India'
+)
 </script>
 
 <style scoped lang="scss">

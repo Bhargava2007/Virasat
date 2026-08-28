@@ -1,7 +1,11 @@
 <template>
   <div v-if="item" class="marker-sheet-overlay" @click.self="$emit('close')">
     <div class="marker-sheet">
-      <button class="marker-sheet__close-btn" aria-label="Close details" @click="$emit('close')">
+      <button
+        class="marker-sheet__close-btn"
+        aria-label="Close details"
+        @click="$emit('close')"
+      >
         <q-icon name="close" size="18px" />
       </button>
 
@@ -28,10 +32,7 @@
         <!-- Content -->
         <div class="marker-sheet__content">
           <div class="marker-sheet__type-bar">
-            <span
-              class="type-pill"
-              :class="`type-pill--${item.recordType}`"
-            >
+            <span class="type-pill" :class="`type-pill--${item.recordType}`">
               <q-icon :name="typeIcon" size="12px" class="q-mr-xs" />
               {{ item.recordType.toUpperCase() }}
             </span>
@@ -45,13 +46,18 @@
           <!-- Location & City Centre Notice -->
           <div class="marker-sheet__location">
             <q-icon name="place" size="14px" class="q-mr-xs opacity-70" />
-            <span class="location-label">{{ item.locationLabel || item.districtOrRegion || item.stateName }}</span>
+            <span class="location-label">{{
+              item.locationLabel || item.districtOrRegion || item.stateName
+            }}</span>
           </div>
 
           <!-- City Centre Discovery Note -->
           <div v-if="item.precision === 'city'" class="city-discovery-note">
             <q-icon name="info" size="13px" class="q-mr-xs text-blue-8" />
-            <span>Marker pin represents the city centre hub for geographic discovery</span>
+            <span
+              >Marker pin represents the city centre hub for geographic
+              discovery</span
+            >
           </div>
 
           <p class="marker-sheet__desc">{{ item.shortDescription }}</p>
@@ -64,7 +70,14 @@
               class="full-width rounded-btn"
               @click="navigateToDetail"
             >
-              <span>View {{ item.recordType === 'heritage' ? 'Heritage Site' : 'Culture Record' }}</span>
+              <span
+                >View
+                {{
+                  item.recordType === 'heritage'
+                    ? 'Heritage Site'
+                    : 'Culture Record'
+                }}</span
+              >
               <q-icon name="arrow_forward" size="16px" class="q-ml-sm" />
             </q-btn>
           </div>
@@ -97,11 +110,16 @@ const imageError = ref(false)
 
 const imageUrl = computed(() => getRecordImage(props.item))
 const isVerified = computed(() => props.item?.verificationStatus === 'verified')
-const typeIcon = computed(() => (props.item?.recordType === 'heritage' ? 'account_balance' : 'palette'))
+const typeIcon = computed(() =>
+  props.item?.recordType === 'heritage' ? 'account_balance' : 'palette'
+)
 
 const categoryObj = computed(() => {
   if (!props.item) return {}
-  const cats = props.item.recordType === 'heritage' ? heritageCategories : cultureCategories
+  const cats =
+    props.item.recordType === 'heritage'
+      ? heritageCategories
+      : cultureCategories
   return cats.find(c => c.slug === props.item.category) || {}
 })
 
@@ -110,8 +128,14 @@ const stateObj = computed(() => {
   return states.find(s => s.slug === props.item.state) || {}
 })
 
-const categoryName = computed(() => props.item?.categoryName || categoryObj.value.name || '')
-const categoryColor = computed(() => categoryObj.value.color || (props.item?.recordType === 'heritage' ? '#B84B2A' : '#6C4BA0'))
+const categoryName = computed(
+  () => props.item?.categoryName || categoryObj.value.name || ''
+)
+const categoryColor = computed(
+  () =>
+    categoryObj.value.color ||
+    (props.item?.recordType === 'heritage' ? '#B84B2A' : '#6C4BA0')
+)
 
 const navigateToDetail = () => {
   if (props.item?.slug) {

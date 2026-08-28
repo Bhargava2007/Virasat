@@ -15,9 +15,12 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A traditional dance-drama form of coastal Karnataka combining dance, music, song, dialogue, storytelling and elaborate costumes.',
-    originHistory: 'Yakshagana is a traditional folk performance form associated especially with the coastal districts of Karnataka.',
-    culturalSignificance: 'Performances combine dance, music, song, dialogue and elaborate costume, and commonly stage episodes drawn from the Ramayana, Mahabharata and other traditional narratives.',
+    shortDescription:
+      'A traditional dance-drama form of coastal Karnataka combining dance, music, song, dialogue, storytelling and elaborate costumes.',
+    originHistory:
+      'Yakshagana is a traditional folk performance form associated especially with the coastal districts of Karnataka.',
+    culturalSignificance:
+      'Performances combine dance, music, song, dialogue and elaborate costume, and commonly stage episodes drawn from the Ramayana, Mahabharata and other traditional narratives.',
     keyElements: [
       'Dance',
       'Music',
@@ -29,11 +32,7 @@ export const verifiedCulture = [
     ],
     images: [],
     media: [],
-    relatedPlaces: [
-      'Udupi',
-      'Dakshina Kannada',
-      'Uttara Kannada'
-    ],
+    relatedPlaces: ['Udupi', 'Dakshina Kannada', 'Uttara Kannada'],
     relatedFestivals: [],
     relatedHeritageIds: [],
     relatedCultureIds: [],
@@ -59,9 +58,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A ten-day festival in Mysuru combining devotion, royal heritage, processions and cultural performances.',
+    shortDescription:
+      'A ten-day festival in Mysuru combining devotion, royal heritage, processions and cultural performances.',
     originHistory: null,
-    culturalSignificance: 'Mysuru Dasara is a major cultural celebration of Karnataka held during Navaratri and culminating on Vijayadashami. The celebrations include the Jumbo Savari procession, palace illumination, cultural performances, exhibitions and ceremonies associated with Goddess Chamundeshwari.',
+    culturalSignificance:
+      'Mysuru Dasara is a major cultural celebration of Karnataka held during Navaratri and culminating on Vijayadashami. The celebrations include the Jumbo Savari procession, palace illumination, cultural performances, exhibitions and ceremonies associated with Goddess Chamundeshwari.',
     keyElements: [
       'Navaratri',
       'Vijayadashami',
@@ -73,10 +74,7 @@ export const verifiedCulture = [
     ],
     images: [],
     media: [],
-    relatedPlaces: [
-      'Mysuru',
-      'Chamundi Hill'
-    ],
+    relatedPlaces: ['Mysuru', 'Chamundi Hill'],
     relatedFestivals: [],
     relatedHeritageIds: ['ka-heritage-mysuru-palace'],
     relatedCultureIds: [],
@@ -84,14 +82,17 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Karnataka Tourism — Experience the Mysuru Dasara festivities in Karnataka',
+        sourceName:
+          'Karnataka Tourism — Experience the Mysuru Dasara festivities in Karnataka',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/experience-the-mysuru-dasara-festivities-in-karnataka'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/experience-the-mysuru-dasara-festivities-in-karnataka'
       },
       {
         sourceName: 'Karnataka Tourism — Mysuru Dasara Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/events/mysuru-dasara-festival'
+        sourceUrl:
+          'https://karnatakatourism.org/en/events/mysuru-dasara-festival'
       }
     ],
     lastVerified: '2026-08-26'
@@ -107,9 +108,12 @@ export const verifiedCulture = [
     community: 'Channapatna toy-making artisans',
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A traditional lacquered wooden toy-making craft associated with Channapatna in Karnataka.',
-    originHistory: 'Channapatna has a long-established wooden toy-making tradition. Karnataka Tourism notes that the craft received patronage from Tipu Sultan, who invited artisans from Persia to train local craftsmen in woodwork.',
-    culturalSignificance: 'The craft is known for hand-crafted wooden toys, puzzles and decorative objects with smooth lacquer finishes and bright colours, and it has Geographical Indication protection.',
+    shortDescription:
+      'A traditional lacquered wooden toy-making craft associated with Channapatna in Karnataka.',
+    originHistory:
+      'Channapatna has a long-established wooden toy-making tradition. Karnataka Tourism notes that the craft received patronage from Tipu Sultan, who invited artisans from Persia to train local craftsmen in woodwork.',
+    culturalSignificance:
+      'The craft is known for hand-crafted wooden toys, puzzles and decorative objects with smooth lacquer finishes and bright colours, and it has Geographical Indication protection.',
     keyElements: [
       'Wood turning',
       'Handcrafted wooden toys',
@@ -118,10 +122,7 @@ export const verifiedCulture = [
     ],
     images: [],
     media: [],
-    relatedPlaces: [
-      'Channapatna',
-      'Ramanagara'
-    ],
+    relatedPlaces: ['Channapatna', 'Ramanagara'],
     relatedFestivals: [],
     relatedHeritageIds: [],
     relatedCultureIds: [],
@@ -131,7 +132,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Channapatna Toys',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/channapatna-toys/'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/channapatna-toys/'
       }
     ],
     lastVerified: '2026-08-26'
@@ -147,10 +149,18 @@ export const verifiedCulture = [
     community: null,
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional South Indian painting style associated with Mysuru, known for refined line work, devotional themes and gold detailing.',
-    originHistory: 'Karnataka Tourism traces the tradition to the royal courts of the Wodeyar dynasty.',
-    culturalSignificance: 'Mysore painting forms an important part of Karnataka\'s royal and devotional art heritage, with themes frequently drawn from Hindu mythology and classical epics.',
-    keyElements: ['Delicate brushwork', 'Devotional subjects', 'Gold foil detailing', 'Muted and refined composition'],
+    shortDescription:
+      'A traditional South Indian painting style associated with Mysuru, known for refined line work, devotional themes and gold detailing.',
+    originHistory:
+      'Karnataka Tourism traces the tradition to the royal courts of the Wodeyar dynasty.',
+    culturalSignificance:
+      "Mysore painting forms an important part of Karnataka's royal and devotional art heritage, with themes frequently drawn from Hindu mythology and classical epics.",
+    keyElements: [
+      'Delicate brushwork',
+      'Devotional subjects',
+      'Gold foil detailing',
+      'Muted and refined composition'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Mysuru'],
@@ -179,10 +189,19 @@ export const verifiedCulture = [
     community: 'Kuruba Gowda community',
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A high-energy traditional drum dance performed in Karnataka during festivals, processions and cultural celebrations.',
-    originHistory: 'Karnataka Tourism associates Dollu Kunitha with the worship of Beeralingeshwara and with ritual traditions of the Kuruba Gowda community.',
-    culturalSignificance: 'The form combines synchronized group movement, rhythmic drumming and song and is widely presented at temple festivals and major cultural events.',
-    keyElements: ['Large drums', 'Group formations', 'Rhythmic dance', 'Singing', 'Festival performance'],
+    shortDescription:
+      'A high-energy traditional drum dance performed in Karnataka during festivals, processions and cultural celebrations.',
+    originHistory:
+      'Karnataka Tourism associates Dollu Kunitha with the worship of Beeralingeshwara and with ritual traditions of the Kuruba Gowda community.',
+    culturalSignificance:
+      'The form combines synchronized group movement, rhythmic drumming and song and is widely presented at temple festivals and major cultural events.',
+    keyElements: [
+      'Large drums',
+      'Group formations',
+      'Rhythmic dance',
+      'Singing',
+      'Festival performance'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -211,16 +230,27 @@ export const verifiedCulture = [
     community: null,
     category: 'folklore-oral-traditions',
     categoryName: 'Folklore & Oral Traditions',
-    shortDescription: 'A traditional Karnataka puppet-theatre form that tells stories through dolls controlled by puppeteers using strings.',
+    shortDescription:
+      'A traditional Karnataka puppet-theatre form that tells stories through dolls controlled by puppeteers using strings.',
     originHistory: null,
-    culturalSignificance: 'Gombe Aata combines puppetry, narration and music to stage stories, often drawing from epics and traditional narratives.',
-    keyElements: ['Wooden puppets', 'String manipulation', 'Narration', 'Music', 'Storytelling'],
+    culturalSignificance:
+      'Gombe Aata combines puppetry, narration and music to stage stories, often drawing from epics and traditional narratives.',
+    keyElements: [
+      'Wooden puppets',
+      'String manipulation',
+      'Narration',
+      'Music',
+      'Storytelling'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Channapatna'],
     relatedFestivals: ['Mysuru Dasara'],
     relatedHeritageIds: [],
-    relatedCultureIds: ['ka-culture-channapatna-toys', 'ka-culture-mysuru-dasara'],
+    relatedCultureIds: [
+      'ka-culture-channapatna-toys',
+      'ka-culture-mysuru-dasara'
+    ],
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
@@ -243,10 +273,18 @@ export const verifiedCulture = [
     community: null,
     category: 'local-customs',
     categoryName: 'Local Customs',
-    shortDescription: 'A traditional buffalo-racing event held on slushy tracks in coastal Karnataka.',
+    shortDescription:
+      'A traditional buffalo-racing event held on slushy tracks in coastal Karnataka.',
     originHistory: null,
-    culturalSignificance: 'Kambala is a prominent rural sporting tradition of coastal Karnataka and forms part of the harvest-season cultural life of Tulu Nadu.',
-    keyElements: ['Pairs of buffaloes', 'Slushy race tracks', 'Jockey/runner', 'Village events', 'Harvest-season tradition'],
+    culturalSignificance:
+      'Kambala is a prominent rural sporting tradition of coastal Karnataka and forms part of the harvest-season cultural life of Tulu Nadu.',
+    keyElements: [
+      'Pairs of buffaloes',
+      'Slushy race tracks',
+      'Jockey/runner',
+      'Village events',
+      'Harvest-season tradition'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Mangaluru', 'Udupi', 'Moodubidire', 'Puttur'],
@@ -280,13 +318,27 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A tiger-themed folk performance of coastal Karnataka, especially visible during Navaratri festivities.',
+    shortDescription:
+      'A tiger-themed folk performance of coastal Karnataka, especially visible during Navaratri festivities.',
     originHistory: null,
-    culturalSignificance: 'Huli Vesha is performed as a tribute to Goddess Durga and is a highly visible part of festive street culture in coastal Karnataka.',
-    keyElements: ['Tiger body paint/costume', 'Group dancing', 'Drums and music', 'Street performance', 'Festival setting'],
+    culturalSignificance:
+      'Huli Vesha is performed as a tribute to Goddess Durga and is a highly visible part of festive street culture in coastal Karnataka.',
+    keyElements: [
+      'Tiger body paint/costume',
+      'Group dancing',
+      'Drums and music',
+      'Street performance',
+      'Festival setting'
+    ],
     images: [],
     media: [],
-    relatedPlaces: ['Mangaluru', 'Udupi', 'Kundapura', 'Moodubidiri', 'Karkala'],
+    relatedPlaces: [
+      'Mangaluru',
+      'Udupi',
+      'Kundapura',
+      'Moodubidiri',
+      'Karkala'
+    ],
     relatedFestivals: ['Navaratri'],
     relatedHeritageIds: [],
     relatedCultureIds: [],
@@ -312,10 +364,20 @@ export const verifiedCulture = [
     community: null,
     category: 'local-customs',
     categoryName: 'Local Customs',
-    shortDescription: 'A ritual tradition of coastal Karnataka centred on ceremonial worship of local spirits or deities through performance, music and invocation.',
-    originHistory: 'Karnataka Tourism describes the tradition as rooted in Tulu Nadu\'s spirit and ancestor-worship practices.',
-    culturalSignificance: 'The ritual combines performance, costume, music, narration, offerings and community belief and remains part of local religious and social life in coastal Karnataka.',
-    keyElements: ['Ritual performance', 'Face painting', 'Costume and headdress', 'Drumming/music', 'Invocation', 'Offerings'],
+    shortDescription:
+      'A ritual tradition of coastal Karnataka centred on ceremonial worship of local spirits or deities through performance, music and invocation.',
+    originHistory:
+      "Karnataka Tourism describes the tradition as rooted in Tulu Nadu's spirit and ancestor-worship practices.",
+    culturalSignificance:
+      'The ritual combines performance, costume, music, narration, offerings and community belief and remains part of local religious and social life in coastal Karnataka.',
+    keyElements: [
+      'Ritual performance',
+      'Face painting',
+      'Costume and headdress',
+      'Drumming/music',
+      'Invocation',
+      'Offerings'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Mangaluru', 'Udupi', 'Tulu Nadu'],
@@ -328,7 +390,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Bhootha Aradhane',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/experiences/bhootha-aradhane-spirit-worship-dance/'
+        sourceUrl:
+          'https://karnatakatourism.org/experiences/bhootha-aradhane-spirit-worship-dance/'
       }
     ],
     lastVerified: '2026-08-26'
@@ -341,16 +404,30 @@ export const verifiedCulture = [
     state: 'karnataka',
     stateName: 'Karnataka',
     region: 'Mysuru, Chamarajanagara and Mandya regions',
-    community: 'Associated with devotees of Male Mahadeshwara; Karnataka Tourism notes Halu Kuruba performers in Chamarajanagara district',
+    community:
+      'Associated with devotees of Male Mahadeshwara; Karnataka Tourism notes Halu Kuruba performers in Chamarajanagara district',
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A devotional folk dance in which performers sing and dance rhythmically while playing pairs of small metal cymbal-like instruments called kamsale.',
+    shortDescription:
+      'A devotional folk dance in which performers sing and dance rhythmically while playing pairs of small metal cymbal-like instruments called kamsale.',
     originHistory: null,
-    culturalSignificance: 'Kamsale Nrutya is closely associated with Male Mahadeshwara worship and combines devotional song, percussion and vigorous group movement.',
-    keyElements: ['Kamsale metal plates', 'Devotional songs', 'Group dance', 'Rhythmic percussion', 'Male Mahadeshwara worship'],
+    culturalSignificance:
+      'Kamsale Nrutya is closely associated with Male Mahadeshwara worship and combines devotional song, percussion and vigorous group movement.',
+    keyElements: [
+      'Kamsale metal plates',
+      'Devotional songs',
+      'Group dance',
+      'Rhythmic percussion',
+      'Male Mahadeshwara worship'
+    ],
     images: [],
     media: [],
-    relatedPlaces: ['Mysuru', 'Chamarajanagara', 'Mandya', 'Male Mahadeshwara Hills'],
+    relatedPlaces: [
+      'Mysuru',
+      'Chamarajanagara',
+      'Mandya',
+      'Male Mahadeshwara Hills'
+    ],
     relatedFestivals: [],
     relatedHeritageIds: [],
     relatedCultureIds: [],
@@ -372,14 +449,24 @@ export const verifiedCulture = [
     recordType: 'culture',
     state: 'karnataka',
     stateName: 'Karnataka',
-    region: 'Especially Mysuru; also associated with artisan traditions elsewhere in Karnataka',
+    region:
+      'Especially Mysuru; also associated with artisan traditions elsewhere in Karnataka',
     community: null,
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A long-standing Karnataka craft tradition of intricately carving fragrant sandalwood into sculptures and decorative objects.',
-    originHistory: 'Karnataka Tourism describes sandalwood carving as a centuries-old traditional art and notes strong royal patronage, especially during the Wodeyar dynasty.',
-    culturalSignificance: 'The craft is an important part of Karnataka\'s artisanal heritage and is particularly associated with Mysuru\'s craft traditions.',
-    keyElements: ['Hand carving', 'Sandalwood', 'Fine detailing', 'Mythological and floral motifs', 'Decorative objects and sculptures'],
+    shortDescription:
+      'A long-standing Karnataka craft tradition of intricately carving fragrant sandalwood into sculptures and decorative objects.',
+    originHistory:
+      'Karnataka Tourism describes sandalwood carving as a centuries-old traditional art and notes strong royal patronage, especially during the Wodeyar dynasty.',
+    culturalSignificance:
+      "The craft is an important part of Karnataka's artisanal heritage and is particularly associated with Mysuru's craft traditions.",
+    keyElements: [
+      'Hand carving',
+      'Sandalwood',
+      'Fine detailing',
+      'Mythological and floral motifs',
+      'Decorative objects and sculptures'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Mysuru'],
@@ -392,7 +479,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Sandalwood Carving',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/sandalwood-carving'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/sandalwood-carving'
       }
     ],
     lastVerified: '2026-08-26'
@@ -408,9 +496,12 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A Mysuru silk-weaving tradition known for lustrous fabric, restrained elegance and the use of pure silk and gold zari.',
-    originHistory: 'Karnataka Tourism associates the tradition with patronage of the Wodeyar kings.',
-    culturalSignificance: 'Mysore Silk is an important part of Karnataka’s textile heritage and is produced at the Karnataka Silk Industries Corporation factory in Mysuru.',
+    shortDescription:
+      'A Mysuru silk-weaving tradition known for lustrous fabric, restrained elegance and the use of pure silk and gold zari.',
+    originHistory:
+      'Karnataka Tourism associates the tradition with patronage of the Wodeyar kings.',
+    culturalSignificance:
+      'Mysore Silk is an important part of Karnataka’s textile heritage and is produced at the Karnataka Silk Industries Corporation factory in Mysuru.',
     keyElements: ['Pure silk', 'Gold zari', 'Silk weaving', 'Mysuru'],
     giStatus: 'GI-tagged',
     images: [],
@@ -425,7 +516,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Weaving Traditions of Karnataka',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/weaving-traditions-of-karnataka'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/weaving-traditions-of-karnataka'
       }
     ],
     lastVerified: '2026-08-26'
@@ -441,10 +533,17 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A weaving tradition from Ilkal known for distinctive contrast borders, bold patterns and the characteristic tope teni pallu.',
+    shortDescription:
+      'A weaving tradition from Ilkal known for distinctive contrast borders, bold patterns and the characteristic tope teni pallu.',
     originHistory: null,
-    culturalSignificance: 'Ilkal sarees form part of Karnataka’s diverse regional weaving heritage.',
-    keyElements: ['Contrast borders', 'Bold patterns', 'Tope teni pallu', 'Red or maroon pallu'],
+    culturalSignificance:
+      'Ilkal sarees form part of Karnataka’s diverse regional weaving heritage.',
+    keyElements: [
+      'Contrast borders',
+      'Bold patterns',
+      'Tope teni pallu',
+      'Red or maroon pallu'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Ilkal', 'Bagalkot district'],
@@ -457,7 +556,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Weaving Traditions of Karnataka',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/weaving-traditions-of-karnataka'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/weaving-traditions-of-karnataka'
       }
     ],
     lastVerified: '2026-08-26'
@@ -473,9 +573,11 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A distinctive textile tradition of Karnataka recognized for its characteristic woven textures and regional identity.',
+    shortDescription:
+      'A distinctive textile tradition of Karnataka recognized for its characteristic woven textures and regional identity.',
     originHistory: null,
-    culturalSignificance: 'Karnataka Tourism includes Guledgudda Khana among the state’s notable weaving traditions.',
+    culturalSignificance:
+      'Karnataka Tourism includes Guledgudda Khana among the state’s notable weaving traditions.',
     keyElements: ['Traditional weaving', 'Regional textile'],
     images: [],
     media: [],
@@ -489,7 +591,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Weaving Traditions of Karnataka',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/weaving-traditions-of-karnataka'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/weaving-traditions-of-karnataka'
       }
     ],
     lastVerified: '2026-08-26'
@@ -505,14 +608,27 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'An energetic Shaivite folk dance of Karnataka associated with Veerabhadra and performed with vigorous martial-style movement.',
-    originHistory: 'Karnataka Tourism describes Veeragase as originating in honour of Veerabhadra and linked to the Dakshayagna narrative.',
-    culturalSignificance: 'The form expresses themes of devotion, heroism and mythological valour and is performed at temple festivals, processions and Mysuru Dasara.',
-    keyElements: ['Martial-style movement', 'Traditional drums', 'Swords', 'Shaivite symbols', 'Group performance'],
+    shortDescription:
+      'An energetic Shaivite folk dance of Karnataka associated with Veerabhadra and performed with vigorous martial-style movement.',
+    originHistory:
+      'Karnataka Tourism describes Veeragase as originating in honour of Veerabhadra and linked to the Dakshayagna narrative.',
+    culturalSignificance:
+      'The form expresses themes of devotion, heroism and mythological valour and is performed at temple festivals, processions and Mysuru Dasara.',
+    keyElements: [
+      'Martial-style movement',
+      'Traditional drums',
+      'Swords',
+      'Shaivite symbols',
+      'Group performance'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
-    relatedFestivals: ['Mysuru Dasara', 'Shravana festivals', 'Kartika festivals'],
+    relatedFestivals: [
+      'Mysuru Dasara',
+      'Shravana festivals',
+      'Kartika festivals'
+    ],
     relatedHeritageIds: [],
     relatedCultureIds: ['ka-culture-mysuru-dasara'],
     trailIds: [],
@@ -537,9 +653,11 @@ export const verifiedCulture = [
     community: null,
     category: 'regional-cuisine',
     categoryName: 'Cuisine',
-    shortDescription: 'A vegetarian culinary tradition associated with Udupi and highlighted by Karnataka Tourism as one of the state’s distinctive regional food traditions.',
+    shortDescription:
+      'A vegetarian culinary tradition associated with Udupi and highlighted by Karnataka Tourism as one of the state’s distinctive regional food traditions.',
     originHistory: null,
-    culturalSignificance: 'Udupi vegetarian food forms part of Karnataka’s geographically diverse culinary heritage.',
+    culturalSignificance:
+      'Udupi vegetarian food forms part of Karnataka’s geographically diverse culinary heritage.',
     keyElements: ['Vegetarian cuisine', 'Regional culinary tradition'],
     images: [],
     media: [],
@@ -569,9 +687,11 @@ export const verifiedCulture = [
     community: 'Kodava',
     category: 'regional-cuisine',
     categoryName: 'Cuisine',
-    shortDescription: 'A regional culinary tradition of Kodagu highlighted within Karnataka’s diverse food heritage.',
+    shortDescription:
+      'A regional culinary tradition of Kodagu highlighted within Karnataka’s diverse food heritage.',
     originHistory: null,
-    culturalSignificance: 'Karnataka Tourism identifies Kodava food traditions, including pork preparations, among the distinctive regional flavours of the state.',
+    culturalSignificance:
+      'Karnataka Tourism identifies Kodava food traditions, including pork preparations, among the distinctive regional flavours of the state.',
     keyElements: ['Regional Kodagu cuisine', 'Pork preparations'],
     images: [],
     media: [],
@@ -601,9 +721,12 @@ export const verifiedCulture = [
     community: null,
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A distinctive metal-inlay craft associated with Bidar, characterized by silver inlay work on a dark metal surface.',
-    originHistory: 'Karnataka Tourism describes Bidar as famous for Bidriware and associates the craft with royal patronage.',
-    culturalSignificance: 'Bidriware is a defining craft tradition of Bidar and an important part of the city’s living artistic heritage.',
+    shortDescription:
+      'A distinctive metal-inlay craft associated with Bidar, characterized by silver inlay work on a dark metal surface.',
+    originHistory:
+      'Karnataka Tourism describes Bidar as famous for Bidriware and associates the craft with royal patronage.',
+    culturalSignificance:
+      'Bidriware is a defining craft tradition of Bidar and an important part of the city’s living artistic heritage.',
     keyElements: ['Metal craft', 'Silver inlay', 'Dark metal surface', 'Bidar'],
     images: [],
     media: [],
@@ -634,18 +757,32 @@ export const verifiedCulture = [
     recordType: 'culture',
     state: 'karnataka',
     stateName: 'Karnataka',
-    region: 'Across Karnataka; particularly documented in rural Mysuru, Dharwad and Ballari districts',
+    region:
+      'Across Karnataka; particularly documented in rural Mysuru, Dharwad and Ballari districts',
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A traditional Karnataka folk dance performed in synchronized groups using short wooden sticks.',
+    shortDescription:
+      'A traditional Karnataka folk dance performed in synchronized groups using short wooden sticks.',
     originHistory: null,
-    culturalSignificance: 'Kolata combines music, synchronized dance and oral storytelling and is performed at harvest celebrations, weddings, temple festivals, village fairs and other community occasions.',
-    keyElements: ['Wooden sticks', 'Circular formations', 'Synchronized movement', 'Folk music and song', 'Oral storytelling'],
+    culturalSignificance:
+      'Kolata combines music, synchronized dance and oral storytelling and is performed at harvest celebrations, weddings, temple festivals, village fairs and other community occasions.',
+    keyElements: [
+      'Wooden sticks',
+      'Circular formations',
+      'Synchronized movement',
+      'Folk music and song',
+      'Oral storytelling'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Mysuru district', 'Dharwad district', 'Ballari district'],
-    relatedFestivals: ['Dasara', 'Temple festivals', 'Village fairs', 'Harvest festivals'],
+    relatedFestivals: [
+      'Dasara',
+      'Temple festivals',
+      'Village fairs',
+      'Harvest festivals'
+    ],
     relatedHeritageIds: [],
     relatedCultureIds: ['ka-culture-mysuru-dasara'],
     trailIds: [],
@@ -670,10 +807,18 @@ export const verifiedCulture = [
     community: null,
     category: 'local-customs',
     categoryName: 'Local Customs',
-    shortDescription: 'An elaborate serpent-worship ritual tradition of coastal Karnataka combining sacred design, dance and all-night ceremonial performance.',
+    shortDescription:
+      'An elaborate serpent-worship ritual tradition of coastal Karnataka combining sacred design, dance and all-night ceremonial performance.',
     originHistory: null,
-    culturalSignificance: 'Karnataka Tourism documents Nagamandala as a ritual performed in Dakshina Kannada to appease the serpent spirit.',
-    keyElements: ['Serpent worship', 'Ritual dance', 'Sacred ground design', 'Natural colours', 'Night-long ceremony'],
+    culturalSignificance:
+      'Karnataka Tourism documents Nagamandala as a ritual performed in Dakshina Kannada to appease the serpent spirit.',
+    keyElements: [
+      'Serpent worship',
+      'Ritual dance',
+      'Sacred ground design',
+      'Natural colours',
+      'Night-long ceremony'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Dakshina Kannada'],
@@ -684,7 +829,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Karnataka Tourism — Art forms that inform Karnataka Culture',
+        sourceName:
+          'Karnataka Tourism — Art forms that inform Karnataka Culture',
         sourceType: 'Government tourism',
         sourceUrl: 'https://old.karnatakatourism.org/karnataka-culture/'
       }
@@ -702,10 +848,19 @@ export const verifiedCulture = [
     community: 'Thigalar community',
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A nine-day Bengaluru folk-religious festival centred on the Dharmaraya Swamy Temple and associated with Draupadi.',
-    originHistory: 'Karnataka Tourism describes the Karaga tradition as started and sustained by the Thigalar community.',
-    culturalSignificance: 'The festival includes a major night procession led by a priest carrying a flower-decorated Karaga and includes an established visit to the tomb of an 18th-century Muslim saint.',
-    keyElements: ['Karaga procession', 'Dharmaraya Swamy Temple', 'Flower-decorated Karaga', 'Sword-bearing participants', 'Draupadi tradition'],
+    shortDescription:
+      'A nine-day Bengaluru folk-religious festival centred on the Dharmaraya Swamy Temple and associated with Draupadi.',
+    originHistory:
+      'Karnataka Tourism describes the Karaga tradition as started and sustained by the Thigalar community.',
+    culturalSignificance:
+      'The festival includes a major night procession led by a priest carrying a flower-decorated Karaga and includes an established visit to the tomb of an 18th-century Muslim saint.',
+    keyElements: [
+      'Karaga procession',
+      'Dharmaraya Swamy Temple',
+      'Flower-decorated Karaga',
+      'Sword-bearing participants',
+      'Draupadi tradition'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Dharmaraya Swamy Temple', 'Bengaluru'],
@@ -718,7 +873,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Bengaluru Karaga',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/experiences/bengaluru-karaga/'
+        sourceUrl:
+          'https://karnatakatourism.org/en/experiences/bengaluru-karaga/'
       }
     ],
     lastVerified: '2026-08-26'
@@ -734,10 +890,19 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A Karnataka folk performance in which dancers wear large, colourful doll costumes made using materials including bamboo and papier-mâché.',
-    originHistory: 'Karnataka Tourism describes the tradition as centuries old and connected with festivals and legends.',
-    culturalSignificance: 'The oversized doll costumes make Gaarudi Gombe a distinctive visual folk-performance tradition of Karnataka.',
-    keyElements: ['Large doll costumes', 'Bamboo', 'Papier-mâché', 'Dance', 'Festival performance'],
+    shortDescription:
+      'A Karnataka folk performance in which dancers wear large, colourful doll costumes made using materials including bamboo and papier-mâché.',
+    originHistory:
+      'Karnataka Tourism describes the tradition as centuries old and connected with festivals and legends.',
+    culturalSignificance:
+      'The oversized doll costumes make Gaarudi Gombe a distinctive visual folk-performance tradition of Karnataka.',
+    keyElements: [
+      'Large doll costumes',
+      'Bamboo',
+      'Papier-mâché',
+      'Dance',
+      'Festival performance'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -766,10 +931,17 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'An annual groundnut fair in Bengaluru associated with the first yield of the groundnut crop and local ritual traditions.',
+    shortDescription:
+      'An annual groundnut fair in Bengaluru associated with the first yield of the groundnut crop and local ritual traditions.',
     originHistory: null,
-    culturalSignificance: 'Karnataka Tourism identifies Kadalekai Parishe as a popular Bengaluru groundnut festival welcoming the first yield of the crop.',
-    keyElements: ['Groundnut fair', 'First crop yield', 'Local rituals', 'Basavanagudi'],
+    culturalSignificance:
+      'Karnataka Tourism identifies Kadalekai Parishe as a popular Bengaluru groundnut festival welcoming the first yield of the crop.',
+    keyElements: [
+      'Groundnut fair',
+      'First crop yield',
+      'Local rituals',
+      'Basavanagudi'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Basavanagudi', 'Bengaluru'],
@@ -798,10 +970,17 @@ export const verifiedCulture = [
     community: 'Jain community',
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major Jain ceremonial festival at Shravanabelagola associated with the Gommateshwara (Bahubali) statue.',
+    shortDescription:
+      'A major Jain ceremonial festival at Shravanabelagola associated with the Gommateshwara (Bahubali) statue.',
     originHistory: null,
-    culturalSignificance: 'Karnataka Tourism states that the grand Mahamastakabhisheka is held every 12 years with elaborate rituals.',
-    keyElements: ['Gommateshwara (Bahubali)', 'Ceremonial anointing', 'Jain pilgrimage', 'Shravanabelagola'],
+    culturalSignificance:
+      'Karnataka Tourism states that the grand Mahamastakabhisheka is held every 12 years with elaborate rituals.',
+    keyElements: [
+      'Gommateshwara (Bahubali)',
+      'Ceremonial anointing',
+      'Jain pilgrimage',
+      'Shravanabelagola'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Shravanabelagola'],
@@ -814,7 +993,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Karnataka Tourism — Shravanabelagola',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://karnatakatourism.org/en/attractions/shravanabelagola/'
+        sourceUrl:
+          'https://karnatakatourism.org/en/attractions/shravanabelagola/'
       },
       {
         sourceName: 'Karnataka Tourism — Festivals, Fairs & Cultural Events',
@@ -835,9 +1015,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A religious festival tradition of Udupi listed by Karnataka Tourism among coastal Karnataka’s notable festivals.',
+    shortDescription:
+      'A religious festival tradition of Udupi listed by Karnataka Tourism among coastal Karnataka’s notable festivals.',
     originHistory: null,
-    culturalSignificance: 'Udupi Paryaya Utsava forms part of coastal Karnataka’s living religious and festival heritage.',
+    culturalSignificance:
+      'Udupi Paryaya Utsava forms part of coastal Karnataka’s living religious and festival heritage.',
     keyElements: ['Udupi', 'Religious festival', 'Coastal Karnataka'],
     images: [],
     media: [],
@@ -867,10 +1049,16 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A religious festival associated with Melukote and listed by Karnataka Tourism among southern Karnataka’s notable festivals.',
+    shortDescription:
+      'A religious festival associated with Melukote and listed by Karnataka Tourism among southern Karnataka’s notable festivals.',
     originHistory: null,
-    culturalSignificance: 'The festival contributes to Melukote’s continuing religious and ceremonial heritage.',
-    keyElements: ['Melukote', 'Temple festival', 'Religious procession tradition'],
+    culturalSignificance:
+      'The festival contributes to Melukote’s continuing religious and ceremonial heritage.',
+    keyElements: [
+      'Melukote',
+      'Temple festival',
+      'Religious procession tradition'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Melukote'],
@@ -899,9 +1087,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A cultural festival associated with Hampi and listed by Karnataka Tourism among northern Karnataka’s notable festivals.',
+    shortDescription:
+      'A cultural festival associated with Hampi and listed by Karnataka Tourism among northern Karnataka’s notable festivals.',
     originHistory: null,
-    culturalSignificance: 'Hampi Utsav connects contemporary cultural celebration with the heritage landscape of Hampi.',
+    culturalSignificance:
+      'Hampi Utsav connects contemporary cultural celebration with the heritage landscape of Hampi.',
     keyElements: ['Hampi', 'Cultural performances', 'Festival'],
     images: [],
     media: [],
@@ -931,9 +1121,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A cultural festival listed by Karnataka Tourism among northern Karnataka’s festival traditions.',
+    shortDescription:
+      'A cultural festival listed by Karnataka Tourism among northern Karnataka’s festival traditions.',
     originHistory: null,
-    culturalSignificance: 'Chalukya Utsava forms part of northern Karnataka’s contemporary celebration of regional heritage and culture.',
+    culturalSignificance:
+      'Chalukya Utsava forms part of northern Karnataka’s contemporary celebration of regional heritage and culture.',
     keyElements: ['North Karnataka', 'Cultural festival'],
     images: [],
     media: [],
@@ -963,9 +1155,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A festival tradition associated with southern Karnataka and listed by Karnataka Tourism among the region’s notable celebrations.',
+    shortDescription:
+      'A festival tradition associated with southern Karnataka and listed by Karnataka Tourism among the region’s notable celebrations.',
     originHistory: null,
-    culturalSignificance: 'Kaveri Sankramana forms part of Kodagu’s living festival and religious traditions.',
+    culturalSignificance:
+      'Kaveri Sankramana forms part of Kodagu’s living festival and religious traditions.',
     keyElements: ['Kodagu', 'Kaveri', 'Religious festival'],
     images: [],
     media: [],
@@ -997,10 +1191,20 @@ export const verifiedCulture = [
     community: 'Kalbelia community',
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A living song-and-dance tradition of the Kalbelia community, inscribed by UNESCO on the Representative List of the Intangible Cultural Heritage of Humanity.',
-    originHistory: 'UNESCO describes the tradition as an expression of the Kalbelia community’s traditional way of life, creatively adapted as older occupations changed.',
-    culturalSignificance: 'Song and dance are markers of Kalbelia identity and pride and transmit stories and mythological knowledge through an oral tradition.',
-    keyElements: ['Swirling dance', 'Black embroidered costumes', 'Poongi', 'Khanjari', 'Improvised songs', 'Oral transmission'],
+    shortDescription:
+      'A living song-and-dance tradition of the Kalbelia community, inscribed by UNESCO on the Representative List of the Intangible Cultural Heritage of Humanity.',
+    originHistory:
+      'UNESCO describes the tradition as an expression of the Kalbelia community’s traditional way of life, creatively adapted as older occupations changed.',
+    culturalSignificance:
+      'Song and dance are markers of Kalbelia identity and pride and transmit stories and mythological knowledge through an oral tradition.',
+    keyElements: [
+      'Swirling dance',
+      'Black embroidered costumes',
+      'Poongi',
+      'Khanjari',
+      'Improvised songs',
+      'Oral transmission'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1008,13 +1212,16 @@ export const verifiedCulture = [
     relatedHeritageIds: [],
     relatedCultureIds: [],
     trailIds: [],
-    unescoIntangibleStatus: 'Representative List of the Intangible Cultural Heritage of Humanity (inscribed 2010)',
+    unescoIntangibleStatus:
+      'Representative List of the Intangible Cultural Heritage of Humanity (inscribed 2010)',
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'UNESCO Intangible Cultural Heritage — Kalbelia folk songs and dances of Rajasthan',
+        sourceName:
+          'UNESCO Intangible Cultural Heritage — Kalbelia folk songs and dances of Rajasthan',
         sourceType: 'UNESCO ICH',
-        sourceUrl: 'https://ich.unesco.org/en/RL/kalbelia-folk-songs-and-dances-of-rajasthan-00340'
+        sourceUrl:
+          'https://ich.unesco.org/en/RL/kalbelia-folk-songs-and-dances-of-rajasthan-00340'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1030,10 +1237,17 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A widely recognized Rajasthani folk-dance tradition performed in colourful traditional attire.',
+    shortDescription:
+      'A widely recognized Rajasthani folk-dance tradition performed in colourful traditional attire.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism repeatedly presents Ghoomar as a central folk-dance form in the state’s cultural festivals and performances.',
-    keyElements: ['Group dance', 'Circular movement', 'Traditional attire', 'Folk music'],
+    culturalSignificance:
+      'Rajasthan Tourism repeatedly presents Ghoomar as a central folk-dance form in the state’s cultural festivals and performances.',
+    keyElements: [
+      'Group dance',
+      'Circular movement',
+      'Traditional attire',
+      'Folk music'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1051,7 +1265,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Abhaneri Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1067,10 +1282,20 @@ export const verifiedCulture = [
     community: 'Bhat puppeteer tradition',
     category: 'folklore-oral-traditions',
     categoryName: 'Folklore & Oral Traditions',
-    shortDescription: 'Rajasthan’s traditional string-puppetry form using carved wooden dolls, music, narration and dramatic storytelling.',
-    originHistory: 'Rajasthan Tourism associates Kathputli with Rajasthan’s Bhat community and a long tradition of string-marionette performance.',
-    culturalSignificance: 'Kathputli has transmitted heroic tales, folklore, epics and social messages through performance.',
-    keyElements: ['Wooden puppets', 'Strings', 'Music', 'Narration', 'Folk stories', 'Travelling performance'],
+    shortDescription:
+      'Rajasthan’s traditional string-puppetry form using carved wooden dolls, music, narration and dramatic storytelling.',
+    originHistory:
+      'Rajasthan Tourism associates Kathputli with Rajasthan’s Bhat community and a long tradition of string-marionette performance.',
+    culturalSignificance:
+      'Kathputli has transmitted heroic tales, folklore, epics and social messages through performance.',
+    keyElements: [
+      'Wooden puppets',
+      'Strings',
+      'Music',
+      'Narration',
+      'Folk stories',
+      'Travelling performance'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Nagaur region'],
@@ -1083,7 +1308,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Puppets / Janesthan',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1099,9 +1325,11 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A Rajasthani folk-dance form regularly presented at state cultural festivals.',
+    shortDescription:
+      'A Rajasthani folk-dance form regularly presented at state cultural festivals.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism features Gair among the folk dances performed at major fairs and festivals.',
+    culturalSignificance:
+      'Rajasthan Tourism features Gair among the folk dances performed at major fairs and festivals.',
     keyElements: ['Folk dance', 'Group performance', 'Festival setting'],
     images: [],
     media: [],
@@ -1115,12 +1343,14 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Pushkar Fair press release',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/press-release-pdf/39.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/press-release-pdf/39.pdf'
       },
       {
         sourceName: 'Rajasthan Tourism — Mount Abu Summer Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/vikassthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/vikassthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1136,10 +1366,17 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A colourful Rajasthani folk performance featuring dancers using decorated dummy-horse costumes.',
+    shortDescription:
+      'A colourful Rajasthani folk performance featuring dancers using decorated dummy-horse costumes.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism includes Kachhi Ghodi among the traditional performances presented at major state cultural festivals.',
-    keyElements: ['Dummy horse costume', 'Dance', 'Folk music', 'Festival performance'],
+    culturalSignificance:
+      'Rajasthan Tourism includes Kachhi Ghodi among the traditional performances presented at major state cultural festivals.',
+    keyElements: [
+      'Dummy horse costume',
+      'Dance',
+      'Folk music',
+      'Festival performance'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1152,12 +1389,14 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Abhaneri Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
       },
       {
         sourceName: 'Rajasthan Tourism — Kumbhalgarh Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/irasthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/irasthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1173,10 +1412,19 @@ export const verifiedCulture = [
     community: null,
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A distinctive Jaipur pottery tradition using a quartz-based body rather than ordinary clay and known for blue and turquoise glazed decoration.',
-    originHistory: 'Rajasthan Tourism states that blue pottery came to Jaipur through Persian and Afghan influences and was further developed by Rajasthani artisans.',
-    culturalSignificance: 'Blue pottery has become one of Jaipur’s signature craft traditions.',
-    keyElements: ['Quartz-based body', 'Blue and turquoise glaze', 'Copper oxide', 'Cobalt oxide', 'Floral, bird and animal motifs'],
+    shortDescription:
+      'A distinctive Jaipur pottery tradition using a quartz-based body rather than ordinary clay and known for blue and turquoise glazed decoration.',
+    originHistory:
+      'Rajasthan Tourism states that blue pottery came to Jaipur through Persian and Afghan influences and was further developed by Rajasthani artisans.',
+    culturalSignificance:
+      'Blue pottery has become one of Jaipur’s signature craft traditions.',
+    keyElements: [
+      'Quartz-based body',
+      'Blue and turquoise glaze',
+      'Copper oxide',
+      'Cobalt oxide',
+      'Floral, bird and animal motifs'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Jaipur', 'Sanganer', 'Mahalan', 'Neota'],
@@ -1189,7 +1437,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Shopping in Rajasthan',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/shopping-in-rajasthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/shopping-in-rajasthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1205,10 +1454,18 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A traditional tie-and-dye textile practice widely associated with Rajasthan and known for patterned resist-dyed fabrics.',
+    shortDescription:
+      'A traditional tie-and-dye textile practice widely associated with Rajasthan and known for patterned resist-dyed fabrics.',
     originHistory: null,
-    culturalSignificance: 'Bandhani forms a major part of Rajasthan’s textile identity and is used for garments and symbolic colour traditions.',
-    keyElements: ['Tie and dye', 'Resist patterning', 'Colour symbolism', 'Sarees', 'Dupattas'],
+    culturalSignificance:
+      'Bandhani forms a major part of Rajasthan’s textile identity and is used for garments and symbolic colour traditions.',
+    keyElements: [
+      'Tie and dye',
+      'Resist patterning',
+      'Colour symbolism',
+      'Sarees',
+      'Dupattas'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1221,7 +1478,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Textile / Janesthan',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1237,10 +1495,18 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A traditional Rajasthani textile style named for wave-like flowing patterns created through resist-dyeing.',
+    shortDescription:
+      'A traditional Rajasthani textile style named for wave-like flowing patterns created through resist-dyeing.',
     originHistory: null,
-    culturalSignificance: 'Leheriya is a recognized part of Rajasthan’s regional textile heritage and appears on turbans, sarees and dupattas.',
-    keyElements: ['Wave patterns', 'Tie-dye technique', 'Turbans', 'Sarees', 'Dupattas'],
+    culturalSignificance:
+      'Leheriya is a recognized part of Rajasthan’s regional textile heritage and appears on turbans, sarees and dupattas.',
+    keyElements: [
+      'Wave patterns',
+      'Tie-dye technique',
+      'Turbans',
+      'Sarees',
+      'Dupattas'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1253,7 +1519,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Textile / Janesthan',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1269,10 +1536,17 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A Rajasthani textile-printing tradition associated with Bagru and known for geometric patterns, earthy colours and block-printing techniques.',
+    shortDescription:
+      'A Rajasthani textile-printing tradition associated with Bagru and known for geometric patterns, earthy colours and block-printing techniques.',
     originHistory: null,
-    culturalSignificance: 'Bagru represents one of Rajasthan’s major regional textile-printing identities.',
-    keyElements: ['Hand block printing', 'Natural dyeing', 'Geometric patterns', 'Earthy colours'],
+    culturalSignificance:
+      'Bagru represents one of Rajasthan’s major regional textile-printing identities.',
+    keyElements: [
+      'Hand block printing',
+      'Natural dyeing',
+      'Geometric patterns',
+      'Earthy colours'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Bagru'],
@@ -1285,7 +1559,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Textile / Janesthan',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1301,9 +1576,11 @@ export const verifiedCulture = [
     community: null,
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A traditional textile block-printing craft associated with Sanganer near Jaipur.',
+    shortDescription:
+      'A traditional textile block-printing craft associated with Sanganer near Jaipur.',
     originHistory: null,
-    culturalSignificance: 'Sanganer is officially highlighted by Rajasthan Tourism for textile block printing alongside other craft traditions.',
+    culturalSignificance:
+      'Sanganer is officially highlighted by Rajasthan Tourism for textile block printing alongside other craft traditions.',
     keyElements: ['Hand block printing', 'Textile craft', 'Sanganer'],
     images: [],
     media: [],
@@ -1317,7 +1594,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Sanganer / Sunitasthan',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/Sunitasthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/Sunitasthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1333,9 +1611,11 @@ export const verifiedCulture = [
     community: null,
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A prominent Rajasthani decorative craft using lac resin to produce jewellery, especially bangles.',
+    shortDescription:
+      'A prominent Rajasthani decorative craft using lac resin to produce jewellery, especially bangles.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism identifies lac jewellery and bangles as a prominent craft tradition of the state.',
+    culturalSignificance:
+      'Rajasthan Tourism identifies lac jewellery and bangles as a prominent craft tradition of the state.',
     keyElements: ['Lac resin', 'Bangles', 'Jewellery', 'Decorative craft'],
     images: [],
     media: [],
@@ -1349,7 +1629,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Janesthan crafts',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/janesthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1365,9 +1646,11 @@ export const verifiedCulture = [
     community: null,
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A jewellery tradition strongly associated with Jaipur and Rajasthan’s royal craft identity.',
+    shortDescription:
+      'A jewellery tradition strongly associated with Jaipur and Rajasthan’s royal craft identity.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism highlights Kundan jewellery from Jaipur among the state’s characteristic craft products.',
+    culturalSignificance:
+      'Rajasthan Tourism highlights Kundan jewellery from Jaipur among the state’s characteristic craft products.',
     keyElements: ['Jewellery craft', 'Jaipur', 'Decorative setting'],
     images: [],
     media: [],
@@ -1381,7 +1664,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Amisthan / Shopping',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/amisthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/amisthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1397,10 +1681,19 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major religious and livestock fair at Pushkar combining pilgrimage, animal trading, markets, competitions and cultural programmes.',
+    shortDescription:
+      'A major religious and livestock fair at Pushkar combining pilgrimage, animal trading, markets, competitions and cultural programmes.',
     originHistory: null,
-    culturalSignificance: 'Official Rajasthan Tourism material describes Pushkar Fair as a world-famous religious and cattle fair associated particularly with camels and horses.',
-    keyElements: ['Religious fair', 'Camel and horse trading', 'Handicraft market', 'Cultural performances', 'Competitions', 'Pushkar Lake rituals'],
+    culturalSignificance:
+      'Official Rajasthan Tourism material describes Pushkar Fair as a world-famous religious and cattle fair associated particularly with camels and horses.',
+    keyElements: [
+      'Religious fair',
+      'Camel and horse trading',
+      'Handicraft market',
+      'Cultural performances',
+      'Competitions',
+      'Pushkar Lake rituals'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Pushkar'],
@@ -1413,12 +1706,14 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Pushkar Fair programme',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/homepage/topslider/Pushkar_Fair_2024_Prog.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/homepage/topslider/Pushkar_Fair_2024_Prog.pdf'
       },
       {
         sourceName: 'Rajasthan Tourism — Pushkar Fair document',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/tender-pdf/52.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/tender-pdf/52.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1434,10 +1729,17 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A Rajasthan cultural festival held in Jaisalmer and centered on the desert region’s performance traditions and public celebration.',
+    shortDescription:
+      'A Rajasthan cultural festival held in Jaisalmer and centered on the desert region’s performance traditions and public celebration.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism lists Desert Festival among the state’s major recurring fairs and festivals.',
-    keyElements: ['Jaisalmer', 'Desert culture', 'Folk performances', 'Public festival'],
+    culturalSignificance:
+      'Rajasthan Tourism lists Desert Festival among the state’s major recurring fairs and festivals.',
+    keyElements: [
+      'Jaisalmer',
+      'Desert culture',
+      'Folk performances',
+      'Public festival'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Jaisalmer'],
@@ -1455,7 +1757,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Fairs and Festivals calendar',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/palaces-to-visit/FF-2018.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/palaces-to-visit/FF-2018.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1471,10 +1774,17 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major Rajasthan festival tradition celebrated in the spring season and prominently represented in state cultural programming.',
+    shortDescription:
+      'A major Rajasthan festival tradition celebrated in the spring season and prominently represented in state cultural programming.',
     originHistory: null,
-    culturalSignificance: 'Gangaur is one of Rajasthan’s major recurring public and religious festival traditions.',
-    keyElements: ['Festival processions', 'Traditional dress', 'Religious observance', 'Public celebration'],
+    culturalSignificance:
+      'Gangaur is one of Rajasthan’s major recurring public and religious festival traditions.',
+    keyElements: [
+      'Festival processions',
+      'Traditional dress',
+      'Religious observance',
+      'Public celebration'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Jaipur', 'Udaipur'],
@@ -1492,7 +1802,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Fairs and Festivals calendar',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/palaces-to-visit/FF-2018.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/palaces-to-visit/FF-2018.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1508,10 +1819,17 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major monsoon-season festival tradition of Rajasthan reflected in state cultural celebrations including Teej and Kajli Teej.',
+    shortDescription:
+      'A major monsoon-season festival tradition of Rajasthan reflected in state cultural celebrations including Teej and Kajli Teej.',
     originHistory: null,
-    culturalSignificance: 'Teej forms an important part of Rajasthan’s seasonal and living festival calendar.',
-    keyElements: ['Monsoon festival', 'Traditional dress', 'Processions', 'Public celebration'],
+    culturalSignificance:
+      'Teej forms an important part of Rajasthan’s seasonal and living festival calendar.',
+    keyElements: [
+      'Monsoon festival',
+      'Traditional dress',
+      'Processions',
+      'Public celebration'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Jaipur', 'Bundi'],
@@ -1540,10 +1858,17 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major Udaipur cultural festival celebrating the living traditions of the Mewar region.',
+    shortDescription:
+      'A major Udaipur cultural festival celebrating the living traditions of the Mewar region.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism includes Mewar Festival among the state’s major cultural events and recurring festival calendar.',
-    keyElements: ['Udaipur', 'Mewar culture', 'Processions', 'Cultural performances'],
+    culturalSignificance:
+      'Rajasthan Tourism includes Mewar Festival among the state’s major cultural events and recurring festival calendar.',
+    keyElements: [
+      'Udaipur',
+      'Mewar culture',
+      'Processions',
+      'Cultural performances'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Udaipur'],
@@ -1561,7 +1886,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Fairs and Festivals calendar',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/palaces-to-visit/FF-2018.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/palaces-to-visit/FF-2018.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1577,23 +1903,41 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A Jodhpur festival centred on Marwar’s folk music, dance, dress and remembered stories of regional rulers.',
+    shortDescription:
+      'A Jodhpur festival centred on Marwar’s folk music, dance, dress and remembered stories of regional rulers.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism describes Marwar Festival as presenting folk dance and music alongside stories of the region’s historic rulers and rural cultural life.',
-    keyElements: ['Folk music', 'Folk dance', 'Traditional turbans', 'Bandhani attire', 'Regional stories'],
+    culturalSignificance:
+      'Rajasthan Tourism describes Marwar Festival as presenting folk dance and music alongside stories of the region’s historic rulers and rural cultural life.',
+    keyElements: [
+      'Folk music',
+      'Folk dance',
+      'Traditional turbans',
+      'Bandhani attire',
+      'Regional stories'
+    ],
     images: [],
     media: [],
-    relatedPlaces: ['Jodhpur', 'Mehrangarh Fort', 'Umaid Bhawan Palace', 'Mandore'],
+    relatedPlaces: [
+      'Jodhpur',
+      'Mehrangarh Fort',
+      'Umaid Bhawan Palace',
+      'Mandore'
+    ],
     relatedFestivals: [],
-    relatedHeritageIds: ['rj-heritage-mehrangarh-fort', 'rj-heritage-umaid-bhawan-palace'],
+    relatedHeritageIds: [
+      'rj-heritage-mehrangarh-fort',
+      'rj-heritage-umaid-bhawan-palace'
+    ],
     relatedCultureIds: ['rj-culture-ghoomar'],
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Rajasthan Tourism — Discovering the Heritage of Jodhpur / Marwar Festival',
+        sourceName:
+          'Rajasthan Tourism — Discovering the Heritage of Jodhpur / Marwar Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/donasthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/donasthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1609,10 +1953,19 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A three-day cultural festival organized at Kumbhalgarh Fort with folk, classical and participatory cultural programmes.',
+    shortDescription:
+      'A three-day cultural festival organized at Kumbhalgarh Fort with folk, classical and participatory cultural programmes.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism describes the festival as promoting the history and heritage of Kumbhalgarh while presenting music, dance and traditional competitions.',
-    keyElements: ['Folk music', 'Dance', 'Classical performances', 'Turban tying', 'Puppetry', 'Kumbhalgarh Fort'],
+    culturalSignificance:
+      'Rajasthan Tourism describes the festival as promoting the history and heritage of Kumbhalgarh while presenting music, dance and traditional competitions.',
+    keyElements: [
+      'Folk music',
+      'Dance',
+      'Classical performances',
+      'Turban tying',
+      'Puppetry',
+      'Kumbhalgarh Fort'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Kumbhalgarh'],
@@ -1625,7 +1978,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Kumbhalgarh Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/travel-diaries/irasthan.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/travel-diaries/irasthan.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1641,23 +1995,38 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A Rajasthan Tourism festival at Abhaneri featuring local and Rajasthani folk performances beside the village’s stepwell heritage.',
-    originHistory: 'Rajasthan Tourism states that the festival was initiated in 2008.',
-    culturalSignificance: 'The festival combines regional performance traditions with public interpretation of Abhaneri’s rural and architectural heritage.',
-    keyElements: ['Kachhi Ghodi', 'Kalbelia', 'Ghoomar', 'Bhawai', 'Traditional music', 'Chand Baori setting'],
+    shortDescription:
+      'A Rajasthan Tourism festival at Abhaneri featuring local and Rajasthani folk performances beside the village’s stepwell heritage.',
+    originHistory:
+      'Rajasthan Tourism states that the festival was initiated in 2008.',
+    culturalSignificance:
+      'The festival combines regional performance traditions with public interpretation of Abhaneri’s rural and architectural heritage.',
+    keyElements: [
+      'Kachhi Ghodi',
+      'Kalbelia',
+      'Ghoomar',
+      'Bhawai',
+      'Traditional music',
+      'Chand Baori setting'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Abhaneri', 'Dausa'],
     relatedFestivals: [],
     relatedHeritageIds: ['rj-heritage-chand-baori'],
-    relatedCultureIds: ['rj-culture-kalbelia', 'rj-culture-ghoomar', 'rj-culture-kachhi-ghodi'],
+    relatedCultureIds: [
+      'rj-culture-kalbelia',
+      'rj-culture-ghoomar',
+      'rj-culture-kachhi-ghodi'
+    ],
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
       {
         sourceName: 'Rajasthan Tourism — Abhaneri Festival 2026',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1673,10 +2042,17 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major Rajasthan festival associated with Bikaner’s camel culture and public cultural celebrations.',
+    shortDescription:
+      'A major Rajasthan festival associated with Bikaner’s camel culture and public cultural celebrations.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism includes the Bikaner Camel Festival among the state’s major fairs and festivals, reflecting Bikaner’s strong identity as camel country.',
-    keyElements: ['Camels', 'Bikaner', 'Public festival', 'Cultural programmes'],
+    culturalSignificance:
+      'Rajasthan Tourism includes the Bikaner Camel Festival among the state’s major fairs and festivals, reflecting Bikaner’s strong identity as camel country.',
+    keyElements: [
+      'Camels',
+      'Bikaner',
+      'Public festival',
+      'Cultural programmes'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Bikaner'],
@@ -1689,12 +2065,14 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism — Fairs and Festivals',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/fairs-and-festivals.html'
       },
       {
         sourceName: 'Rajasthan Tourism — Tourist Destinations / Bikaner',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/tourist-destinations.html'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/tourist-destinations.html'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1710,9 +2088,11 @@ export const verifiedCulture = [
     community: null,
     category: 'regional-cuisine',
     categoryName: 'Regional Cuisine',
-    shortDescription: 'One of Rajasthan’s best-known culinary traditions, combining dal, baked baati and sweet churma.',
+    shortDescription:
+      'One of Rajasthan’s best-known culinary traditions, combining dal, baked baati and sweet churma.',
     originHistory: null,
-    culturalSignificance: 'Rajasthan Tourism identifies Dal-Baati-Churma among the state’s most renowned foods and part of its regional culinary identity.',
+    culturalSignificance:
+      'Rajasthan Tourism identifies Dal-Baati-Churma among the state’s most renowned foods and part of its regional culinary identity.',
     keyElements: ['Dal', 'Baati', 'Churma', 'Rajasthani cuisine'],
     images: [],
     media: [],
@@ -1731,7 +2111,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism brochure — What to Eat',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/tender-pdf/Tender%20for%20translation%20of%20DOT%20Broucher%20in%20Russian%20language%2008052018.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/tender-pdf/Tender%20for%20translation%20of%20DOT%20Broucher%20in%20Russian%20language%2008052018.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1747,9 +2128,11 @@ export const verifiedCulture = [
     community: null,
     category: 'regional-cuisine',
     categoryName: 'Regional Cuisine',
-    shortDescription: 'A sweet preparation identified by Rajasthan Tourism among the state’s characteristic foods.',
+    shortDescription:
+      'A sweet preparation identified by Rajasthan Tourism among the state’s characteristic foods.',
     originHistory: null,
-    culturalSignificance: 'Ghevar forms part of Rajasthan’s widely recognized sweet-making and festive culinary traditions.',
+    culturalSignificance:
+      'Ghevar forms part of Rajasthan’s widely recognized sweet-making and festive culinary traditions.',
     keyElements: ['Sweet', 'Rajasthani cuisine'],
     images: [],
     media: [],
@@ -1763,7 +2146,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Rajasthan Tourism brochure — What to Eat',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/tender-pdf/Tender%20for%20translation%20of%20DOT%20Broucher%20in%20Russian%20language%2008052018.pdf'
+        sourceUrl:
+          'https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/pdf/tender-pdf/Tender%20for%20translation%20of%20DOT%20Broucher%20in%20Russian%20language%2008052018.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1779,9 +2163,11 @@ export const verifiedCulture = [
     community: null,
     category: 'regional-cuisine',
     categoryName: 'Regional Cuisine',
-    shortDescription: 'A meat preparation identified by Rajasthan Tourism among Rajasthan’s best-known regional foods.',
+    shortDescription:
+      'A meat preparation identified by Rajasthan Tourism among Rajasthan’s best-known regional foods.',
     originHistory: null,
-    culturalSignificance: 'Laal Maas forms part of the state’s distinctive non-vegetarian culinary heritage.',
+    culturalSignificance:
+      'Laal Maas forms part of the state’s distinctive non-vegetarian culinary heritage.',
     keyElements: ['Meat preparation', 'Rajasthani cuisine'],
     images: [],
     media: [],
@@ -1813,10 +2199,18 @@ export const verifiedCulture = [
     community: null,
     category: 'classical-folk-dance',
     categoryName: 'Classical & Folk Dance',
-    shortDescription: 'A classical Indian dance form with deep historical roots in Tamil Nadu.',
-    originHistory: 'A Tamil Nadu Raj Bhavan speech identifies Bharatanatyam as tracing its origins to Tamil Nadu and notes references to the form in the Tamil epic Silappathikaram.',
-    culturalSignificance: 'Bharatanatyam remains a major part of Tamil Nadu’s performing-arts identity and is actively taught through state cultural institutions.',
-    keyElements: ['Classical dance', 'Gesture', 'Rhythm', 'Expressive storytelling'],
+    shortDescription:
+      'A classical Indian dance form with deep historical roots in Tamil Nadu.',
+    originHistory:
+      'A Tamil Nadu Raj Bhavan speech identifies Bharatanatyam as tracing its origins to Tamil Nadu and notes references to the form in the Tamil epic Silappathikaram.',
+    culturalSignificance:
+      'Bharatanatyam remains a major part of Tamil Nadu’s performing-arts identity and is actively taught through state cultural institutions.',
+    keyElements: [
+      'Classical dance',
+      'Gesture',
+      'Rhythm',
+      'Expressive storytelling'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1829,7 +2223,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Tamil Nadu Raj Bhavan — Address on Bharatanatyam',
         sourceType: 'Government speech',
-        sourceUrl: 'https://tnrajbhavantour.tn.gov.in/tnrb-website-archive/Archives/Website1621/Speeches/2019/Sp270419-1.pdf'
+        sourceUrl:
+          'https://tnrajbhavantour.tn.gov.in/tnrb-website-archive/Archives/Website1621/Speeches/2019/Sp270419-1.pdf'
       },
       {
         sourceName: 'Tamil Nadu Department of Art and Culture — Events',
@@ -1850,9 +2245,11 @@ export const verifiedCulture = [
     community: null,
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional martial art practiced and taught in Tamil Nadu.',
+    shortDescription:
+      'A traditional martial art practiced and taught in Tamil Nadu.',
     originHistory: null,
-    culturalSignificance: 'Tamil Nadu government institutions continue to teach Silambam, and Tiruchirappalli municipal material identifies it as an older defensive and physical-training tradition.',
+    culturalSignificance:
+      'Tamil Nadu government institutions continue to teach Silambam, and Tiruchirappalli municipal material identifies it as an older defensive and physical-training tradition.',
     keyElements: ['Martial art', 'Staff practice', 'Physical training'],
     images: [],
     media: [],
@@ -1864,14 +2261,18 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tiruchirappalli City Municipal Corporation — Places of Interest',
+        sourceName:
+          'Tiruchirappalli City Municipal Corporation — Places of Interest',
         sourceType: 'Government municipal',
-        sourceUrl: 'https://www.tnurbantree.tn.gov.in/trichy/en/places-of-interest/'
+        sourceUrl:
+          'https://www.tnurbantree.tn.gov.in/trichy/en/places-of-interest/'
       },
       {
-        sourceName: 'Tamil Nadu Department of Art and Culture — Jawahar Siruvar Manram',
+        sourceName:
+          'Tamil Nadu Department of Art and Culture — Jawahar Siruvar Manram',
         sourceType: 'State culture department',
-        sourceUrl: 'https://artandculture.tn.gov.in/tamil-nadu-jawahar-siruvar-manram'
+        sourceUrl:
+          'https://artandculture.tn.gov.in/tamil-nadu-jawahar-siruvar-manram'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1887,10 +2288,18 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'Tamil Nadu’s major harvest festival and a central celebration of Tamil cultural tradition.',
+    shortDescription:
+      'Tamil Nadu’s major harvest festival and a central celebration of Tamil cultural tradition.',
     originHistory: null,
-    culturalSignificance: 'Tamil Nadu government sources repeatedly describe Pongal as a festival of Tamil people, linking it with harvest, thanksgiving, kolam, cattle and traditional arts.',
-    keyElements: ['Harvest', 'Thanksgiving', 'Kolam', 'Cattle', 'Community celebration'],
+    culturalSignificance:
+      'Tamil Nadu government sources repeatedly describe Pongal as a festival of Tamil people, linking it with harvest, thanksgiving, kolam, cattle and traditional arts.',
+    keyElements: [
+      'Harvest',
+      'Thanksgiving',
+      'Kolam',
+      'Cattle',
+      'Community celebration'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1903,12 +2312,14 @@ export const verifiedCulture = [
       {
         sourceName: 'Tamil Nadu Raj Bhavan — Pongal Greeting 2023',
         sourceType: 'Government press release',
-        sourceUrl: 'https://tnrajbhavantour.tn.gov.in/tnrb-website-archive/PressReleases/2023/PR140123-1.pdf'
+        sourceUrl:
+          'https://tnrajbhavantour.tn.gov.in/tnrb-website-archive/PressReleases/2023/PR140123-1.pdf'
       },
       {
         sourceName: 'Government of Tamil Nadu — Budget Speech 2007–08',
         sourceType: 'Government budget document',
-        sourceUrl: 'https://www.tnrd.tn.gov.in/Announcement_pdf/budgetspeech2007_2008.pdf'
+        sourceUrl:
+          'https://www.tnrd.tn.gov.in/Announcement_pdf/budgetspeech2007_2008.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1924,10 +2335,18 @@ export const verifiedCulture = [
     community: null,
     category: 'local-customs',
     categoryName: 'Local Customs',
-    shortDescription: 'A traditional Tamil bull-embracing sport associated with rural and agrarian culture and Pongal-season celebrations.',
-    originHistory: 'Tamil Nadu government sources describe Jallikattu as an ancient Tamil tradition and refer to the practice in Sangam literature.',
-    culturalSignificance: 'The 2017 Tamil Nadu amendment explicitly describes Jallikattu as conducted to follow and promote tradition and culture and support the continuance of native bull breeds.',
-    keyElements: ['Bull-embracing sport', 'Rural tradition', 'Pongal season', 'Native cattle breeds'],
+    shortDescription:
+      'A traditional Tamil bull-embracing sport associated with rural and agrarian culture and Pongal-season celebrations.',
+    originHistory:
+      'Tamil Nadu government sources describe Jallikattu as an ancient Tamil tradition and refer to the practice in Sangam literature.',
+    culturalSignificance:
+      'The 2017 Tamil Nadu amendment explicitly describes Jallikattu as conducted to follow and promote tradition and culture and support the continuance of native bull breeds.',
+    keyElements: [
+      'Bull-embracing sport',
+      'Rural tradition',
+      'Pongal season',
+      'Native cattle breeds'
+    ],
     images: [],
     media: [],
     relatedPlaces: ['Alanganallur', 'Madurai district'],
@@ -1938,14 +2357,18 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tamil Nadu Government Gazette — Jallikattu Amendment Act 2017',
+        sourceName:
+          'Tamil Nadu Government Gazette — Jallikattu Amendment Act 2017',
         sourceType: 'Government gazette',
-        sourceUrl: 'https://www.jallikattu.tn.gov.in/ords/r/wsjallikattu/110/files/static/v1668/ACT_1_of_2017_TN.pdf'
+        sourceUrl:
+          'https://www.jallikattu.tn.gov.in/ords/r/wsjallikattu/110/files/static/v1668/ACT_1_of_2017_TN.pdf'
       },
       {
-        sourceName: 'Tamil Nadu Information & Public Relations Department — Jallikattu Arena',
+        sourceName:
+          'Tamil Nadu Information & Public Relations Department — Jallikattu Arena',
         sourceType: 'Government press release',
-        sourceUrl: 'https://dipr.tn.gov.in/ords/r/dipr/info-prdept103/press-release1?p33_file_id=16977'
+        sourceUrl:
+          'https://dipr.tn.gov.in/ords/r/dipr/info-prdept103/press-release1?p33_file_id=16977'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1961,10 +2384,17 @@ export const verifiedCulture = [
     community: null,
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional decorative floor-art practice associated with Tamil homes and festive life.',
+    shortDescription:
+      'A traditional decorative floor-art practice associated with Tamil homes and festive life.',
     originHistory: null,
-    culturalSignificance: 'Tamil Nadu government material explicitly includes drawing colourful kolams in descriptions of Tamil seasonal celebration.',
-    keyElements: ['Floor drawing', 'Geometric and decorative patterns', 'Household tradition', 'Festival use'],
+    culturalSignificance:
+      'Tamil Nadu government material explicitly includes drawing colourful kolams in descriptions of Tamil seasonal celebration.',
+    keyElements: [
+      'Floor drawing',
+      'Geometric and decorative patterns',
+      'Household tradition',
+      'Festival use'
+    ],
     images: [],
     media: [],
     relatedPlaces: [],
@@ -1977,7 +2407,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Government of Tamil Nadu — Budget Speech 2008–09',
         sourceType: 'Government budget document',
-        sourceUrl: 'https://www.tnrd.tn.gov.in/Announcement_pdf/budgetspeech_2008_2009_en.pdf'
+        sourceUrl:
+          'https://www.tnrd.tn.gov.in/Announcement_pdf/budgetspeech_2008_2009_en.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -1993,9 +2424,11 @@ export const verifiedCulture = [
     community: 'Handloom weaving communities',
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A major silk-weaving tradition of Kanchipuram and a registered Geographical Indication product.',
+    shortDescription:
+      'A major silk-weaving tradition of Kanchipuram and a registered Geographical Indication product.',
     originHistory: null,
-    culturalSignificance: 'Kanchipuram municipal sources identify fine silk sarees as a long-standing part of the city’s identity, while the Tamil Nadu Handlooms Department lists Kancheepuram Silk Saree among registered GI products.',
+    culturalSignificance:
+      'Kanchipuram municipal sources identify fine silk sarees as a long-standing part of the city’s identity, while the Tamil Nadu Handlooms Department lists Kancheepuram Silk Saree among registered GI products.',
     keyElements: ['Silk weaving', 'Handloom', 'Kanchipuram'],
     giStatus: 'GI registered',
     images: [],
@@ -2008,7 +2441,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tamil Nadu Handlooms, Handicrafts, Textiles and Khadi Department — Policy Note',
+        sourceName:
+          'Tamil Nadu Handlooms, Handicrafts, Textiles and Khadi Department — Policy Note',
         sourceType: 'State government policy',
         sourceUrl: 'https://tnhandlooms.tn.gov.in/english/pdf/policy-2.pdf'
       },
@@ -2031,9 +2465,11 @@ export const verifiedCulture = [
     community: 'Handloom/textile artisans',
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A textile tradition associated with Madurai and listed by the Tamil Nadu Handlooms Department as a registered GI product.',
+    shortDescription:
+      'A textile tradition associated with Madurai and listed by the Tamil Nadu Handlooms Department as a registered GI product.',
     originHistory: null,
-    culturalSignificance: 'Madurai Sungudi is part of Tamil Nadu’s regional handloom and textile heritage.',
+    culturalSignificance:
+      'Madurai Sungudi is part of Tamil Nadu’s regional handloom and textile heritage.',
     keyElements: ['Textile tradition', 'Madurai', 'GI product'],
     giStatus: 'GI registered',
     images: [],
@@ -2046,7 +2482,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tamil Nadu Handlooms, Handicrafts, Textiles and Khadi Department — Policy Note',
+        sourceName:
+          'Tamil Nadu Handlooms, Handicrafts, Textiles and Khadi Department — Policy Note',
         sourceType: 'State government policy',
         sourceUrl: 'https://tnhandlooms.tn.gov.in/english/pdf/policy-2.pdf'
       }
@@ -2064,9 +2501,11 @@ export const verifiedCulture = [
     community: 'Handloom weaving communities',
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A woven textile product associated with Bhavani and listed by the Tamil Nadu Handlooms Department as a registered GI product.',
+    shortDescription:
+      'A woven textile product associated with Bhavani and listed by the Tamil Nadu Handlooms Department as a registered GI product.',
     originHistory: null,
-    culturalSignificance: 'Bhavani Jamakkalam is part of Tamil Nadu’s regional handloom heritage.',
+    culturalSignificance:
+      'Bhavani Jamakkalam is part of Tamil Nadu’s regional handloom heritage.',
     keyElements: ['Handloom weaving', 'Bhavani', 'GI product'],
     giStatus: 'GI registered',
     images: [],
@@ -2079,7 +2518,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tamil Nadu Handlooms, Handicrafts, Textiles and Khadi Department — Policy Note',
+        sourceName:
+          'Tamil Nadu Handlooms, Handicrafts, Textiles and Khadi Department — Policy Note',
         sourceType: 'State government policy',
         sourceUrl: 'https://tnhandlooms.tn.gov.in/english/pdf/policy-2.pdf'
       }
@@ -2097,9 +2537,11 @@ export const verifiedCulture = [
     community: null,
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional painting form identified in Tamil Nadu government tourism-education material among the state’s important handicrafts and souvenirs.',
+    shortDescription:
+      'A traditional painting form identified in Tamil Nadu government tourism-education material among the state’s important handicrafts and souvenirs.',
     originHistory: null,
-    culturalSignificance: 'Thanjavur painting forms part of Tamil Nadu’s visual-art heritage.',
+    culturalSignificance:
+      'Thanjavur painting forms part of Tamil Nadu’s visual-art heritage.',
     keyElements: ['Painting', 'Thanjavur', 'Traditional art'],
     images: [],
     media: [],
@@ -2111,9 +2553,11 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Government of Tamil Nadu — Tourism Administration and Management syllabus',
+        sourceName:
+          'Government of Tamil Nadu — Tourism Administration and Management syllabus',
         sourceType: 'Government educational source',
-        sourceUrl: 'https://www.trb.tn.gov.in/admin/pdf/476374751A04_Tourism_administration_and_management_updated%5B1%5D.pdf'
+        sourceUrl:
+          'https://www.trb.tn.gov.in/admin/pdf/476374751A04_Tourism_administration_and_management_updated%5B1%5D.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -2129,9 +2573,11 @@ export const verifiedCulture = [
     community: 'Bronze artisans',
     category: 'handicrafts',
     categoryName: 'Handicrafts',
-    shortDescription: 'A traditional bronze-working craft associated with Swamimalai and identified by Tamil Nadu government planning material as a key state handicraft.',
+    shortDescription:
+      'A traditional bronze-working craft associated with Swamimalai and identified by Tamil Nadu government planning material as a key state handicraft.',
     originHistory: null,
-    culturalSignificance: 'Bronze casting is closely connected with Tamil Nadu’s temple-art and sculptural traditions.',
+    culturalSignificance:
+      'Bronze casting is closely connected with Tamil Nadu’s temple-art and sculptural traditions.',
     keyElements: ['Bronze work', 'Metal sculpture', 'Swamimalai'],
     images: [],
     media: [],
@@ -2145,7 +2591,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Vision Tamil Nadu 2023 — Arts and Craft Village',
         sourceType: 'Government planning document',
-        sourceUrl: 'https://tnbudget.tn.gov.in/tnweb_files/vision23/TN%20VISION%202023%28PHASE%202%29.pdf'
+        sourceUrl:
+          'https://tnbudget.tn.gov.in/tnweb_files/vision23/TN%20VISION%202023%28PHASE%202%29.pdf'
       }
     ],
     lastVerified: '2026-08-26'
@@ -2161,9 +2608,11 @@ export const verifiedCulture = [
     community: 'Handloom weaving communities',
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A silk-weaving product associated with Arni and listed by the Tamil Nadu Handlooms Department among registered GI products.',
+    shortDescription:
+      'A silk-weaving product associated with Arni and listed by the Tamil Nadu Handlooms Department among registered GI products.',
     originHistory: null,
-    culturalSignificance: 'Arni silk forms part of Tamil Nadu’s diverse regional silk-weaving heritage.',
+    culturalSignificance:
+      'Arni silk forms part of Tamil Nadu’s diverse regional silk-weaving heritage.',
     keyElements: ['Silk weaving', 'Arni', 'GI product'],
     giStatus: 'GI registered',
     images: [],
@@ -2194,9 +2643,11 @@ export const verifiedCulture = [
     community: 'Handloom weaving communities',
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A regional cotton-saree tradition listed by the Tamil Nadu Handlooms Department as a registered GI product.',
+    shortDescription:
+      'A regional cotton-saree tradition listed by the Tamil Nadu Handlooms Department as a registered GI product.',
     originHistory: null,
-    culturalSignificance: 'Kovai Kora Cotton forms part of western Tamil Nadu’s handloom identity.',
+    culturalSignificance:
+      'Kovai Kora Cotton forms part of western Tamil Nadu’s handloom identity.',
     keyElements: ['Cotton weaving', 'Coimbatore region', 'GI product'],
     giStatus: 'GI registered',
     images: [],
@@ -2227,9 +2678,11 @@ export const verifiedCulture = [
     community: 'Handloom weaving communities',
     category: 'clothing-textiles',
     categoryName: 'Textiles',
-    shortDescription: 'A saree tradition associated with the Chettinad region and listed by the Tamil Nadu Handlooms Department among registered GI products.',
+    shortDescription:
+      'A saree tradition associated with the Chettinad region and listed by the Tamil Nadu Handlooms Department among registered GI products.',
     originHistory: null,
-    culturalSignificance: 'Kandangi textiles form part of Chettinad’s living material culture.',
+    culturalSignificance:
+      'Kandangi textiles form part of Chettinad’s living material culture.',
     keyElements: ['Handloom', 'Chettinad', 'GI product'],
     giStatus: 'GI registered',
     images: [],
@@ -2260,9 +2713,11 @@ export const verifiedCulture = [
     community: 'Musicians',
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional wind instrument included in Tamil Nadu government educational material on musical heritage.',
+    shortDescription:
+      'A traditional wind instrument included in Tamil Nadu government educational material on musical heritage.',
     originHistory: null,
-    culturalSignificance: 'Nadaswaram remains an important component of Tamil musical and ceremonial performance traditions.',
+    culturalSignificance:
+      'Nadaswaram remains an important component of Tamil musical and ceremonial performance traditions.',
     keyElements: ['Wind instrument', 'Music', 'Ceremonial performance'],
     images: [],
     media: [],
@@ -2274,7 +2729,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
+        sourceName:
+          'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
         sourceType: 'Government educational source',
         sourceUrl: 'https://www.trb.tn.gov.in/admin/pdf/1447547983ESSP1.pdf'
       }
@@ -2292,9 +2748,11 @@ export const verifiedCulture = [
     community: 'Musicians',
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional percussion instrument included in Tamil Nadu government educational material on the state’s musical heritage.',
+    shortDescription:
+      'A traditional percussion instrument included in Tamil Nadu government educational material on the state’s musical heritage.',
     originHistory: null,
-    culturalSignificance: 'Thavil forms part of Tamil ceremonial and performance-music traditions.',
+    culturalSignificance:
+      'Thavil forms part of Tamil ceremonial and performance-music traditions.',
     keyElements: ['Percussion', 'Rhythm', 'Ceremonial music'],
     images: [],
     media: [],
@@ -2306,7 +2764,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
+        sourceName:
+          'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
         sourceType: 'Government educational source',
         sourceUrl: 'https://www.trb.tn.gov.in/admin/pdf/1447547983ESSP1.pdf'
       }
@@ -2324,9 +2783,11 @@ export const verifiedCulture = [
     community: 'Musicians and instrument makers',
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'A traditional string instrument included in Tamil Nadu government educational material on musical heritage.',
+    shortDescription:
+      'A traditional string instrument included in Tamil Nadu government educational material on musical heritage.',
     originHistory: null,
-    culturalSignificance: 'The veena forms part of Tamil Nadu’s classical-music and instrument-making heritage.',
+    culturalSignificance:
+      'The veena forms part of Tamil Nadu’s classical-music and instrument-making heritage.',
     keyElements: ['String instrument', 'Classical music', 'Instrument craft'],
     images: [],
     media: [],
@@ -2338,7 +2799,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
+        sourceName:
+          'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
         sourceType: 'Government educational source',
         sourceUrl: 'https://www.trb.tn.gov.in/admin/pdf/1447547983ESSP1.pdf'
       }
@@ -2356,9 +2818,11 @@ export const verifiedCulture = [
     community: 'Traditional percussion performers',
     category: 'traditional-arts',
     categoryName: 'Traditional Arts',
-    shortDescription: 'An ancient Tamil percussion instrument listed in government educational material on Tamil Nadu’s musical instruments.',
+    shortDescription:
+      'An ancient Tamil percussion instrument listed in government educational material on Tamil Nadu’s musical instruments.',
     originHistory: null,
-    culturalSignificance: 'Parai belongs to Tamil Nadu’s long percussion and community-performance traditions.',
+    culturalSignificance:
+      'Parai belongs to Tamil Nadu’s long percussion and community-performance traditions.',
     keyElements: ['Percussion', 'Rhythm', 'Community performance'],
     images: [],
     media: [],
@@ -2370,7 +2834,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
+        sourceName:
+          'Government of Tamil Nadu — Environmental Studies syllabus: Musical Instruments',
         sourceType: 'Government educational source',
         sourceUrl: 'https://www.trb.tn.gov.in/admin/pdf/1447547983ESSP1.pdf'
       }
@@ -2388,9 +2853,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A major Tamil festival tradition included among programmes supported by the Tamil Nadu Department of Art and Culture.',
+    shortDescription:
+      'A major Tamil festival tradition included among programmes supported by the Tamil Nadu Department of Art and Culture.',
     originHistory: null,
-    culturalSignificance: 'Chithirai Thiruvizha remains part of Tamil Nadu’s living religious and public festival calendar.',
+    culturalSignificance:
+      'Chithirai Thiruvizha remains part of Tamil Nadu’s living religious and public festival calendar.',
     keyElements: ['Festival', 'Processions', 'Temple-centred celebration'],
     images: [],
     media: [],
@@ -2402,7 +2869,8 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tamil Nadu Department of Art and Culture — Regional Cultural Centres',
+        sourceName:
+          'Tamil Nadu Department of Art and Culture — Regional Cultural Centres',
         sourceType: 'State culture department',
         sourceUrl: 'https://artandculture.tn.gov.in/regional-cultural-centres'
       }
@@ -2420,9 +2888,11 @@ export const verifiedCulture = [
     community: null,
     category: 'festivals',
     categoryName: 'Festivals',
-    shortDescription: 'A Tamil seasonal festival associated with rivers and included in programmes of the Tamil Nadu Department of Art and Culture.',
+    shortDescription:
+      'A Tamil seasonal festival associated with rivers and included in programmes of the Tamil Nadu Department of Art and Culture.',
     originHistory: null,
-    culturalSignificance: 'Aadi Perukku forms part of Tamil Nadu’s seasonal and river-centred cultural traditions.',
+    culturalSignificance:
+      'Aadi Perukku forms part of Tamil Nadu’s seasonal and river-centred cultural traditions.',
     keyElements: ['Aadi month', 'River worship', 'Seasonal festival'],
     images: [],
     media: [],
@@ -2434,14 +2904,16 @@ export const verifiedCulture = [
     verificationStatus: 'verified',
     sources: [
       {
-        sourceName: 'Tamil Nadu Department of Art and Culture — Regional Cultural Centres',
+        sourceName:
+          'Tamil Nadu Department of Art and Culture — Regional Cultural Centres',
         sourceType: 'State culture department',
         sourceUrl: 'https://artandculture.tn.gov.in/regional-cultural-centres'
       },
       {
         sourceName: 'Bhavani Municipality — Events and Festivals',
         sourceType: 'Government municipal',
-        sourceUrl: 'https://www.tnurbantree.tn.gov.in/bhavani/events-and-festivals/'
+        sourceUrl:
+          'https://www.tnurbantree.tn.gov.in/bhavani/events-and-festivals/'
       }
     ],
     lastVerified: '2026-08-26'
@@ -2457,9 +2929,12 @@ export const verifiedCulture = [
     community: 'Chettiar regional tradition',
     category: 'regional-cuisine',
     categoryName: 'Regional Cuisine',
-    shortDescription: 'A distinctive regional culinary tradition associated with the Chettinad area around Karaikudi and Devakottai.',
-    originHistory: 'Karaikudi municipal material states that Chettinad cuisine originated in the areas around Karaikudi.',
-    culturalSignificance: 'Chettinad cuisine forms a major part of the region’s cultural identity and is included in local heritage-tourism planning.',
+    shortDescription:
+      'A distinctive regional culinary tradition associated with the Chettinad area around Karaikudi and Devakottai.',
+    originHistory:
+      'Karaikudi municipal material states that Chettinad cuisine originated in the areas around Karaikudi.',
+    culturalSignificance:
+      'Chettinad cuisine forms a major part of the region’s cultural identity and is included in local heritage-tourism planning.',
     keyElements: ['Regional cuisine', 'Karaikudi', 'Chettinad'],
     images: [],
     media: [],
@@ -2473,12 +2948,14 @@ export const verifiedCulture = [
       {
         sourceName: 'Karaikudi Municipality — Brief History',
         sourceType: 'Government municipal',
-        sourceUrl: 'https://tnurbantree.tn.gov.in/karaikudi/wp-content/uploads/sites/33/2020/06/Brief-of-History_.pdf'
+        sourceUrl:
+          'https://tnurbantree.tn.gov.in/karaikudi/wp-content/uploads/sites/33/2020/06/Brief-of-History_.pdf'
       },
       {
         sourceName: 'Devakottai Municipality — City Development Plan',
         sourceType: 'Government municipal',
-        sourceUrl: 'https://www.tnurbantree.tn.gov.in/devakottai/wp-content/uploads/sites/32/2019/12/cdp.pdf'
+        sourceUrl:
+          'https://www.tnurbantree.tn.gov.in/devakottai/wp-content/uploads/sites/32/2019/12/cdp.pdf'
       }
     ],
     lastVerified: '2026-08-26'
