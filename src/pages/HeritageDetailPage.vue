@@ -156,6 +156,108 @@
           <p class="detail-section__text">{{ record.architecture }}</p>
         </section>
 
+        <!-- CONSTRUCTION STORY SECTION -->
+        <section v-if="record.constructionDetails" class="detail-section">
+          <h2 class="detail-section__heading">
+            <q-icon name="engineering" size="20px" class="section-icon" />
+            Construction Story
+          </h2>
+          <p v-if="record.constructionDetails.commissioner" class="detail-section__subtext q-mb-sm">
+            <strong>Commissioned by:</strong> {{ record.constructionDetails.commissioner }}
+          </p>
+          <p v-if="record.constructionDetails.duration" class="detail-section__subtext q-mb-sm">
+            <strong>Construction Period:</strong> {{ record.constructionDetails.duration }}
+          </p>
+          <p v-if="record.constructionDetails.craftspeople" class="detail-section__subtext q-mb-sm">
+            <strong>Craftspeople & Artisans:</strong> {{ record.constructionDetails.craftspeople }}
+          </p>
+          <p v-if="record.constructionDetails.materials" class="detail-section__subtext q-mb-sm">
+            <strong>Materials Used:</strong> {{ record.constructionDetails.materials }}
+          </p>
+          <p v-if="record.constructionDetails.process" class="detail-section__text q-mt-sm">
+            {{ record.constructionDetails.process }}
+          </p>
+        </section>
+
+        <!-- HISTORICAL TIMELINE SECTION -->
+        <section v-if="record.timelineEvents && record.timelineEvents.length > 0" class="detail-section">
+          <h2 class="detail-section__heading">
+            <q-icon name="timeline" size="20px" class="section-icon" />
+            Historical Timeline
+          </h2>
+          <div class="timeline-list">
+            <div
+              v-for="(evt, idx) in record.timelineEvents"
+              :key="idx"
+              class="timeline-item"
+            >
+              <div class="timeline-item__dot"></div>
+              <div class="timeline-item__content">
+                <span class="timeline-item__year">{{ evt.year }}</span>
+                <p class="timeline-item__desc">{{ evt.event }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NOTABLE EVENTS SECTION -->
+        <section v-if="record.notableEvents && record.notableEvents.length > 0" class="detail-section">
+          <h2 class="detail-section__heading">
+            <q-icon name="event_note" size="20px" class="section-icon" />
+            Notable Events
+          </h2>
+          <div class="notable-events-list">
+            <div
+              v-for="(evt, idx) in record.notableEvents"
+              :key="idx"
+              class="notable-event-card"
+            >
+              <div class="notable-event-card__header">
+                <q-icon name="stars" size="16px" class="q-mr-xs text-amber-7" />
+                <span class="notable-event-card__title">{{ evt.title }}</span>
+                <span v-if="evt.year" class="notable-event-card__year">{{ evt.year }}</span>
+              </div>
+              <p class="notable-event-card__desc">{{ evt.description }}</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- TRADITIONS & CULTURE BORN HERE -->
+        <section v-if="record.traditionsSpawned && record.traditionsSpawned.length > 0" class="detail-section traditions-section">
+          <h2 class="detail-section__heading">
+            <q-icon name="auto_stories" size="20px" class="section-icon" />
+            Traditions & Culture Born Here
+          </h2>
+          <p class="detail-section__subtext q-mb-md">
+            How this site influenced the living culture around it — traditions, art forms, food, and rituals that emerged from or because of this place.
+          </p>
+          <div class="traditions-list">
+            <div
+              v-for="(item, idx) in record.traditionsSpawned"
+              :key="idx"
+              class="tradition-card"
+            >
+              <div class="tradition-card__icon">
+                <q-icon :name="item.icon || 'fiber_manual_record'" size="20px" />
+              </div>
+              <div class="tradition-card__body">
+                <h4 class="tradition-card__name">{{ item.name }}</h4>
+                <span class="tradition-card__type">{{ item.type }}</span>
+                <p class="tradition-card__desc">{{ item.description }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACTIVE USE & LEGACY -->
+        <section v-if="record.activeUsePeriod" class="detail-section">
+          <h2 class="detail-section__heading">
+            <q-icon name="hourglass_full" size="20px" class="section-icon" />
+            Active Use & Legacy
+          </h2>
+          <p class="detail-section__text">{{ record.activeUsePeriod }}</p>
+        </section>
+
         <!-- GALLERY SECTION (Only if legitimate media exists) -->
         <section v-if="hasGallery" class="detail-section">
           <h2 class="detail-section__heading">
@@ -806,6 +908,170 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
     &:hover {
       background: #ffe5d6;
     }
+  }
+}
+
+/* TIMELINE */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 8px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  padding-bottom: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 20px;
+    bottom: 0;
+    width: 2px;
+    background: rgba(184, 75, 42, 0.15);
+  }
+
+  &:last-child::before { display: none; }
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #B84B2A;
+    border: 3px solid #fff3ec;
+    flex-shrink: 0;
+    margin-top: 2px;
+    box-shadow: 0 0 0 2px rgba(184, 75, 42, 0.2);
+  }
+
+  &__content { flex: 1; }
+
+  &__year {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #B84B2A;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  &__desc {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.55;
+    margin: 0;
+  }
+}
+
+/* NOTABLE EVENTS */
+.notable-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notable-event-card {
+  background: #fffaf7;
+  border: 1px solid rgba(184, 75, 42, 0.1);
+  border-left: 3px solid #B84B2A;
+  border-radius: 8px;
+  padding: 12px 14px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #2c1e18;
+    flex: 1;
+  }
+
+  &__year {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: #B84B2A;
+    font-weight: 600;
+    background: #fff3ec;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+
+  &__desc {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.55;
+    margin: 0;
+  }
+}
+
+/* TRADITIONS & CULTURE */
+.traditions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tradition-card {
+  display: flex;
+  gap: 14px;
+  background: linear-gradient(135deg, #fdf6f0 0%, #fff9f5 100%);
+  border: 1px solid rgba(184, 75, 42, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px;
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(184, 75, 42, 0.1);
+    color: #B84B2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__body { flex: 1; }
+
+  &__name {
+    font-family: var(--font-heading);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #2c1e18;
+    margin: 0 0 2px;
+  }
+
+  &__type {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #B84B2A;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  &__desc {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.55;
+    margin: 0;
   }
 }
 </style>
