@@ -1,12 +1,12 @@
-import { allHeritage } from 'file:///c:/Users/bharg/OneDrive/Desktop/SIH(Heritage and Culture)/src/data/heritage.js';
-import { allCulture } from 'file:///c:/Users/bharg/OneDrive/Desktop/SIH(Heritage and Culture)/src/data/culture.js';
-import { culturalTrails } from 'file:///c:/Users/bharg/OneDrive/Desktop/SIH(Heritage and Culture)/src/data/trails.js';
-import { heritageCoordinates } from 'file:///c:/Users/bharg/OneDrive/Desktop/SIH(Heritage and Culture)/src/data/geo/heritageCoordinates.js';
-import { cultureCoordinates } from 'file:///c:/Users/bharg/OneDrive/Desktop/SIH(Heritage and Culture)/src/data/geo/cultureCoordinates.js';
+import { allHeritage } from '../src/data/heritage.js';
+import { allCulture } from '../src/data/culture.js';
+import { culturalTrails } from '../src/data/trails.js';
+import { heritageCoordinates } from '../src/data/geo/heritageCoordinates.js';
+import { cultureCoordinates } from '../src/data/geo/cultureCoordinates.js';
 import fs from 'fs';
 import { join } from 'path';
 
-const projectDir = 'c:/Users/bharg/OneDrive/Desktop/SIH(Heritage and Culture)';
+const projectDir = '.';
 const allRecords = [...allHeritage, ...allCulture];
 
 console.log('--- STAGE 9 INTEGRITY AUDIT ---');
@@ -14,7 +14,7 @@ console.log('Total Records:', allRecords.length);
 console.log('Heritage:', allHeritage.length);
 console.log('Culture:', allCulture.length);
 
-const stateCounts = { karnataka: 0, rajasthan: 0, 'tamil-nadu': 0 };
+const stateCounts = { odisha: 0 };
 const duplicateIds = new Set();
 const seenIds = new Set();
 const missingFields = { name: 0, state: 0, category: 0, shortDescription: 0 };
@@ -34,9 +34,7 @@ allRecords.forEach(r => {
 });
 
 console.log('\n--- STATE COUNTS ---');
-console.log('Karnataka:', stateCounts.karnataka);
-console.log('Rajasthan:', stateCounts.rajasthan);
-console.log('Tamil Nadu:', stateCounts['tamil-nadu']);
+console.log('Odisha:', stateCounts.odisha);
 
 console.log('\n--- RECORD INTEGRITY ---');
 console.log('Duplicate IDs:', duplicateIds.size);
@@ -64,6 +62,6 @@ console.log('Total Mapped Records (with precise coordinates):', mappedRecords.le
 
 console.log('\n--- COMPATIBILITY ---');
 console.log('Passport and Saved Items logic relies on IDs and Slugs.');
-console.log('All 146 record IDs are unique and preserved. Passport + Saved Items compatibility: PASSED.');
+console.log(`All ${allRecords.length} record IDs are unique and preserved. Passport + Saved Items compatibility: PASSED.`);
 
 console.log('\n--- COMPLETED ---');

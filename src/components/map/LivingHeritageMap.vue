@@ -56,17 +56,9 @@ let resizeObserver = null
 
 // State Bounding Boxes for Smooth Camera Focus
 const STATE_BOUNDS = {
-  karnataka: [
-    [11.5, 74.0],
-    [18.5, 78.5]
-  ],
-  rajasthan: [
-    [23.0, 69.5],
-    [30.5, 78.0]
-  ],
-  'tamil-nadu': [
-    [8.0, 76.0],
-    [13.5, 80.5]
+  odisha: [
+    [17.5, 81.0],
+    [22.8, 87.5]
   ]
 }
 

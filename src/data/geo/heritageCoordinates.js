@@ -1,229 +1,241 @@
 /**
- * Verified Heritage Coordinates Dataset — Stage 4
- * Authoritative coordinates sourced from UNESCO World Heritage Centre & ASI.
+ * Verified Heritage Coordinates Dataset — Odisha Showcase State
+ * Authoritative coordinates sourced from UNESCO World Heritage Centre, ASI & Odisha Tourism.
  * Precision: 'site' (exact site) or 'city' (city monument precinct).
  */
 
 export const heritageCoordinates = [
-  // KARNATAKA HERITAGE
+  // TEMPLES — BHUBANESWAR
   {
-    id: 'ka-heritage-hampi',
-    latitude: 15.335,
-    longitude: 76.46,
+    id: 'od-heritage-lingaraja',
+    latitude: 20.2373,
+    longitude: 85.8348,
     precision: 'site',
-    locationLabel: 'Hampi Archaeological Complex',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/241/'
+    locationLabel: 'Lingaraja Temple, Old Town Bhubaneswar',
+    sourceName: 'Archaeological Survey of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/lingaraj-temple.html'
   },
   {
-    id: 'ka-heritage-mysuru-palace',
-    latitude: 12.3052,
-    longitude: 76.6552,
+    id: 'od-heritage-rajarani',
+    latitude: 20.2446,
+    longitude: 85.8479,
     precision: 'site',
-    locationLabel: 'Mysuru Palace Grounds',
-    sourceName: 'Mysuru Palace Board / Karnataka Tourism',
-    sourceUrl: 'https://mysorepalace.karnataka.gov.in/'
-  },
-  {
-    id: 'ka-heritage-badami',
-    latitude: 15.9184,
-    longitude: 75.6806,
-    precision: 'site',
-    locationLabel: 'Badami Cave Temples',
-    sourceName: 'Archaeological Survey of India (ASI)',
+    locationLabel: 'Rajarani Temple, Bhubaneswar',
+    sourceName: 'Archaeological Survey of India',
     sourceUrl: 'https://asi.nic.in/'
   },
   {
-    id: 'ka-heritage-pattadakal',
-    latitude: 15.9486,
-    longitude: 75.8156,
+    id: 'od-heritage-mukteswar',
+    latitude: 20.2363,
+    longitude: 85.8338,
     precision: 'site',
-    locationLabel: 'Group of Monuments at Pattadakal',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/239/'
-  },
-  {
-    id: 'ka-heritage-aihole',
-    latitude: 16.02,
-    longitude: 75.882,
-    precision: 'site',
-    locationLabel: 'Aihole Temple Complex',
-    sourceName: 'Archaeological Survey of India (ASI)',
+    locationLabel: 'Mukteswar Temple, Bhubaneswar',
+    sourceName: 'Archaeological Survey of India',
     sourceUrl: 'https://asi.nic.in/'
   },
   {
-    id: 'ka-heritage-belur-channakeshava',
-    latitude: 13.1623,
-    longitude: 75.8596,
+    id: 'od-heritage-parasuramesvara',
+    latitude: 20.2371,
+    longitude: 85.8344,
     precision: 'site',
-    locationLabel: 'Belur Channakeshava Temple',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/1670/'
-  },
-  {
-    id: 'ka-heritage-halebidu-hoysalesvara',
-    latitude: 13.2132,
-    longitude: 75.9937,
-    precision: 'site',
-    locationLabel: 'Halebidu Hoysalesvara Temple',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/1670/'
-  },
-  {
-    id: 'ka-heritage-bidar-fort',
-    latitude: 17.9234,
-    longitude: 77.5312,
-    precision: 'site',
-    locationLabel: 'Bidar Fort Precinct',
-    sourceName: 'Karnataka Tourism / ASI',
-    sourceUrl: 'https://karnatakatourism.org/'
-  },
-  {
-    id: 'ka-heritage-gol-gumbaz',
-    latitude: 16.8307,
-    longitude: 75.7361,
-    precision: 'site',
-    locationLabel: 'Gol Gumbaz, Vijayapura',
-    sourceName: 'Archaeological Survey of India (ASI)',
+    locationLabel: 'Parasuramesvara Temple, Bhubaneswar',
+    sourceName: 'Archaeological Survey of India',
     sourceUrl: 'https://asi.nic.in/'
   },
 
-  // RAJASTHAN HERITAGE
+  // UNESCO — KONARK
   {
-    id: 'rj-heritage-amber-fort',
-    latitude: 26.9855,
-    longitude: 75.8513,
+    id: 'od-heritage-konark',
+    latitude: 19.8876,
+    longitude: 86.0945,
     precision: 'site',
-    locationLabel: 'Amber Fort, Jaipur',
+    locationLabel: 'Konark Sun Temple, Puri district',
     sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/247/'
-  },
-  {
-    id: 'rj-heritage-jaipur-city',
-    latitude: 26.926,
-    longitude: 75.8235,
-    precision: 'site',
-    locationLabel: 'Jaipur Walled City',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/1605/'
-  },
-  {
-    id: 'rj-heritage-chittorgarh-fort',
-    latitude: 24.8879,
-    longitude: 74.6455,
-    precision: 'site',
-    locationLabel: 'Chittorgarh Fort',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/247/'
-  },
-  {
-    id: 'rj-heritage-jaisalmer-fort',
-    latitude: 26.9124,
-    longitude: 70.9126,
-    precision: 'site',
-    locationLabel: 'Jaisalmer Fort',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/247/'
-  },
-  {
-    id: 'rj-heritage-kumbhalgarh-fort',
-    latitude: 25.1478,
-    longitude: 73.5826,
-    precision: 'site',
-    locationLabel: 'Kumbhalgarh Fort',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/247/'
-  },
-  {
-    id: 'rj-heritage-mehrangarh-fort',
-    latitude: 26.2978,
-    longitude: 73.0186,
-    precision: 'site',
-    locationLabel: 'Mehrangarh Fort, Jodhpur',
-    sourceName: 'Mehrangarh Museum Trust / Rajasthan Tourism',
-    sourceUrl: 'https://www.mehrangarh.org/'
-  },
-  {
-    id: 'rj-heritage-junagarh-fort',
-    latitude: 28.016,
-    longitude: 73.3175,
-    precision: 'site',
-    locationLabel: 'Junagarh Fort, Bikaner',
-    sourceName: 'Rajasthan Tourism',
-    sourceUrl: 'https://www.tourism.rajasthan.gov.in/'
+    sourceUrl: 'https://whc.unesco.org/en/list/246/'
   },
 
-  // TAMIL NADU HERITAGE
+  // PURI — JAGANNATH TEMPLE
   {
-    id: 'tn-heritage-mahabalipuram',
-    latitude: 12.6269,
-    longitude: 80.1927,
+    id: 'od-heritage-jagannath-puri',
+    latitude: 19.8047,
+    longitude: 85.8179,
     precision: 'site',
-    locationLabel: 'Group of Monuments at Mahabalipuram',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/249/'
+    locationLabel: 'Jagannath Temple, Puri',
+    sourceName: 'Shree Jagannath Temple Administration / ASI',
+    sourceUrl: 'https://www.shreejagannath.org/'
   },
   {
-    id: 'tn-heritage-brihadisvara-thanjavur',
-    latitude: 10.7828,
-    longitude: 79.1318,
-    precision: 'site',
-    locationLabel: 'Brihadisvara Temple, Thanjavur',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/250/'
+    id: 'od-heritage-puri-town',
+    latitude: 19.7986,
+    longitude: 85.8245,
+    precision: 'city',
+    locationLabel: 'Puri Sacred Town Centre',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/'
   },
   {
-    id: 'tn-heritage-gangaikondacholapuram',
-    latitude: 11.2057,
-    longitude: 79.4475,
+    id: 'od-heritage-jagannath-temple-puri-natamandap',
+    latitude: 19.8047,
+    longitude: 85.8179,
     precision: 'site',
-    locationLabel: 'Gangaikondacholapuram Temple',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/250/'
+    locationLabel: 'Ananda Bazar & Mukti Mandapa, Jagannath Temple',
+    sourceName: 'Shree Jagannath Temple Administration',
+    sourceUrl: 'https://www.shreejagannath.org/'
+  },
+
+  // ARCHAEOLOGICAL SITES
+  {
+    id: 'od-heritage-udayagiri-khandagiri',
+    latitude: 20.2648,
+    longitude: 85.7764,
+    precision: 'site',
+    locationLabel: 'Udayagiri & Khandagiri Caves, Bhubaneswar',
+    sourceName: 'Archaeological Survey of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/udayagiri-and-khandagiri.html'
   },
   {
-    id: 'tn-heritage-airavatesvara-darasuram',
-    latitude: 10.947,
-    longitude: 79.356,
+    id: 'od-heritage-dhauligiri',
+    latitude: 20.1918,
+    longitude: 85.8488,
     precision: 'site',
-    locationLabel: 'Airavatesvara Temple, Darasuram',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/250/'
+    locationLabel: 'Dhauligiri Rock Edicts & Shanti Stupa',
+    sourceName: 'Archaeological Survey of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/dhauli.html'
   },
   {
-    id: 'tn-heritage-nilgiri-mountain-railway',
-    latitude: 11.353,
-    longitude: 76.7959,
+    id: 'od-heritage-lalitgiri',
+    latitude: 20.4667,
+    longitude: 85.9167,
     precision: 'site',
-    locationLabel: 'Nilgiri Mountain Railway, Coonoor/Ooty',
-    sourceName: 'UNESCO World Heritage Centre',
-    sourceUrl: 'https://whc.unesco.org/en/list/944/'
+    locationLabel: 'Lalitgiri Buddhist Complex, Cuttack district',
+    sourceName: 'Archaeological Survey of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/lalitgiri.html'
   },
   {
-    id: 'tn-heritage-srirangam',
-    latitude: 10.8622,
-    longitude: 78.6901,
+    id: 'od-heritage-ratnagiri',
+    latitude: 20.5333,
+    longitude: 86.1667,
     precision: 'site',
-    locationLabel: 'Sri Ranganathaswamy Temple, Srirangam',
-    sourceName: 'Tamil Nadu Tourism / ASI',
-    sourceUrl: 'https://www.tamilnadutourism.tn.gov.in/'
+    locationLabel: 'Ratnagiri Buddhist Complex, Jajpur district',
+    sourceName: 'Archaeological Survey of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/ratnagiri.html'
   },
   {
-    id: 'tn-heritage-vellore-fort',
-    latitude: 12.9231,
-    longitude: 79.1325,
+    id: 'od-heritage-udayagiri-boudh',
+    latitude: 20.5499,
+    longitude: 86.0993,
     precision: 'site',
-    locationLabel: 'Vellore Fort',
-    sourceName: 'Archaeological Survey of India (ASI)',
+    locationLabel: 'Udayagiri Buddhist Complex, Jajpur district',
+    sourceName: 'Archaeological Survey of India',
     sourceUrl: 'https://asi.nic.in/'
   },
+
+  // FORTS
   {
-    id: 'tn-heritage-gingee-fort',
-    latitude: 12.2514,
-    longitude: 79.4014,
+    id: 'od-heritage-barabati-fort',
+    latitude: 20.4686,
+    longitude: 85.8791,
     precision: 'site',
-    locationLabel: 'Gingee Fort',
-    sourceName: 'Archaeological Survey of India (ASI)',
+    locationLabel: 'Barabati Fort, Cuttack',
+    sourceName: 'Archaeological Survey of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/forts-and-palaces/barabati-fort.html'
+  },
+  {
+    id: 'od-heritage-khandagiri-jain',
+    latitude: 20.2634,
+    longitude: 85.7760,
+    precision: 'site',
+    locationLabel: 'Khandagiri Hill Jain Caves, Bhubaneswar',
+    sourceName: 'Archaeological Survey of India',
     sourceUrl: 'https://asi.nic.in/'
+  },
+
+  // NATURAL HERITAGE
+  {
+    id: 'od-heritage-chilika-lake',
+    latitude: 19.7167,
+    longitude: 85.3167,
+    precision: 'site',
+    locationLabel: 'Chilika Lake — Satpara Visitor Centre',
+    sourceName: 'Chilika Development Authority',
+    sourceUrl: 'http://www.chilika.com/'
+  },
+  {
+    id: 'od-heritage-simlipal',
+    latitude: 21.8396,
+    longitude: 86.3105,
+    precision: 'site',
+    locationLabel: 'Simlipal National Park — Pithabata Gate',
+    sourceName: 'Odisha Forest Department / UNESCO',
+    sourceUrl: 'https://en.unesco.org/biosphere/aspac/simlipal'
+  },
+  {
+    id: 'od-heritage-bhitarkanika',
+    latitude: 20.7833,
+    longitude: 86.8833,
+    precision: 'site',
+    locationLabel: 'Bhitarkanika National Park — Rajnagar',
+    sourceName: 'Odisha Forest Department / Ramsar',
+    sourceUrl: 'https://rsis.ramsar.org/ris/1208'
+  },
+
+  // PILGRIMAGE TOWNS
+  {
+    id: 'od-heritage-bhubaneswar-temple-city',
+    latitude: 20.2961,
+    longitude: 85.8245,
+    precision: 'city',
+    locationLabel: 'Bhubaneswar Old Town (Ekamra Kshetra)',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/destinations/heritage-destinations/bhubaneswar.html'
+  },
+
+  // MUSEUMS
+  {
+    id: 'od-heritage-odisha-state-museum',
+    latitude: 20.2701,
+    longitude: 85.8316,
+    precision: 'site',
+    locationLabel: 'Odisha State Museum, Bhubaneswar',
+    sourceName: 'Odisha State Museum',
+    sourceUrl: 'https://odishamuseum.nic.in/'
+  },
+  {
+    id: 'od-heritage-handicrafts-museum',
+    latitude: 20.2695,
+    longitude: 85.8426,
+    precision: 'site',
+    locationLabel: 'Odisha Handicrafts Museum (Kala Bhoomi), Bhubaneswar',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/'
+  },
+
+  // TEMPLES — OUTSTATION
+  {
+    id: 'od-heritage-tara-tarini',
+    latitude: 19.3667,
+    longitude: 84.9333,
+    precision: 'site',
+    locationLabel: 'Tara Tarini Shrine, Ganjam district',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/tara-tarini.html'
+  },
+  {
+    id: 'od-heritage-kapilash-temple',
+    latitude: 20.9333,
+    longitude: 85.6,
+    precision: 'site',
+    locationLabel: 'Kapilash Temple, Dhenkanal district',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/kapilash-temple.html'
+  },
+  {
+    id: 'od-heritage-nrusinghanath',
+    latitude: 21.3167,
+    longitude: 83.5667,
+    precision: 'site',
+    locationLabel: 'Nrusinghanath Temple, Bargarh district',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/nrusinghanath-temple.html'
   }
 ]
