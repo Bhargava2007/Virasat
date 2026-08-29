@@ -80,28 +80,6 @@
 
       <!-- MAIN BODY CONTENT -->
       <main class="detail-body">
-        <!-- PASSPORT & SAVE ACTIONS -->
-        <div class="passport-action-bar q-mb-lg row no-wrap q-gutter-x-sm">
-          <q-btn
-            :outline="!isExplored"
-            :unelevated="isExplored"
-            :color="isExplored ? 'positive' : 'primary'"
-            :icon="isExplored ? 'check_circle' : 'explore'"
-            :label="isExplored ? 'Explored ✓' : 'Mark as Explored'"
-            class="col rounded-btn text-weight-bold"
-            style="border-radius: 12px; padding: 10px"
-            @click="toggleExplore"
-          />
-          <q-btn
-            outline
-            :color="isSaved ? 'secondary' : 'grey-7'"
-            :icon="isSaved ? 'bookmark' : 'bookmark_border'"
-            class="rounded-btn"
-            style="border-radius: 12px; width: 48px"
-            @click="toggleSave"
-          />
-        </div>
-
         <!-- UNESCO World Heritage Banner (If Applicable) -->
         <div v-if="record.unescoStatus" class="unesco-banner">
           <div class="unesco-banner__icon">
@@ -247,8 +225,6 @@ import { allCulture } from '@/data/culture.js'
 import { heritageCategories } from '@/data/heritageCategories.js'
 import { states } from '@/data/states.js'
 import { getRecordImage } from '@/utils/mediaHelper.js'
-import { usePassportStore } from '@/stores/passportStore.js'
-import { useSavedStore } from '@/stores/savedStore.js'
 import { useQuasar } from 'quasar'
 
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
@@ -257,39 +233,11 @@ import RelatedContentCard from '@/components/discovery/RelatedContentCard.vue'
 const route = useRoute()
 const router = useRouter()
 const $q = useQuasar()
-const passport = usePassportStore()
-const savedStore = useSavedStore()
 const heroImageError = ref(false)
 
 const record = computed(() => {
   return allHeritage.find(h => h.slug === route.params.slug) || null
 })
-
-const isExplored = computed(() => {
-  return record.value ? passport.hasExploredHeritage(record.value.id) : false
-})
-
-const toggleExplore = () => {
-  if (record.value) passport.toggleHeritage(record.value.id)
-}
-
-const isSaved = computed(() => {
-  return record.value ? savedStore.isSaved(record.value.id) : false
-})
-
-const toggleSave = async () => {
-  if (record.value) {
-    const success = await savedStore.toggleSave(record.value.id, 'heritage')
-    if (!success) {
-      $q.notify({ type: 'warning', message: 'Sign in to save items.' })
-    } else {
-      $q.notify({
-        type: 'positive',
-        message: isSaved.value ? 'Saved' : 'Removed from saved items'
-      })
-    }
-  }
-}
 
 const isVerified = computed(
   () => record.value?.verificationStatus === 'verified'

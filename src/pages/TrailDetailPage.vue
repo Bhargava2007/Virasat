@@ -50,29 +50,6 @@
 
     <!-- Overview -->
     <section class="section-spacing trail-overview">
-      <!-- PASSPORT & SAVE ACTIONS -->
-      <div class="passport-action-bar q-mb-lg row no-wrap q-gutter-x-sm">
-        <q-btn
-          :outline="!isCompleted"
-          :unelevated="isCompleted"
-          :color="isCompleted ? 'positive' : 'primary'"
-          :icon="isCompleted ? 'check_circle' : 'route'"
-          :label="isCompleted ? 'Completed ✓' : 'Mark Trail Complete'"
-          class="col rounded-btn text-weight-bold"
-          style="border-radius: 12px; padding: 10px"
-          @click="toggleComplete"
-        />
-        <q-btn
-          outline
-          :color="isSaved ? 'secondary' : 'grey-7'"
-          :icon="isSaved ? 'bookmark' : 'bookmark_border'"
-          class="rounded-btn"
-          style="border-radius: 12px; width: 48px"
-          @click="toggleSave"
-        />
-      </div>
-
-      <h2 class="section-title">Trail Overview</h2>
       <p class="detail-description">{{ trail.shortDescription }}</p>
 
       <div class="curation-box">
@@ -176,16 +153,12 @@ import { allHeritage } from '@/data/heritage.js'
 import { allCulture } from '@/data/culture.js'
 import { states } from '@/data/states.js'
 import { getRecordImage } from '@/utils/mediaHelper.js'
-import { usePassportStore } from '@/stores/passportStore.js'
-import { useSavedStore } from '@/stores/savedStore.js'
 import { useQuasar } from 'quasar'
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
 
 const route = useRoute()
 const router = useRouter()
 const $q = useQuasar()
-const passport = usePassportStore()
-const savedStore = useSavedStore()
 const trail = ref(null)
 
 onMounted(() => {
@@ -197,32 +170,6 @@ onMounted(() => {
     router.replace({ name: 'error-not-found' })
   }
 })
-
-const isCompleted = computed(() => {
-  return trail.value ? passport.hasCompletedTrail(trail.value.slug) : false
-})
-
-const toggleComplete = () => {
-  if (trail.value) passport.toggleTrail(trail.value.slug)
-}
-
-const isSaved = computed(() => {
-  return trail.value ? savedStore.isSaved(trail.value.slug) : false
-})
-
-const toggleSave = async () => {
-  if (trail.value) {
-    const success = await savedStore.toggleSave(trail.value.slug, 'trail')
-    if (!success) {
-      $q.notify({ type: 'warning', message: 'Sign in to save items.' })
-    } else {
-      $q.notify({
-        type: 'positive',
-        message: isSaved.value ? 'Saved' : 'Removed from saved items'
-      })
-    }
-  }
-}
 
 const getStateName = slug => {
   const state = states.find(s => s.slug === slug)

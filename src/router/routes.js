@@ -49,14 +49,14 @@ const routes = [
         component: () => import('@/pages/LivingHeritageMapPage.vue')
       },
       {
-        path: 'passport',
-        name: 'passport',
-        component: () => import('@/pages/PassportPage.vue')
+        path: 'legacy-stories',
+        name: 'legacy-stories',
+        component: () => import('@/pages/LegacyStoriesPage.vue')
       },
       {
-        path: 'profile',
-        name: 'profile',
-        component: () => import('@/pages/ProfilePage.vue')
+        path: 'legacy-stories/:slug',
+        name: 'legacy-story-detail',
+        component: () => import('@/pages/LegacyStoryDetailPage.vue')
       }
     ]
   },
