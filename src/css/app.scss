@@ -13,11 +13,11 @@
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', sans-serif;
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --shadow-soft: 0 4px 16px rgba(74, 44, 30, 0.06);
-  --shadow-medium: 0 6px 24px rgba(74, 44, 30, 0.12);
-  --shadow-elevated: 0 12px 36px rgba(74, 44, 30, 0.18);
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-soft: 0 4px 16px rgba(74, 44, 30, 0.08);
+  --shadow-medium: 0 8px 24px rgba(74, 44, 30, 0.12);
+  --shadow-elevated: 0 12px 32px rgba(74, 44, 30, 0.18);
   --gradient-primary: linear-gradient(135deg, #b84b2a 0%, #d4a017 100%);
   --gradient-secondary: linear-gradient(135deg, #2c3e73 0%, #6c4ba0 100%);
   --gradient-heritage: linear-gradient(
@@ -112,6 +112,12 @@ h6 {
   -webkit-backdrop-filter: blur(16px);
 }
 
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 *:not(.leaflet-tile):not(.leaflet-tile-container):not(.leaflet-tile-pane):not(
     .leaflet-map-pane
   ):not(.leaflet-layer) {
@@ -161,6 +167,8 @@ h6 {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding: 0 16px;
+  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, black 90%, transparent 100%);
 
   &::-webkit-scrollbar {
     display: none;
@@ -174,6 +182,8 @@ h6 {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding: 0 16px;
+  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, black 90%, transparent 100%);
 
   &::-webkit-scrollbar {
     display: none;

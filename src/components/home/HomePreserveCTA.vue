@@ -10,13 +10,13 @@
       <q-btn
         unelevated
         rounded
-        color="primary"
+        color="grey-6"
         text-color="white"
-        label="Contribute"
+        label="Coming Soon"
         no-caps
+        disable
         class="cta-btn"
       />
-      <div class="demo-badge">PLACEHOLDER</div>
     </div>
   </div>
 </template>
@@ -67,16 +67,5 @@
 
 .cta-btn {
   padding: 10px 28px;
-}
-
-.demo-badge {
-  margin-top: 12px;
-  background: rgba(196, 99, 42, 0.1);
-  color: var(--color-primary, #c4632a);
-  font-size: 0.625rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
 }
 </style>

@@ -10,7 +10,7 @@ export const culturalTrails = [
     curationBasis:
       'All records are historically and geographically anchored in and around Mysuru, representing the royal Wadiyar dynasty and integrated local arts.',
     orderType: 'curated-thematic',
-    coverImage: 'heritage_hero_art_1787729701525.png',
+    coverImage: 'heritage-hero-art.png',
     stops: [
       'ka-heritage-mysuru-palace',
       'ka-culture-mysuru-dasara',

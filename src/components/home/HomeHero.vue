@@ -3,21 +3,37 @@
     <h1 class="hero-title">Heritage & Culture</h1>
     <p class="hero-tagline">Explore India's Heritage & Living Culture</p>
     <div class="accent-line"></div>
-    <q-input
-      readonly
-      class="hero-search"
-      placeholder="Search monuments, festivals, arts..."
-      borderless
-      dense
-    >
-      <template v-slot:prepend>
-        <q-icon name="search" color="white" />
-      </template>
-    </q-input>
+    
+    <div class="hero-search-wrapper">
+      <SearchBar
+        v-model="searchQuery"
+        placeholder="Search monuments, festivals, arts..."
+        dark
+        actionIcon="arrow"
+        @submit="handleSearch"
+      />
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import SearchBar from '@/components/discovery/SearchBar.vue'
+
+const router = useRouter()
+const searchQuery = ref('')
+
+const handleSearch = () => {
+  const query = searchQuery.value.trim()
+  if (query) {
+    router.push({
+      path: '/explore',
+      query: { search: query }
+    })
+  }
+}
+</script>
 
 <style scoped>
 .home-hero {
@@ -50,21 +66,10 @@
   margin: 16px auto;
 }
 
-.hero-search {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 28px;
-  color: white;
+.hero-search-wrapper {
   margin-top: 24px;
-  padding: 0 16px;
-}
-
-:deep(.q-field__native),
-:deep(.q-field__input) {
-  color: white !important;
-}
-
-:deep(.q-field__native::placeholder) {
-  color: rgba(255, 255, 255, 0.5);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

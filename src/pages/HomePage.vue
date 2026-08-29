@@ -22,5 +22,12 @@ import HomePreserveCTA from '@/components/home/HomePreserveCTA.vue'
 .home-page {
   background: var(--color-surface);
   padding-bottom: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 }
 </style>

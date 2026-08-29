@@ -4,7 +4,7 @@
     <svg
       class="category-fallback-art__pattern"
       viewBox="0 0 400 300"
-      preserveAspectRatio="none"
+      preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
     >
       <defs>

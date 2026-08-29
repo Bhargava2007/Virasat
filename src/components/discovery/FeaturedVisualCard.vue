@@ -9,7 +9,7 @@
   >
     <!-- Image / Placeholder Canvas -->
     <div class="featured-visual-card__image-container" :style="containerStyle">
-      <img
+      <img loading="lazy"
         v-if="imageUrl && !imageError"
         :src="imageUrl"
         :alt="item.name"
@@ -26,7 +26,6 @@
       <div v-if="isVerified" class="verified-badge-card">
         <q-icon name="verified" size="10px" class="q-mr-xs" />VERIFIED
       </div>
-      <div v-else class="demo-badge demo-badge--card">DEMO</div>
 
       <!-- Gradient Overlay for Text Readability -->
       <div class="featured-visual-card__gradient"></div>
@@ -121,17 +120,17 @@ const containerStyle = computed(() => {
   width: 145px;
   height: 180px;
   flex-shrink: 0;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   position: relative;
-  box-shadow: 0 6px 20px rgba(74, 44, 30, 0.12);
+  box-shadow: var(--shadow-soft);
   cursor: pointer;
   transition: all 0.25s ease;
 
   &:hover,
   &:focus-visible {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 10px 28px rgba(74, 44, 30, 0.22);
+    box-shadow: var(--shadow-soft);
     outline: none;
   }
 
@@ -156,18 +155,6 @@ const containerStyle = computed(() => {
     object-fit: cover;
   }
 
-  .demo-badge--card {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(8px);
-    color: #ffffff;
-    border-radius: 4px;
-    font-size: 0.5625rem;
-    padding: 2px 6px;
-  }
 
   .verified-badge-card {
     position: absolute;

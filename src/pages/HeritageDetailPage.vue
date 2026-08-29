@@ -27,6 +27,7 @@
             :src="heroImageUrl"
             :alt="record.name"
             class="detail-hero__img"
+            fetchpriority="high"
             @error="heroImageError = true"
           />
           <CategoryFallbackArt
@@ -167,51 +168,30 @@
               :key="idx"
               class="gallery-item"
             >
-              <img :src="imgItem.url" :alt="imgItem.title || record.name" />
+              <img :src="imgItem.url" :alt="imgItem.title || record.name" loading="lazy" />
             </div>
           </div>
         </section>
 
-        <!-- RELATED LIVING CULTURE (Heritage ↔ Culture Connections) -->
-        <section v-if="relatedCultureList.length > 0" class="detail-section">
+        <!-- RELATED HERITAGE & CULTURE -->
+        <section v-if="relatedContentList.length > 0" class="detail-section">
           <h2 class="detail-section__heading">
             <q-icon
-              name="palette"
-              size="20px"
-              class="section-icon text-purple"
-            />
-            Connected Living Culture
-          </h2>
-          <p class="detail-section__subtext">
-            Living traditions, arts and festivals associated with
-            {{ record.name }}.
-          </p>
-          <div class="related-grid">
-            <RelatedContentCard
-              v-for="cItem in relatedCultureList"
-              :key="cItem.id"
-              :item="cItem"
-              type="culture"
-            />
-          </div>
-        </section>
-
-        <!-- RELATED HERITAGE SITES -->
-        <section v-if="relatedHeritageList.length > 0" class="detail-section">
-          <h2 class="detail-section__heading">
-            <q-icon
-              name="account_balance"
+              name="explore"
               size="20px"
               class="section-icon text-terracotta"
             />
-            Related Heritage Sites
+            Explore More
           </h2>
+          <p class="detail-section__subtext">
+            Related Heritage & Culture you might find interesting.
+          </p>
           <div class="related-grid">
             <RelatedContentCard
-              v-for="hItem in relatedHeritageList"
-              :key="hItem.id"
-              :item="hItem"
-              type="heritage"
+              v-for="item in relatedContentList"
+              :key="item.id"
+              :item="item"
+              :type="item.record_type"
             />
           </div>
         </section>
@@ -344,21 +324,38 @@ const stateName = computed(
   () => record.value?.stateName || stateObj.value.name || 'India'
 )
 
-// Resolve Related Culture Records
-const relatedCultureList = computed(() => {
-  if (!record.value || !Array.isArray(record.value.relatedCultureIds)) return []
-  return record.value.relatedCultureIds
-    .map(id => allCulture.find(c => c.id === id))
-    .filter(Boolean)
-})
+// Deterministic Related Content Logic
+const relatedContentList = computed(() => {
+  if (!record.value) return []
 
-// Resolve Related Heritage Records
-const relatedHeritageList = computed(() => {
-  if (!record.value || !Array.isArray(record.value.relatedHeritageIds))
-    return []
-  return record.value.relatedHeritageIds
-    .map(id => allHeritage.find(h => h.id === id))
-    .filter(Boolean)
+  const current = record.value
+  const allUnified = [
+    ...allHeritage.map(h => ({ ...h, record_type: 'heritage' })),
+    ...allCulture.map(c => ({ ...c, record_type: 'culture' }))
+  ]
+
+  // Filter out current record
+  const candidates = allUnified.filter(item => item.id !== current.id)
+
+  // Rank 1: Same category + same state
+  const rank1 = candidates.filter(
+    item => item.category === current.category && item.state === current.state
+  )
+
+  // Rank 2: Same category (but not same state, as they are in rank1)
+  const rank2 = candidates.filter(
+    item => item.category === current.category && item.state !== current.state
+  )
+
+  // Rank 3: Same state (but not same category)
+  const rank3 = candidates.filter(
+    item => item.state === current.state && item.category !== current.category
+  )
+
+  // Combine and deduplicate (deduplication happens naturally here due to exclusive conditions)
+  const combined = [...rank1, ...rank2, ...rank3]
+
+  return combined.slice(0, 3)
 })
 
 // Gallery Check

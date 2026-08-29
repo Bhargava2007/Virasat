@@ -8,7 +8,7 @@
   >
     <!-- Visual Thumbnail / Fallback -->
     <div class="heritage-card__media">
-      <img
+      <img loading="lazy"
         v-if="imageUrl && !imageError"
         :src="imageUrl"
         :alt="item.name"
@@ -104,8 +104,8 @@ const stateName = computed(
 <style scoped lang="scss">
 .heritage-card {
   background-color: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(74, 44, 30, 0.06);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
   border: 1px solid rgba(74, 44, 30, 0.08);
   display: flex;
   flex-direction: row;
@@ -117,7 +117,7 @@ const stateName = computed(
   &:hover,
   &:focus-visible {
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(184, 75, 42, 0.14);
+    box-shadow: var(--shadow-soft);
     border-color: rgba(184, 75, 42, 0.25);
     outline: none;
 
@@ -169,7 +169,7 @@ const stateName = computed(
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-soft);
   }
 
   &__content {

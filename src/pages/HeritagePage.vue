@@ -19,7 +19,7 @@
       </div>
 
       <SearchBar
-        v-model="searchQuery"
+        v-model="discovery.searchQuery.value"
         placeholder="Search heritage sites..."
         class="heritage-hero__search"
       />
@@ -30,10 +30,10 @@
       <SectionHeader title="Categories" actionLabel="View all" />
       <div class="category-scroll-row">
         <CategoryCard
-          v-for="cat in heritageCategories"
+          v-for="cat in discovery.availableCategories.value"
           :key="cat.id"
           :category="cat"
-          :selected="selectedCategory === cat.slug"
+          :selected="discovery.selectedCategory.value === cat.slug"
           @select="toggleCategory"
         />
       </div>
@@ -45,15 +45,15 @@
       <div class="chip-scroll-row">
         <StateChip
           :state="{ id: 'all', slug: '', name: 'All States' }"
-          :selected="!selectedState"
+          :selected="!discovery.selectedState.value"
           activeColor="#4A2C1E"
-          @select="() => (selectedState = '')"
+          @select="discovery.selectedState.value = ''"
         />
         <StateChip
           v-for="state in states"
           :key="state.id"
           :state="state"
-          :selected="selectedState === state.slug"
+          :selected="discovery.selectedState.value === state.slug"
           activeColor="#4A2C1E"
           @select="toggleState"
         />
@@ -62,15 +62,16 @@
 
     <!-- Counter & Results -->
     <section class="section-spacing results-section">
-      <div class="counter-heading">
-        <span class="counter-heading__text"
-          >{{ filteredRecords.length }} sites found</span
-        >
+      <div class="row items-center justify-between q-mb-md">
+        <div class="counter-heading__text text-subtitle2 text-weight-bold text-grey-8">
+          {{ discovery.resultCount.value }} sites found
+        </div>
+        <q-btn flat dense color="primary" label="Clear Filters" @click="discovery.resetFilters()" />
       </div>
 
-      <div v-if="filteredRecords.length > 0" class="record-list">
+      <div v-if="discovery.resultCount.value > 0" class="record-list">
         <HeritageCard
-          v-for="item in filteredRecords"
+          v-for="item in discovery.filteredResults.value"
           :key="item.id"
           :item="item"
         />
@@ -78,20 +79,17 @@
       <div v-else class="empty-state">
         <q-icon name="search_off" class="empty-state__icon" />
         <h3 class="empty-state__title">No heritage sites found</h3>
-        <p class="empty-state__subtitle"
-          >Try adjusting your filters or search</p
-        >
+        <p class="empty-state__subtitle">Try adjusting your filters or search</p>
+        <q-btn outline color="primary" label="Clear Filters" class="q-mt-md" @click="discovery.resetFilters()" />
       </div>
     </section>
   </q-page>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { heritageCategories } from '@/data/heritageCategories.js'
+import { useRouter } from 'vue-router'
+import { useDiscovery } from '@/composables/useDiscovery.js'
 import { states } from '@/data/states.js'
-import { allHeritage } from '@/data/heritage.js'
 
 import HeroHeritageArch from '@/components/decor/HeroHeritageArch.vue'
 import SectionHeader from '@/components/discovery/SectionHeader.vue'
@@ -100,12 +98,10 @@ import CategoryCard from '@/components/discovery/CategoryCard.vue'
 import StateChip from '@/components/discovery/StateChip.vue'
 import HeritageCard from '@/components/discovery/HeritageCard.vue'
 
-const route = useRoute()
 const router = useRouter()
 
-const searchQuery = ref('')
-const selectedCategory = ref(route.query.category || '')
-const selectedState = ref(route.query.state || '')
+// Initialize Discovery specifically locked to Heritage
+const discovery = useDiscovery({ fixedType: 'heritage', syncRoute: true })
 
 const handleBack = () => {
   if (window.history.length > 1) {
@@ -116,35 +112,12 @@ const handleBack = () => {
 }
 
 const toggleCategory = cat => {
-  selectedCategory.value = selectedCategory.value === cat.slug ? '' : cat.slug
+  discovery.selectedCategory.value = discovery.selectedCategory.value === cat.slug ? '' : cat.slug
 }
 
 const toggleState = state => {
-  selectedState.value = selectedState.value === state.slug ? '' : state.slug
+  discovery.selectedState.value = discovery.selectedState.value === state.slug ? '' : state.slug
 }
-
-const filteredRecords = computed(() => {
-  return allHeritage.filter(r => {
-    let matchesCategory = true
-    if (selectedCategory.value) {
-      matchesCategory = r.category === selectedCategory.value
-    }
-    let matchesState = true
-    if (selectedState.value) {
-      matchesState = r.state === selectedState.value
-    }
-    let matchesSearch = true
-    if (searchQuery.value.trim()) {
-      const q = searchQuery.value.toLowerCase().trim()
-      matchesSearch =
-        (r.name && r.name.toLowerCase().includes(q)) ||
-        (r.category && r.category.toLowerCase().includes(q)) ||
-        (r.state && r.state.toLowerCase().includes(q)) ||
-        (r.shortDescription && r.shortDescription.toLowerCase().includes(q))
-    }
-    return matchesCategory && matchesState && matchesSearch
-  })
-})
 </script>
 
 <style scoped lang="scss">

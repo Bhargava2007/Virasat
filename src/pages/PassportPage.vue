@@ -274,7 +274,7 @@ const confirmReset = () => {
   padding: 40px 24px 32px;
   border-radius: 0 0 24px 24px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(44, 30, 24, 0.15);
+  box-shadow: var(--shadow-soft);
 
   &__texture {
     position: absolute;
@@ -384,7 +384,7 @@ const confirmReset = () => {
   padding: 32px 16px;
   background: rgba(255, 255, 255, 0.5);
   border: 1px dashed rgba(61, 43, 34, 0.2);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   color: #7a685d;
   font-size: 0.875rem;
 
@@ -405,7 +405,7 @@ const confirmReset = () => {
   border-radius: 16px;
   padding: 20px 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(61, 43, 34, 0.05);
+  box-shadow: var(--shadow-soft);
   border: 1px solid rgba(61, 43, 34, 0.05);
   position: relative;
   overflow: hidden;
@@ -460,7 +460,7 @@ const confirmReset = () => {
   background: white;
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(61, 43, 34, 0.05);
+  box-shadow: var(--shadow-soft);
   border: 1px solid rgba(61, 43, 34, 0.05);
 
   &__header {
@@ -508,7 +508,7 @@ const confirmReset = () => {
 .stat-pill {
   background: #f8f5f2;
   padding: 4px 10px;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   font-size: 0.75rem;
   font-weight: 600;
   color: #57463d;
@@ -528,8 +528,8 @@ const confirmReset = () => {
   align-items: center;
   background: white;
   padding: 12px 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(61, 43, 34, 0.04);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
   cursor: pointer;
   transition:
     transform 0.2s ease,

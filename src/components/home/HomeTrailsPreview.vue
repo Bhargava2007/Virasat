@@ -2,37 +2,43 @@
   <div class="trails-preview-wrapper">
     <div class="section-header">
       <h2 class="section-title">Cultural Trails</h2>
-      <router-link to="/trails" class="view-all-link"
-        >View All &rarr;</router-link
-      >
+      <router-link to="/trails" class="view-all-link">View All &rarr;</router-link>
     </div>
     <div class="trails-scroll-row">
-      <div class="trail-card card-1">
-        <div class="demo-badge">DEMO</div>
+      <div 
+        v-for="trail in featuredTrails" 
+        :key="trail.id"
+        class="trail-card"
+        @click="goToTrail(trail.slug)"
+      >
+        <q-img
+          :src="`/images/${trail.coverImage}`"
+          class="trail-bg"
+          loading="lazy"
+          fetchpriority="low"
+        />
+        <div class="trail-overlay"></div>
         <div class="trail-content">
-          <div class="trail-title">Trail Placeholder 1</div>
-          <div class="trail-subtitle">Demo cultural journey</div>
-        </div>
-      </div>
-      <div class="trail-card card-2">
-        <div class="demo-badge">DEMO</div>
-        <div class="trail-content">
-          <div class="trail-title">Trail Placeholder 2</div>
-          <div class="trail-subtitle">Demo cultural journey</div>
-        </div>
-      </div>
-      <div class="trail-card card-3">
-        <div class="demo-badge">DEMO</div>
-        <div class="trail-content">
-          <div class="trail-title">Trail Placeholder 3</div>
-          <div class="trail-subtitle">Demo cultural journey</div>
+          <div class="trail-title">{{ trail.title }}</div>
+          <div class="trail-subtitle">{{ trail.stops.length }} Locations &bull; {{ trail.orderType.replace('-', ' ') }}</div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from 'vue'
+import { useRouter } from 'vue-router'
+import { culturalTrails } from '@/data/trails.js'
+
+const router = useRouter()
+const featuredTrails = computed(() => culturalTrails.slice(0, 3))
+
+const goToTrail = (slug) => {
+  router.push(`/trails/${slug}`)
+}
+</script>
 
 <style scoped>
 .trails-preview-wrapper {
@@ -67,6 +73,7 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  padding-bottom: 8px; /* For shadow */
 }
 
 .trails-scroll-row::-webkit-scrollbar {
@@ -79,35 +86,41 @@
   flex-shrink: 0;
   height: 150px;
   border-radius: var(--radius-md, 12px);
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease;
 }
 
-.card-1 {
-  background: linear-gradient(135deg, #c4632a 0%, #d4a843 100%);
+.trail-card:hover {
+  transform: translateY(-2px);
 }
 
-.card-2 {
-  background: linear-gradient(135deg, #2d3a7c 0%, #4a5aa8 100%);
-}
-
-.card-3 {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d3a7c 100%);
-}
-
-.demo-badge {
+.trail-bg {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  font-size: 0.625rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.trail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+}
+
+.trail-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
 }
 
 .trail-title {
@@ -115,10 +128,12 @@
   font-family: var(--font-heading), 'Outfit', sans-serif;
   font-weight: 600;
   font-size: 1rem;
+  margin-bottom: 4px;
 }
 
 .trail-subtitle {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.75rem;
+  text-transform: capitalize;
 }
 </style>

@@ -337,8 +337,8 @@ const goToRecord = item => {
 .auth-box {
   background: white;
   padding: 32px 24px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(61, 43, 34, 0.05);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-medium);
   border: 1px solid rgba(61, 43, 34, 0.05);
 }
 
@@ -474,8 +474,8 @@ const goToRecord = item => {
   align-items: center;
   background: white;
   padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(61, 43, 34, 0.04);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
   cursor: pointer;
 
   &__title {

@@ -26,151 +26,176 @@
       </div>
 
       <SearchBar
-        v-model="searchQuery"
+        v-model="discovery.searchQuery.value"
         placeholder="Search heritage, culture, places..."
         class="explore-hero__search"
       />
     </header>
 
-    <!-- Heritage & Culture Entry Cards -->
-    <section class="section-spacing entry-section">
-      <div class="entry-cards-grid">
-        <router-link to="/heritage" class="entry-card entry-card--heritage">
-          <div class="entry-card__icon-wrap">
-            <q-icon name="account_balance" size="22px" />
-          </div>
-          <div class="entry-card__body">
-            <h2 class="entry-card__title">Heritage</h2>
-            <p class="entry-card__text"
-              >Monuments, forts, heritage sites & more</p
-            >
-          </div>
-          <div class="entry-card__arrow">
-            <q-icon name="chevron_right" size="18px" />
-          </div>
-        </router-link>
-
-        <router-link to="/culture" class="entry-card entry-card--culture">
-          <div class="entry-card__icon-wrap">
-            <q-icon name="self_improvement" size="22px" />
-          </div>
-          <div class="entry-card__body">
-            <h2 class="entry-card__title">Culture</h2>
-            <p class="entry-card__text">Traditions, arts, festivals & more</p>
-          </div>
-          <div class="entry-card__arrow">
-            <q-icon name="chevron_right" size="18px" />
-          </div>
-        </router-link>
-
-        <router-link
-          to="/explore/map"
-          class="entry-card entry-card--map full-width-card"
-        >
-          <div class="entry-card__icon-wrap">
-            <q-icon name="map" size="22px" />
-          </div>
-          <div class="entry-card__body">
-            <h2 class="entry-card__title">Living Heritage Map</h2>
-            <p class="entry-card__text"
-              >Explore India visually through an interactive map.</p
-            >
-          </div>
-          <div class="entry-card__arrow">
-            <q-icon name="chevron_right" size="18px" />
-          </div>
-        </router-link>
+    <!-- Global Discovery Filters -->
+    <section class="section-spacing filters-section">
+      <!-- Type Filter -->
+      <div class="filter-group">
+        <q-btn-group rounded outline class="type-btn-group full-width">
+          <q-btn
+            :color="discovery.selectedType.value === 'all' ? 'primary' : 'grey-7'"
+            :outline="discovery.selectedType.value !== 'all'"
+            label="All"
+            @click="discovery.selectedType.value = 'all'"
+            class="col"
+            unelevated
+          />
+          <q-btn
+            :color="discovery.selectedType.value === 'heritage' ? 'primary' : 'grey-7'"
+            :outline="discovery.selectedType.value !== 'heritage'"
+            label="Heritage"
+            @click="discovery.selectedType.value = 'heritage'"
+            class="col"
+            unelevated
+          />
+          <q-btn
+            :color="discovery.selectedType.value === 'culture' ? 'primary' : 'grey-7'"
+            :outline="discovery.selectedType.value !== 'culture'"
+            label="Culture"
+            @click="discovery.selectedType.value = 'culture'"
+            class="col"
+            unelevated
+          />
+        </q-btn-group>
       </div>
-    </section>
 
-    <!-- Explore by Category -->
-    <section class="section-spacing">
-      <SectionHeader
-        title="Explore by Category"
-        actionLabel="View all"
-        actionTo="/heritage"
-      />
-      <div class="category-tiles-row">
-        <CategoryCard
-          v-for="cat in featuredHeritageCats"
-          :key="cat.id"
-          :category="cat"
-          :selected="false"
-          @select="goToHeritageCategory"
+      <!-- State Filter -->
+      <div class="chip-scroll-row q-mt-md">
+        <StateChip
+          :state="{ id: 'all', slug: '', name: 'All States' }"
+          :selected="discovery.selectedState.value === ''"
+          activeColor="#B84B2A"
+          @select="discovery.selectedState.value = ''"
         />
-      </div>
-      <div class="category-tiles-row q-mt-sm">
-        <CategoryCard
-          v-for="cat in featuredCultureCats"
-          :key="cat.id"
-          :category="cat"
-          :selected="false"
-          @select="goToCultureCategory"
-        />
-      </div>
-    </section>
-
-    <!-- Explore by State -->
-    <section class="section-spacing">
-      <SectionHeader title="Explore by State" actionLabel="View all" />
-      <div class="chip-scroll-row">
         <StateChip
           v-for="st in stateChipsWithIcons"
           :key="st.id"
           :state="st"
           :icon="st.icon"
-          :selected="selectedState === st.slug"
+          :selected="discovery.selectedState.value === st.slug"
           activeColor="#B84B2A"
           @select="toggleState"
         />
       </div>
-    </section>
 
-    <!-- Featured Heritage -->
-    <section class="section-spacing">
-      <SectionHeader
-        title="Featured Heritage"
-        actionLabel="View all"
-        actionTo="/heritage"
-      />
-      <div v-if="filteredHeritage.length > 0" class="featured-scroll-row">
-        <FeaturedVisualCard
-          v-for="item in filteredHeritage"
-          :key="item.id"
-          :item="item"
-          type="heritage"
-        />
-      </div>
-      <div v-else class="empty-state">
-        <q-icon name="search_off" class="empty-state__icon" />
-        <h3 class="empty-state__title">No heritage sites found</h3>
-        <p class="empty-state__subtitle">Try adjusting your search query</p>
-      </div>
-    </section>
-
-    <!-- Living Culture -->
-    <section class="section-spacing">
-      <SectionHeader
-        title="Living Culture"
-        actionLabel="View all"
-        actionTo="/culture"
-      />
-      <div v-if="filteredCulture.length > 0" class="featured-scroll-row">
-        <FeaturedVisualCard
-          v-for="item in filteredCulture"
-          :key="item.id"
-          :item="item"
-          type="culture"
-        />
-      </div>
-      <div v-else class="empty-state">
-        <q-icon name="search_off" class="empty-state__icon" />
-        <h3 class="empty-state__title">No results found</h3>
-        <p class="empty-state__subtitle"
-          >Try adjusting your filters or search</p
+      <!-- Dynamic Category Filter -->
+      <div v-if="discovery.availableCategories.value.length > 0" class="chip-scroll-row q-mt-md">
+        <q-chip
+          clickable
+          :color="discovery.selectedCategory.value === '' ? 'secondary' : 'grey-3'"
+          :text-color="discovery.selectedCategory.value === '' ? 'white' : 'grey-8'"
+          @click="discovery.selectedCategory.value = ''"
         >
+          All Categories
+        </q-chip>
+        <q-chip
+          v-for="cat in discovery.availableCategories.value"
+          :key="cat.id"
+          clickable
+          :color="discovery.selectedCategory.value === cat.slug ? 'secondary' : 'grey-3'"
+          :text-color="discovery.selectedCategory.value === cat.slug ? 'white' : 'grey-8'"
+          @click="discovery.selectedCategory.value = discovery.selectedCategory.value === cat.slug ? '' : cat.slug"
+        >
+          {{ cat.name }}
+        </q-chip>
       </div>
     </section>
+
+    <!-- DISCOVERY HUB (Curated) - Shown when no filters are active -->
+    <template v-if="!discovery.hasActiveFilters.value">
+      <!-- Heritage & Culture Entry Cards -->
+      <section class="section-spacing entry-section">
+        <div class="entry-cards-grid">
+          <router-link to="/heritage" class="entry-card entry-card--heritage">
+            <div class="entry-card__icon-wrap">
+              <q-icon name="account_balance" size="22px" />
+            </div>
+            <div class="entry-card__body">
+              <h2 class="entry-card__title">Heritage</h2>
+              <p class="entry-card__text">Monuments, forts, heritage sites & more</p>
+            </div>
+            <div class="entry-card__arrow">
+              <q-icon name="chevron_right" size="18px" />
+            </div>
+          </router-link>
+
+          <router-link to="/culture" class="entry-card entry-card--culture">
+            <div class="entry-card__icon-wrap">
+              <q-icon name="self_improvement" size="22px" />
+            </div>
+            <div class="entry-card__body">
+              <h2 class="entry-card__title">Culture</h2>
+              <p class="entry-card__text">Traditions, arts, festivals & more</p>
+            </div>
+            <div class="entry-card__arrow">
+              <q-icon name="chevron_right" size="18px" />
+            </div>
+          </router-link>
+
+          <router-link to="/explore/map" class="entry-card entry-card--map full-width-card">
+            <div class="entry-card__icon-wrap">
+              <q-icon name="map" size="22px" />
+            </div>
+            <div class="entry-card__body">
+              <h2 class="entry-card__title">Living Heritage Map</h2>
+              <p class="entry-card__text">Explore India visually through an interactive map.</p>
+            </div>
+            <div class="entry-card__arrow">
+              <q-icon name="chevron_right" size="18px" />
+            </div>
+          </router-link>
+        </div>
+      </section>
+
+      <!-- Featured Heritage -->
+      <section class="section-spacing">
+        <SectionHeader title="Featured Heritage" actionLabel="View all" actionTo="/heritage" />
+        <div class="featured-scroll-row">
+          <FeaturedVisualCard v-for="item in featuredHeritage" :key="item.id" :item="item" type="heritage" />
+        </div>
+      </section>
+
+      <!-- Living Culture -->
+      <section class="section-spacing">
+        <SectionHeader title="Living Culture" actionLabel="View all" actionTo="/culture" />
+        <div class="featured-scroll-row">
+          <FeaturedVisualCard v-for="item in featuredCulture" :key="item.id" :item="item" type="culture" />
+        </div>
+      </section>
+    </template>
+
+    <!-- SEARCH/RESULTS MODE - Shown when filters are active -->
+    <template v-else>
+      <section class="section-spacing results-section">
+        <div class="row items-center justify-between q-mb-md">
+          <div class="text-subtitle2 text-weight-bold text-grey-8">
+            {{ discovery.resultCount.value }} places and traditions found
+          </div>
+          <q-btn flat dense color="primary" label="Clear Filters" @click="discovery.resetFilters()" />
+        </div>
+
+        <div v-if="discovery.resultCount.value > 0" class="record-list">
+          <component
+            v-for="item in discovery.filteredResults.value"
+            :key="item.id"
+            :is="item.record_type === 'heritage' ? HeritageCard : CultureCard"
+            :item="item"
+          />
+        </div>
+        
+        <div v-else class="empty-state">
+          <q-icon name="search_off" class="empty-state__icon" />
+          <h3 class="empty-state__title">No results found</h3>
+          <p class="empty-state__subtitle">Try adjusting your filters or search</p>
+          <q-btn outline color="primary" label="Clear Filters" class="q-mt-md" @click="discovery.resetFilters()" />
+        </div>
+      </section>
+    </template>
 
     <!-- Map FAB -->
     <q-page-sticky position="bottom-right" :offset="[20, 20]">
@@ -189,10 +214,9 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { heritageCategories } from '@/data/heritageCategories.js'
-import { cultureCategories } from '@/data/cultureCategories.js'
+import { useDiscovery } from '@/composables/useDiscovery.js'
 import { states } from '@/data/states.js'
 import { allHeritage } from '@/data/heritage.js'
 import { allCulture } from '@/data/culture.js'
@@ -200,23 +224,19 @@ import { allCulture } from '@/data/culture.js'
 import HeroMonumentsBg from '@/components/decor/HeroMonumentsBg.vue'
 import SectionHeader from '@/components/discovery/SectionHeader.vue'
 import SearchBar from '@/components/discovery/SearchBar.vue'
-import CategoryCard from '@/components/discovery/CategoryCard.vue'
 import StateChip from '@/components/discovery/StateChip.vue'
 import FeaturedVisualCard from '@/components/discovery/FeaturedVisualCard.vue'
+import HeritageCard from '@/components/discovery/HeritageCard.vue'
+import CultureCard from '@/components/discovery/CultureCard.vue'
 
 const router = useRouter()
-const searchQuery = ref('')
-const selectedCategory = ref('')
-const selectedState = ref('')
 
-const featuredHeritageCats = computed(() => heritageCategories.slice(0, 5))
-const featuredCultureCats = computed(() => [
-  cultureCategories[0],
-  cultureCategories[1],
-  cultureCategories[3],
-  cultureCategories[2],
-  cultureCategories[6]
-])
+// Initialize Discovery Composable for Explore Page
+const discovery = useDiscovery({ syncRoute: true })
+
+// Curated content for the landing hub
+const featuredHeritage = computed(() => allHeritage.slice(0, 5))
+const featuredCulture = computed(() => allCulture.slice(0, 5))
 
 const stateChipsWithIcons = computed(() => {
   const iconMap = {
@@ -230,39 +250,9 @@ const stateChipsWithIcons = computed(() => {
   }))
 })
 
-const goToHeritageCategory = cat => {
-  router.push({ name: 'heritage', query: { category: cat.slug } })
-}
-
-const goToCultureCategory = cat => {
-  router.push({ name: 'culture', query: { category: cat.slug } })
-}
-
 const toggleState = state => {
-  selectedState.value = selectedState.value === state.slug ? '' : state.slug
+  discovery.selectedState.value = discovery.selectedState.value === state.slug ? '' : state.slug
 }
-
-const filterRecords = records => {
-  return records.filter(r => {
-    let matchesState = true
-    if (selectedState.value) {
-      matchesState = r.state === selectedState.value
-    }
-    let matchesSearch = true
-    if (searchQuery.value.trim()) {
-      const q = searchQuery.value.toLowerCase().trim()
-      matchesSearch =
-        (r.name && r.name.toLowerCase().includes(q)) ||
-        (r.category && r.category.toLowerCase().includes(q)) ||
-        (r.state && r.state.toLowerCase().includes(q)) ||
-        (r.shortDescription && r.shortDescription.toLowerCase().includes(q))
-    }
-    return matchesState && matchesSearch
-  })
-}
-
-const filteredHeritage = computed(() => filterRecords(allHeritage))
-const filteredCulture = computed(() => filterRecords(allCulture))
 </script>
 
 <style lang="scss" scoped>

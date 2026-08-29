@@ -4,13 +4,12 @@
     <div class="map-card">
       <q-icon name="explore" class="map-icon" />
       <div class="map-text">Interactive Map</div>
-      <div class="demo-badge">PLACEHOLDER</div>
     </div>
     <q-btn
       flat
       color="primary"
       label="Open Full Map &rarr;"
-      to="/explore"
+      to="/explore/map"
       no-caps
       class="explore-btn"
     />
@@ -54,17 +53,6 @@
   font-size: 0.875rem;
   color: var(--color-text-secondary, #5a5a6e);
   margin-top: 8px;
-}
-
-.demo-badge {
-  margin-top: 8px;
-  background: rgba(0, 0, 0, 0.1);
-  color: var(--color-text-secondary, #5a5a6e);
-  font-size: 0.625rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .explore-btn {

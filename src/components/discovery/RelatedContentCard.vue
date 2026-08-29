@@ -8,7 +8,7 @@
     @keydown.enter="navigateToDetail"
   >
     <div class="related-card__media">
-      <img
+      <img loading="lazy"
         v-if="imageUrl && !imageError"
         :src="imageUrl"
         :alt="item.name"
@@ -102,9 +102,9 @@ const stateName = computed(
 <style scoped lang="scss">
 .related-card {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(74, 44, 30, 0.08);
-  box-shadow: 0 4px 16px rgba(74, 44, 30, 0.05);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -115,7 +115,7 @@ const stateName = computed(
   &:hover,
   &:focus-visible {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(74, 44, 30, 0.12);
+    box-shadow: var(--shadow-soft);
     outline: none;
   }
 
