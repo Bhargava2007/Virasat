@@ -39,16 +39,10 @@ const tabs = [
   },
   { label: 'Trails', icon: 'o_route', iconActive: 'route', route: '/trails' },
   {
-    label: 'Passport',
-    icon: 'o_auto_stories',
-    iconActive: 'auto_stories',
-    route: '/passport'
-  },
-  {
-    label: 'Profile',
-    icon: 'o_person',
-    iconActive: 'person',
-    route: '/profile'
+    label: 'Legacy',
+    icon: 'o_menu_book',
+    iconActive: 'menu_book',
+    route: '/legacy-stories'
   }
 ]
 
