@@ -1,15 +1,15 @@
-<template>
-  <q-page class="legacy-page">
+﻿<template>
+  <q-page class="stories-page">
     <!-- Header -->
-    <header class="legacy-header">
-      <div class="legacy-header__bg-pattern"></div>
-      <div class="legacy-header__content">
+    <header class="stories-header">
+      <div class="stories-header__bg-pattern"></div>
+      <div class="stories-header__content">
         <div class="heritage-emblem">
           <q-icon name="auto_stories" size="32px" />
         </div>
-        <p class="legacy-header__eyebrow">Oral History of Odisha</p>
-        <h1 class="legacy-header__title">Legacy Stories</h1>
-        <p class="legacy-header__subtitle">
+        <p class="stories-header__eyebrow">Oral History of Odisha</p>
+        <h1 class="stories-header__title">Stories</h1>
+        <p class="stories-header__subtitle">
           Timeless folk tales, legends &amp; oral histories — preserved before they fade into silence
         </p>
         <div class="story-count-badge">
@@ -46,7 +46,6 @@
           <div class="story-card__accent"></div>
 
           <div class="story-card__body">
-            <!-- Category + read time row — no absolute positioning -->
             <div class="story-card__top-row">
               <span class="story-card__category">{{ story.category }}</span>
               <span class="story-card__read-time">
@@ -112,14 +111,14 @@ $accent: #B84B2A;
 $gold: #C9962A;
 $muted: #6B5240;
 
-.legacy-page {
+.stories-page {
   background: $parchment;
   min-height: 100vh;
   padding-bottom: 100px;
 }
 
 // === HEADER ===
-.legacy-header {
+.stories-header {
   position: relative;
   padding: 56px 24px 48px;
   overflow: hidden;
@@ -301,14 +300,13 @@ $colors: (
     gap: 0;
   }
 
-  // ---- TOP ROW: category pill + read time (inline, no overlap) ----
   &__top-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
     margin-bottom: 14px;
-    flex-wrap: wrap;          // wraps gracefully if text is long
+    flex-wrap: wrap;
   }
 
   &__category {
@@ -354,7 +352,6 @@ $colors: (
     overflow: hidden;
   }
 
-  // ---- FOOTER: region + era ----
   &__footer {
     display: flex;
     align-items: center;
@@ -390,7 +387,6 @@ $colors: (
     flex-shrink: 0;
   }
 
-  // ---- CTA ----
   &__cta {
     display: flex;
     align-items: center;
