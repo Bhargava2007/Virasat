@@ -89,9 +89,7 @@ export function getUnmappedRecords() {
 
       if (
         text.includes('statewide') |
-        text.includes('across rajasthan') |
-        text.includes('across tamil nadu') |
-        text.includes('across karnataka') |
+        text.includes('across odisha') |
         text.includes('state-wide')
       ) {
         type = 'statewide'

@@ -240,9 +240,7 @@ const featuredCulture = computed(() => allCulture.slice(0, 5))
 
 const stateChipsWithIcons = computed(() => {
   const iconMap = {
-    karnataka: 'account_balance',
-    rajasthan: 'fort',
-    'tamil-nadu': 'temple_hindu'
+    odisha: 'temple_hindu'
   }
   return states.map(s => ({
     ...s,

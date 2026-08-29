@@ -187,10 +187,10 @@ const badges = passport.earnedBadges
 const recent = passport.recentExplorations
 const stateProgress = passport.stateProgress
 
-// We only want to show the showcase states (Karnataka, Rajasthan, Tamil Nadu)
+// We only want to show the showcase states (Odisha)
 const activeStateProgress = computed(() => {
   return stateProgress.value.filter(s =>
-    ['karnataka', 'rajasthan', 'tamil-nadu'].includes(s.stateSlug)
+    ['odisha'].includes(s.stateSlug)
   )
 })
 

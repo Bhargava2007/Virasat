@@ -1,121 +1,223 @@
 /**
- * Verified Culture Coordinates Dataset — Stage 4
+ * Verified Culture Coordinates Dataset — Odisha Showcase State
  * City-level coordinates for city-bound living traditions & crafts.
  * Note: precision: 'city' indicates city hub center for geographical discovery.
  */
 
 export const cultureCoordinates = [
-  // KARNATAKA CITY-LINKED CULTURE
+  // BHUBANESWAR — DANCE & PERFORMING ARTS
   {
-    id: 'ka-culture-mysuru-dasara',
-    latitude: 12.3052,
-    longitude: 76.6552,
+    id: 'od-culture-odissi',
+    latitude: 20.2696,
+    longitude: 85.8408,
     precision: 'city',
-    locationLabel: 'Mysuru City Hub (Cultural Centre)',
-    sourceName: 'Karnataka Tourism / Mysuru Dasara Official',
-    sourceUrl: 'https://mysuredasara.gov.in/'
+    locationLabel: 'Bhubaneswar Cultural Hub (Rabindra Mandap)',
+    sourceName: 'Odisha Tourism / Sangeet Natak Akademi',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/odissi.html'
   },
   {
-    id: 'ka-culture-channapatna-toys',
-    latitude: 12.6517,
-    longitude: 77.2089,
+    id: 'od-culture-chhau',
+    latitude: 21.9324,
+    longitude: 86.7314,
     precision: 'city',
-    locationLabel: 'Channapatna Town Centre (Craft Hub)',
-    sourceName: 'GI Registry / Karnataka Tourism',
-    sourceUrl: 'https://karnatakatourism.org/'
+    locationLabel: 'Baripada, Mayurbhanj (Chhau Centre)',
+    sourceName: 'UNESCO ICH / Odisha Tourism',
+    sourceUrl: 'https://ich.unesco.org/en/RL/chhau-dance-00337'
   },
   {
-    id: 'ka-culture-mysore-silk',
-    latitude: 12.2958,
-    longitude: 76.6394,
+    id: 'od-culture-odissi-music',
+    latitude: 20.2701,
+    longitude: 85.8316,
     precision: 'city',
-    locationLabel: 'Mysuru Weaving Centre',
-    sourceName: 'KSIC Mysore Silk Official',
-    sourceUrl: 'https://ksicmysoresilk.com/'
-  },
-
-  // RAJASTHAN CITY-LINKED CULTURE
-  {
-    id: 'rj-culture-pushkar-fair',
-    latitude: 26.4897,
-    longitude: 74.5511,
-    precision: 'city',
-    locationLabel: 'Pushkar Town Grounds',
-    sourceName: 'Rajasthan Tourism / Pushkar Fair',
-    sourceUrl: 'https://www.tourism.rajasthan.gov.in/'
+    locationLabel: 'Bhubaneswar — Rajarani Music Festival Venue',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/'
   },
   {
-    id: 'rj-culture-desert-festival',
-    latitude: 26.9157,
-    longitude: 70.9083,
+    id: 'od-culture-paika-akhada',
+    latitude: 20.1864,
+    longitude: 85.7104,
     precision: 'city',
-    locationLabel: 'Jaisalmer Sands & City Centre',
-    sourceName: 'Rajasthan Tourism',
-    sourceUrl: 'https://www.tourism.rajasthan.gov.in/'
-  },
-  {
-    id: 'rj-culture-blue-pottery',
-    latitude: 26.9124,
-    longitude: 75.7873,
-    precision: 'city',
-    locationLabel: 'Jaipur Artisan Hub',
-    sourceName: 'Crafts Council of India / GI Registry',
-    sourceUrl: 'https://craftscouncilofindia.org/'
-  },
-  {
-    id: 'rj-culture-sanganeri-block-printing',
-    latitude: 26.8028,
-    longitude: 75.8014,
-    precision: 'city',
-    locationLabel: 'Sanganer Printing Hub',
-    sourceName: 'GI Registry India',
-    sourceUrl: 'https://ipindia.gov.in/'
+    locationLabel: 'Khurda (Paika Akhada Heritage Centre)',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/performing-arts/paika-akhada.html'
   },
 
-  // TAMIL NADU CITY-LINKED CULTURE
+  // PURI — FESTIVALS & RELIGIOUS CULTURE
   {
-    id: 'tn-culture-kanchipuram-silk',
-    latitude: 12.8342,
-    longitude: 79.7036,
-    precision: 'city',
-    locationLabel: 'Kanchipuram Silk Weaving Hub',
-    sourceName: 'GI Registry / Tamil Nadu Handlooms',
-    sourceUrl: 'https://www.tamilnadutourism.tn.gov.in/'
+    id: 'od-culture-rath-yatra',
+    latitude: 19.8047,
+    longitude: 85.8179,
+    precision: 'site',
+    locationLabel: 'Jagannath Temple — Grand Road (Bada Danda), Puri',
+    sourceName: 'Shree Jagannath Temple Administration',
+    sourceUrl: 'https://www.shreejagannath.org/'
   },
   {
-    id: 'tn-culture-thanjavur-painting',
-    latitude: 10.787,
-    longitude: 79.1378,
-    precision: 'city',
-    locationLabel: 'Thanjavur Art Heritage Centre',
-    sourceName: 'GI Registry / Tamil Nadu Tourism',
-    sourceUrl: 'https://www.tamilnadutourism.tn.gov.in/'
+    id: 'od-culture-odisha-mahaprasad',
+    latitude: 19.8046,
+    longitude: 85.8175,
+    precision: 'site',
+    locationLabel: 'Ananda Bazar, Jagannath Temple, Puri',
+    sourceName: 'Shree Jagannath Temple Administration',
+    sourceUrl: 'https://www.shreejagannath.org/'
   },
   {
-    id: 'tn-culture-madurai-sungudi',
-    latitude: 9.9252,
-    longitude: 78.1198,
+    id: 'od-culture-gotipua',
+    latitude: 19.8087,
+    longitude: 85.8234,
     precision: 'city',
-    locationLabel: 'Madurai Textile Hub',
+    locationLabel: 'Raghurajpur Craft Village, Puri district',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
+  },
+  {
+    id: 'od-culture-pattachitra',
+    latitude: 19.8110,
+    longitude: 85.8267,
+    precision: 'city',
+    locationLabel: 'Raghurajpur Heritage Craft Village',
+    sourceName: 'Odisha Tourism / GI Registry',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
+  },
+  {
+    id: 'od-culture-applique-pipili',
+    latitude: 19.9333,
+    longitude: 85.6,
+    precision: 'city',
+    locationLabel: 'Pipili Village, Puri district',
+    sourceName: 'GI Registry / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/pipili-applique-work.html'
+  },
+  {
+    id: 'od-culture-ikat-khandua',
+    latitude: 20.5667,
+    longitude: 85.8833,
+    precision: 'city',
+    locationLabel: 'Nuapatna Village, Cuttack district',
     sourceName: 'GI Registry India',
     sourceUrl: 'https://ipindia.gov.in/'
   },
+
+  // KONARK — DANCE FESTIVAL
   {
-    id: 'tn-culture-swamimalai-bronze',
-    latitude: 10.9575,
-    longitude: 79.3245,
+    id: 'od-culture-konark-dance-festival',
+    latitude: 19.8876,
+    longitude: 86.0945,
+    precision: 'site',
+    locationLabel: 'Konark Dance Festival Grounds, Konark Sun Temple',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/konark-dance-festival.html'
+  },
+
+  // CUTTACK — SILVER FILIGREE & DURGA PUJA
+  {
+    id: 'od-culture-silver-filigree',
+    latitude: 20.4686,
+    longitude: 85.8791,
     precision: 'city',
-    locationLabel: 'Swamimalai Metalcraft Hub',
+    locationLabel: 'Cuttack Silver Street (Tarini Chowk Area)',
+    sourceName: 'GI Registry / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/silver-filigree.html'
+  },
+  {
+    id: 'od-culture-durga-puja-odisha',
+    latitude: 20.4686,
+    longitude: 85.8791,
+    precision: 'city',
+    locationLabel: 'Cuttack — Mahanadi Ghats Durga Puja Grounds',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/durga-puja.html'
+  },
+
+  // SAMBALPUR — TEXTILES & FOLK TRADITIONS
+  {
+    id: 'od-culture-sambalpuri-weave',
+    latitude: 21.4669,
+    longitude: 83.9756,
+    precision: 'city',
+    locationLabel: 'Sambalpur Weavers\' Colony (Sonepur Road)',
+    sourceName: 'GI Registry / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/sambalpuri-saree.html'
+  },
+  {
+    id: 'od-culture-nuakhai',
+    latitude: 21.4669,
+    longitude: 83.9756,
+    precision: 'city',
+    locationLabel: 'Sambalpur City Centre (Nuakhai Festival Hub)',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/nuakhai.html'
+  },
+  {
+    id: 'od-culture-dalkhai',
+    latitude: 21.3333,
+    longitude: 83.5,
+    precision: 'city',
+    locationLabel: 'Bargarh — Dalkhai Folk Culture Hub',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/dalkhai.html'
+  },
+  {
+    id: 'od-culture-sambalpuri-folk-music',
+    latitude: 21.4669,
+    longitude: 83.9756,
+    precision: 'city',
+    locationLabel: 'Sambalpur Cultural Centre',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/'
+  },
+
+  // GANJAM — BOMKAI TEXTILES
+  {
+    id: 'od-culture-bomkai-silk',
+    latitude: 19.5667,
+    longitude: 84.9333,
+    precision: 'city',
+    locationLabel: 'Bomkai Village, Ganjam district',
     sourceName: 'GI Registry India',
     sourceUrl: 'https://ipindia.gov.in/'
   },
+
+  // DHENKANAL — DHOKRA
   {
-    id: 'tn-culture-bhavani-jamakkalam',
-    latitude: 11.446,
-    longitude: 77.68,
+    id: 'od-culture-dhokra',
+    latitude: 20.6596,
+    longitude: 85.5975,
     precision: 'city',
-    locationLabel: 'Bhavani Weaving Hub',
-    sourceName: 'GI Registry India',
-    sourceUrl: 'https://ipindia.gov.in/'
+    locationLabel: 'Dhenkanal — Dhokra Artisan Cluster',
+    sourceName: 'Crafts Council of India / Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/dhokra.html'
+  },
+
+  // BHUBANESWAR — PALM LEAF MANUSCRIPT & CUISINE
+  {
+    id: 'od-culture-palm-leaf-manuscript',
+    latitude: 20.2696,
+    longitude: 85.8408,
+    precision: 'city',
+    locationLabel: 'Bhubaneswar — Odisha State Museum / Raghurajpur',
+    sourceName: 'Odisha State Museum',
+    sourceUrl: 'https://odishamuseum.nic.in/'
+  },
+  {
+    id: 'od-culture-odisha-cuisine',
+    latitude: 19.8047,
+    longitude: 85.8179,
+    precision: 'city',
+    locationLabel: 'Puri — Odishan Cuisine Hub',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine.html'
+  },
+
+  // STATEWIDE FESTIVALS
+  {
+    id: 'od-culture-raja-parba',
+    latitude: 20.2961,
+    longitude: 85.8245,
+    precision: 'city',
+    locationLabel: 'Bhubaneswar (Raja Festival Centre)',
+    sourceName: 'Odisha Tourism',
+    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/raja-festival.html'
   }
 ]

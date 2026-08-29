@@ -280,46 +280,24 @@ const earnedBadges = computed(() => {
     })
 
   const sp = stateProgress.value
-  const ka = sp.find(s => s.stateSlug === 'karnataka')
-  const rj = sp.find(s => s.stateSlug === 'rajasthan')
-  const tn = sp.find(s => s.stateSlug === 'tamil-nadu')
+  const od = sp.find(s => s.stateSlug === 'odisha')
 
-  if (ka && ka.totalExplored >= 1)
+  if (od && od.totalExplored >= 1)
     badges.push({
-      id: 'ka-explorer',
-      name: 'Karnataka Explorer',
+      id: 'od-explorer',
+      name: 'Odisha Explorer',
       icon: 'place',
-      color: '#F57C00',
-      desc: 'Explored Karnataka heritage/culture'
-    })
-  if (rj && rj.totalExplored >= 1)
-    badges.push({
-      id: 'rj-explorer',
-      name: 'Rajasthan Explorer',
-      icon: 'place',
-      color: '#D81B60',
-      desc: 'Explored Rajasthan heritage/culture'
-    })
-  if (tn && tn.totalExplored >= 1)
-    badges.push({
-      id: 'tn-explorer',
-      name: 'Tamil Nadu Explorer',
-      icon: 'place',
-      color: '#00695C',
-      desc: 'Explored Tamil Nadu heritage/culture'
+      color: '#B84B2A',
+      desc: 'Explored Odisha heritage/culture'
     })
 
-  if (
-    ka?.totalExplored >= 1 &&
-    rj?.totalExplored >= 1 &&
-    tn?.totalExplored >= 1
-  ) {
+  if (od?.totalExplored >= 5) {
     badges.push({
       id: 'all-states',
       name: 'Pan-India Explorer',
       icon: 'public',
       color: '#D4A843',
-      desc: 'Explored records from all showcase states'
+      desc: 'Explored 5 or more records across Odisha'
     })
   }
   return badges
