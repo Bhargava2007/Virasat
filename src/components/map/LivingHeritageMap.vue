@@ -73,16 +73,6 @@ const STATE_BOUNDS = {
 // Multiple tile providers for fallback
 const TILE_PROVIDERS = [
   {
-    name: 'CartoDB Voyager',
-    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-    options: {
-      maxZoom: 20,
-      subdomains: 'abcd',
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-    }
-  },
-  {
     name: 'OpenStreetMap',
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     options: {
@@ -90,6 +80,16 @@ const TILE_PROVIDERS = [
       subdomains: 'abc',
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }
+  },
+  {
+    name: 'CartoDB Voyager',
+    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    options: {
+      maxZoom: 20,
+      subdomains: 'abcd',
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }
   }
 ]
@@ -176,13 +176,23 @@ function tryLoadTiles(providerIndex = 0) {
   tileLayer.addTo(mapInstance)
 }
 
+// Bounding box for India to strictly constrain map scrolling/panning
+const INDIA_BOUNDS = L.latLngBounds(
+  [6.0, 68.0],   // Southwest corner (Lakshadweep / Kanyakumari)
+  [37.5, 97.5]   // Northeast corner (Ladakh / Arunachal Pradesh)
+)
+
 onMounted(() => {
   if (!mapElement.value) return
 
-  // Center on India
+  // Center on India with strict boundary constraints
   mapInstance = L.map(mapElement.value, {
     center: [20.5937, 78.9629],
     zoom: 5,
+    minZoom: 4,
+    maxZoom: 18,
+    maxBounds: INDIA_BOUNDS,
+    maxBoundsViscosity: 1.0,
     zoomControl: false
   })
 
