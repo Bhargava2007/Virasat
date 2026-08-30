@@ -39,6 +39,7 @@ export const verifiedHeritage = [
         sourceUrl: 'https://whc.unesco.org/en/list/241'
       }
     ],
+<<<<<<< Updated upstream
     lastVerified: '2026-08-26'
   },
   {
@@ -69,6 +70,139 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "notableEvents": [
+      {
+        "title": "Narasimhadeva I's Victory Commemoration",
+        "year": "c. 1238 CE",
+        "description": "The temple's construction is historically linked to the Eastern Ganga king's military triumph over the Bengal Sultanate forces. The temple is believed to have been conceived as a monument of victory, with Surya (the sun) as the presiding deity of kingship and conquest in the Ganga royal tradition."
+      },
+      {
+        "title": "Visit of Ibn Battuta",
+        "year": "c. 1335 CE",
+        "description": "The Moroccan scholar and traveller Ibn Battuta is believed to have visited or described a great temple in Odisha during his travels across India. Scholars have debated whether his account of a \"Marvelous temple\" corresponds to Konark or another Odishan site, but the description of its scale and imagery aligns with Konark's grandeur."
+      },
+      {
+        "title": "Kalapahad's Raid on Odisha",
+        "year": "1568 CE",
+        "description": "The Afghan general Kalapahad (Kalapahar), who served under Sultan Sulaiman Karrani of Bengal, raided Odisha and targeted the major temple complexes. The Konark temple's consecrated deities were removed by priests and hidden to protect them. This event is seen as the beginning of the temple's decline as an active religious centre."
+      },
+      {
+        "title": "Codification as an ASI-Protected Monument",
+        "year": "1901 CE",
+        "description": "Under the Ancient Monuments Preservation Act, the Konark Sun Temple was declared a protected monument by the Archaeological Survey of India under British India. This triggered the major conservation campaigns of the early 20th century and prevented further structural deterioration."
+      },
+      {
+        "title": "Magha Saptami Solar Eclipse Pilgrimage",
+        "year": "Annual — January/February",
+        "description": "On the seventh day of the bright fortnight of the Hindu month of Magha (January–February), thousands of pilgrims gather at Konark for the Magha Saptami festival, also called Chandrabhaga Mela. Pilgrims bathe in the Chandrabhaga river (historically adjacent to the temple) at sunrise, believing the first rays of the sun falling on the temple at this time carry special healing power. This pilgrimage tradition predates the current temple structure."
+      }
+    ],
+    "traditionsSpawned": [
+      {
+        "name": "Konark Dance Festival",
+        "type": "Classical Dance Festival",
+        "icon": "self_improvement",
+        "description": "Established in 1986 by the Odisha Tourism and Culture Department, the Konark Dance Festival is held annually from December 1–5 in the open-air auditorium at the base of the Sun Temple. The temple serves as the dramatic backdrop. India's seven major classical dance forms — Odissi, Bharatanatyam, Kuchipudi, Manipuri, Mohiniattam, Kathak, and Chhau — are performed here. The festival is now one of India's most-watched classical dance events and draws international performers and tourists. The location of the festival was deliberately chosen because the temple itself was, in its active life, a centre of ritual dance performed by devadasis (temple dancers) in the Natya Mandapa (now mostly in ruins)."
+      },
+      {
+        "name": "Odissi Dance — Mahari & Gotipua Traditions",
+        "type": "Classical Dance Form",
+        "icon": "theater_comedy",
+        "description": "The Konark temple's Natya Mandapa (dance hall) was the institutional home of devadasi (Mahari) dance, a ritual tradition of women consecrated to perform for the deity. The Mahari tradition at Konark directly contributed to the codification and revival of Odissi as a classical dance form in the 1950s–60s. The angular positions of the Surya sculptures — particularly the \"Tribhanga\" (three-bend posture) — were studied by Guru Kelucharan Mohapatra and other revivalists and became foundational to Odissi's vocabulary. Without Konark's sculptural archive, the revival of Odissi as we know it may not have been possible."
+      },
+      {
+        "name": "Magha Saptami Pilgrimage & Sun-Worship Ritual",
+        "type": "Religious Tradition & Pilgrimage",
+        "icon": "wb_sunny",
+        "description": "The Chandrabhaga Mela (also called Magha Saptami Mela) is an annual pilgrimage in which tens of thousands bathe in the Chandrabhaga river at dawn, oriented toward the rising sun as it aligns with the temple axis. The ritual draws on a belief that the first rays of the sun on Magha Saptami pass through the temple sanctum and carry divine healing power. This tradition has continued uninterrupted for at least 700 years and is closely tied to the temple's solar alignment by its original architects."
+      },
+      {
+        "name": "Konark as a Motif in Odishan Art & Craft",
+        "type": "Living Craft Tradition",
+        "icon": "palette",
+        "description": "The 24 wheels of the Konark chariot are perhaps the single most reproduced motif in Odishan craft. The wheel appears in Pattachitra paintings, Sambalpuri ikat sarees, silver filigree (tarakasi) work from Cuttack, stone carvings, and applied art across the state. The Odisha government uses the Konark wheel on the state seal and the state emblem. This iconographic life of the temple — long after its structural life ended — represents a rare case of a ruined monument continuing to actively shape a regional visual identity across multiple craft traditions simultaneously."
+      }
+    ],
+    "activeUsePeriod": "The Konark Sun Temple functioned as an active Hindu temple — with daily rituals, devadasi (Mahari) dance, seasonal festivals, and pilgrimage traffic — from approximately 1250 CE to the late 16th century, roughly 300 years. The Kalapahad raid of 1568 CE and subsequent years saw the removal of the consecrated deities, after which the temple gradually ceased to function as a living religious centre. The main sanctuary likely collapsed between the 16th and 18th centuries, though the exact cause remains debated (theories include storm damage, structural failure of the iron beams, and deliberate dismantling). The Jagamohana has survived and is the dominant standing structure today. Since its declaration as an ASI monument and later a UNESCO World Heritage Site, the temple has taken on a second life as one of India's foremost archaeological and cultural tourism sites, receiving 2–3 million visitors annually.",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg/1280px-Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument (Centrally Protected Monument). Sand-filled interior of the Jagamohana to preserve structural integrity. UNESCO inscription since 1984. Ongoing conservation and monitoring by ASI Bhubaneswar circle.",
+    "relatedHeritageIds": [
+      "od-heritage-jagannath-puri",
+      "od-heritage-lingaraja"
+    ],
+    "relatedCultureIds": [
+      "od-culture-odissi",
+      "od-culture-konark-dance-festival"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+      {
+        "sourceName": "UNESCO World Heritage Centre — Sun Temple, Konark",
+        "sourceType": "UNESCO",
+        "sourceUrl": "https://whc.unesco.org/en/list/246/"
+      },
+      {
+        "sourceName": "Archaeological Survey of India — Konark",
+        "sourceType": "Government",
+        "sourceUrl": "https://asi.nic.in/tag/konark/"
+      },
+      {
+        "sourceName": "Thomas E. Donaldson — Hindu Temple Art of Orissa (Brill, 1985)",
+        "sourceType": "Academic",
+        "sourceUrl": "https://brill.com/display/title/3480"
+      },
+      {
+        "sourceName": "Odisha Tourism — Konark Sun Temple",
+        "sourceType": "Government Tourism",
+        "sourceUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/konark-sun-temple.html"
+      }
+    ],
+    "lastVerified": "2026-08-30"
+  },
+  {
+    "id": "od-heritage-jagannath-puri",
+    "slug": "jagannath-temple-puri",
+    "name": "Jagannath Temple, Puri",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Puri district",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "One of the four sacred Char Dham pilgrimage sites of Hinduism, the 12th-century Jagannath Temple at Puri is the abode of Lord Jagannath and home to the world-famous Rath Yatra.",
+    "history": "The present temple was built by King Anantavarman Chodaganga Deva in the 12th century CE on a site of earlier shrines. It has been a major pilgrimage destination for over 800 years.",
+    "culturalSignificance": "The temple is a living place of worship serving millions of pilgrims annually. The Mahaprasad (sacred food offering) and the Rath Yatra (Chariot Festival) are globally recognized traditions originating here.",
+    "architecture": "Kalinga-style with a 65-metre high Rekha Deula (curvilinear shikhara). The complex covers over 10 acres and contains more than 120 temples and shrines within its fortified walls.",
+    "historicalPeriod": "12th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Jagannath_Temple_Puri.jpg/1280px-Jagannath_Temple_Puri.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Jagannath_Temple%2C_Puri_02.jpg/1280px-Jagannath_Temple%2C_Puri_02.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument. Managed by the Shree Jagannath Temple Administration (SJTA).",
+    "relatedHeritageIds": [
+      "od-heritage-konark",
+      "od-heritage-lingaraja"
+    ],
+    "relatedCultureIds": [
+      "od-culture-rath-yatra",
+      "od-culture-odisha-mahaprasad"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName:
           'Karnataka Tourism — Mysore Palace (Amba Vilas Palace), Mysuru',
@@ -85,6 +219,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-badami',
     slug: 'badami',
     name: 'Badami',
@@ -112,6 +247,41 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-lingaraja",
+    "slug": "lingaraja-temple",
+    "name": "Lingaraja Temple",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "The largest and most prominent temple of Bhubaneswar, the 11th-century Lingaraja Temple is dedicated to Lord Shiva and is the finest surviving example of Kalinga temple architecture.",
+    "history": "Built mainly by King Jajati Keshari around 1090–1100 CE, the Lingaraja Temple has grown through additions by successive Eastern Ganga kings. It is one of the oldest and most sacred Shaivite temples in Odisha.",
+    "culturalSignificance": "The temple remains an active place of worship. It defines the skyline of the \"Temple City\" of Bhubaneswar and is central to Odishan Shaivite tradition and the annual Shivaratri celebrations.",
+    "architecture": "Kalinga Rekha Deula standing 55 metres tall, considered the most mature expression of the Kalinga architectural style. The compound contains over 150 smaller shrines and a sacred tank (Bindu Sagar).",
+    "historicalPeriod": "11th century CE (c. 1090–1100 CE)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lingaraja_Temple_01.jpg/1280px-Lingaraja_Temple_01.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-rajarani",
+      "od-heritage-mukteswar"
+    ],
+    "relatedCultureIds": [
+      "od-culture-odissi"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Badami',
         sourceType: 'Government tourism',
@@ -121,6 +291,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-pattadakal',
     slug: 'group-of-monuments-at-pattadakal',
     name: 'Group of Monuments at Pattadakal',
@@ -147,6 +318,41 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-rajarani",
+    "slug": "rajarani-temple",
+    "name": "Rajarani Temple",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "An 11th-century sandstone temple in Bhubaneswar famed for its intricate sculptural decoration and unique tower adorned with clusters of smaller turrets.",
+    "history": "Built around the 11th century CE, the temple's original dedication is unknown (the name \"Rajarani\" refers to the red and gold sandstone used locally). Its absence of a presiding deity makes it unusual among Odishan temples.",
+    "culturalSignificance": "The Rajarani Temple hosts the annual Rajarani Music Festival, one of the premier classical music events of eastern India, held against the backdrop of its illuminated spire.",
+    "architecture": "Kalinga Rekha Deula with a distinctive tower encrusted with miniature turrets (anga shikharas). Exceptionally rich sculptural programme with navagrahas, dikpalas, and apsara figures.",
+    "historicalPeriod": "11th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/9b/Rajarani_Temple_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Rajarani_Temple_02.jpg/1280px-Rajarani_Temple_02.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-lingaraja",
+      "od-heritage-mukteswar"
+    ],
+    "relatedCultureIds": [
+      "od-culture-odissi"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName:
           'UNESCO World Heritage Centre — Group of Monuments at Pattadakal',
@@ -157,6 +363,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-aihole',
     slug: 'aihole',
     name: 'Aihole',
@@ -183,6 +390,41 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-mukteswar",
+    "slug": "mukteswar-temple",
+    "name": "Mukteswar Temple",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "A 10th-century Shiva temple celebrated as the \"gem of Odishan architecture\", remarkable for its ornate torana (arched gateway) — unique in Odishan temple tradition.",
+    "history": "Built around 950 CE, the Mukteswar Temple is attributed to the Somavamshi dynasty. Although small in scale, it is considered a masterpiece of Kalinga temple art for its sculptural refinement.",
+    "culturalSignificance": "The Mukteswar Dance Festival, held annually at the temple premises, is a flagship classical dance event showcasing Odissi and other Indian classical dance forms.",
+    "architecture": "Kalinga Rekha Deula (11 m tall) with an elaborately carved torana gateway, a kunda (tank), and exceptionally refined sculptural decoration including celestial maidens and scenes from the Panchatantra.",
+    "historicalPeriod": "10th century CE (c. 950 CE)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mukteshvara_Temple%2C_Bhubaneswar.jpg/1280px-Mukteshvara_Temple%2C_Bhubaneswar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Torana_of_the_Mukteshvara_Temple%2C_Bhubaneswar_03.jpg/1280px-Torana_of_the_Mukteshvara_Temple%2C_Bhubaneswar_03.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-lingaraja",
+      "od-heritage-rajarani"
+    ],
+    "relatedCultureIds": [
+      "od-culture-odissi"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Aihole',
         sourceType: 'Government tourism',
@@ -198,6 +440,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-belur-channakeshava',
     slug: 'channakeshava-temple-belur',
     name: 'Channakeshava Temple, Belur',
@@ -228,6 +471,39 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-parasuramesvara",
+    "slug": "parasuramesvara-temple",
+    "name": "Parasuramesvara Temple",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "The best-preserved and earliest surviving temple of Bhubaneswar (c. 650 CE), marking the beginning of the Kalinga temple-building tradition.",
+    "history": "Built around 650 CE in the late Gupta / early Shailodbhava period, the Parasuramesvara Temple is the oldest substantially intact temple in Bhubaneswar and a prototype of the Kalinga style.",
+    "culturalSignificance": "It represents the starting point of the Odishan temple-building tradition that culminated in the Lingaraja and Konark temples, making it of immense art-historical significance.",
+    "architecture": "Early Rekha Deula with a flat-roofed Jagamohana. Panels depicting Lakulisha, Kartikeya, Ganesha, and Nataraja are among the finest early Odishan sculptures.",
+    "historicalPeriod": "7th century CE (c. 650 CE)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Parsurameswara_temple_complex.jpg/1280px-Parsurameswara_temple_complex.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Parasurameswar_temple_with_linga.jpg/1280px-Parasurameswar_temple_with_linga.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-lingaraja",
+      "od-heritage-mukteswar"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName:
           'UNESCO World Heritage Centre — Sacred Ensembles of the Hoysalas',
@@ -238,6 +514,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-halebidu-hoysalesvara',
     slug: 'hoysalesvara-temple-halebidu',
     name: 'Hoysalesvara Temple, Halebidu',
@@ -268,6 +545,38 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-udayagiri-khandagiri",
+    "slug": "udayagiri-khandagiri-caves",
+    "name": "Udayagiri & Khandagiri Caves",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "archaeological-sites",
+    "categoryName": "Archaeological Site",
+    "shortDescription": "Twin hills with rock-cut caves dating from the 2nd century BCE, built during the reign of the Jain king Kharavela of the Mahameghavahana dynasty.",
+    "history": "The caves were excavated primarily during the reign of King Kharavela (c. 169–130 BCE). The Hathigumpha Inscription on Udayagiri is one of the longest and most important Brahmi rock inscriptions in India.",
+    "culturalSignificance": "The sites provide the earliest evidence of Jain patronage and political power in Odisha. The Hathigumpha Inscription gives a detailed account of Kharavela's conquests and benevolent rule.",
+    "architecture": "Rock-cut caves on two hills: Udayagiri (18 caves) and Khandagiri (15 caves), with sculpted friezes depicting royal court scenes, yaksha and yakshini figures, and floral/animal motifs.",
+    "historicalPeriod": "2nd century BCE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Udayagiri_and_Khandagiri_Caves_2024_04.jpg/1280px-Udayagiri_and_Khandagiri_Caves_2024_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Udayagiri_and_Khandagiri_Caves_2024_11.jpg/1280px-Udayagiri_and_Khandagiri_Caves_2024_11.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-dhauligiri"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [
+      "trail-buddhist-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName:
           'UNESCO World Heritage Centre — Sacred Ensembles of the Hoysalas',
@@ -278,6 +587,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-somanathapura-keshava',
     slug: 'keshava-temple-somanathapura',
     name: 'Keshava Temple, Somanathapura',
@@ -308,6 +618,39 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-dhauligiri",
+    "slug": "dhauligiri",
+    "name": "Dhauligiri",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar (Dhauli)",
+    "category": "archaeological-sites",
+    "categoryName": "Archaeological Site",
+    "shortDescription": "Site of the Kalinga War (c. 261 BCE) where Emperor Ashoka's edicts are carved into a rock mass — the only Ashokan edicts that explicitly mention the Kalinga War.",
+    "history": "The Kalinga War was fought near Dhauli around 261 BCE. Ashoka's remorse led to his conversion to Buddhism. The Dhauli rock edicts (Major Rock Edicts XI–XIII) are among the most important epigraphic records in Indian history.",
+    "culturalSignificance": "A place of profound historical and spiritual significance, Dhauli is sacred to both Buddhists and Hindus. The Shanti Stupa (Peace Pagoda), built in 1972 by Japanese Buddhists, stands atop the hill.",
+    "architecture": "Ashokan rock edicts carved into a natural rock face. The Elephant Rock (partially carved elephant emerging from rock) is a notable early Buddhist sculpture. The white Shanti Stupa nearby is a modern pilgrimage monument.",
+    "historicalPeriod": "3rd century BCE (c. 261 BCE)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bd/ShantiSthupa_Dhauli.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Dhauli_Shanti_Stupa_carvings1.jpg/1280px-Dhauli_Shanti_Stupa_carvings1.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-lalitgiri",
+      "od-heritage-udayagiri-khandagiri"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [
+      "trail-buddhist-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName:
           'UNESCO World Heritage Centre — Sacred Ensembles of the Hoysalas',
@@ -318,6 +661,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-bidar-fort',
     slug: 'bidar-fort',
     name: 'Bidar Fort',
@@ -344,6 +688,40 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-lalitgiri",
+    "slug": "lalitgiri-buddhist-complex",
+    "name": "Lalitgiri Buddhist Complex",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Cuttack district",
+    "category": "archaeological-sites",
+    "categoryName": "Archaeological Site",
+    "shortDescription": "One of the oldest Buddhist sites in India (1st century BCE – 15th century CE), containing mahastupas, monasteries, and intricately carved Buddha images.",
+    "history": "Lalitgiri has been an active Buddhist site from at least the 1st century BCE through the 15th century CE. Excavations revealed a sealed relic casket inside the main mahastupa, establishing it as a major pilgrimage site in ancient India.",
+    "culturalSignificance": "Along with Ratnagiri and Udayagiri (Jajpur), Lalitgiri forms the \"Diamond Triangle\" of Buddhist pilgrimage sites in Odisha that were major centres of Vajrayana Buddhist learning.",
+    "architecture": "A complex of monasteries (viharas), a large mahastupa, smaller stupas, and votive stupas with fine sculpted Buddha and Bodhisattva images in chlorite stone.",
+    "historicalPeriod": "1st century BCE – 15th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Mahastupha_at_Lalitgiri.jpg/1280px-Mahastupha_at_Lalitgiri.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/View_from_Lalitgiri%2C_Odisha.jpg/1280px-View_from_Lalitgiri%2C_Odisha.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument. Site museum maintained by ASI.",
+    "relatedHeritageIds": [
+      "od-heritage-ratnagiri",
+      "od-heritage-udayagiri-boudh",
+      "od-heritage-dhauligiri"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [
+      "trail-buddhist-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Bidar Fort',
         sourceType: 'Government tourism',
@@ -353,6 +731,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-gol-gumbaz',
     slug: 'gol-gumbaz',
     name: 'Gol Gumbaz',
@@ -379,6 +758,39 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-ratnagiri",
+    "slug": "ratnagiri-buddhist-complex",
+    "name": "Ratnagiri Buddhist Complex",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Jajpur district",
+    "category": "archaeological-sites",
+    "categoryName": "Archaeological Site",
+    "shortDescription": "The most extensively excavated of the three Buddhist \"Diamond Triangle\" sites in Odisha, featuring a large stupa complex and exquisitely carved monastery doorways.",
+    "history": "Ratnagiri (7th–12th century CE) was a major Vajrayana Buddhist monastic institution, possibly referred to as \"Pushpagiri Vihara\" in ancient texts. It attracted Buddhist scholars from across Asia.",
+    "culturalSignificance": "The site's monumental monastery doorways are among the finest examples of early medieval Buddhist decorative art in India. Numerous Buddha, Bodhisattva, and Tantric deity sculptures have been recovered.",
+    "architecture": "A brick-built mahastupa, two excavated monasteries with beautifully carved entrances, and numerous votive stupas. The main stupa is encased with decorated stone panels.",
+    "historicalPeriod": "7th–12th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ratnagiri_roof-top_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/At_Ratnagiri_%28Orissa%29_06.jpg/1280px-At_Ratnagiri_%28Orissa%29_06.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument. Site museum on premises.",
+    "relatedHeritageIds": [
+      "od-heritage-lalitgiri",
+      "od-heritage-udayagiri-boudh"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [
+      "trail-buddhist-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Vijayapura',
         sourceType: 'Government tourism',
@@ -388,6 +800,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-chitradurga-fort',
     slug: 'chitradurga-fort',
     name: 'Chitradurga Fort',
@@ -414,6 +827,39 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-udayagiri-boudh",
+    "slug": "udayagiri-buddhist-complex",
+    "name": "Udayagiri Buddhist Complex (Jajpur)",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Jajpur district",
+    "category": "archaeological-sites",
+    "categoryName": "Archaeological Site",
+    "shortDescription": "The third site of Odisha's Buddhist \"Diamond Triangle\", with a large brick stupa and monastery remains dating to the 7th–12th centuries CE.",
+    "history": "Udayagiri (Jajpur) flourished as a Buddhist monastic complex alongside Ratnagiri and Lalitgiri in the post-Gupta and early medieval periods. It was part of an interconnected Buddhist university landscape in coastal Odisha.",
+    "culturalSignificance": "Together with Ratnagiri and Lalitgiri, Udayagiri formed one of the most significant concentrations of Buddhist monasticism in eastern India during the Vajrayana period.",
+    "architecture": "Remains of a large stupa and brick monastery. Sculptures including standing Bodhisattvas recovered from the site are displayed in the Patna Museum and ASI site museum.",
+    "historicalPeriod": "7th–12th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Udayagiri_WIKI.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Udayagiri_Caves_-_Rani_Gumpha_01.jpg/1280px-Udayagiri_Caves_-_Rani_Gumpha_01.jpg"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [
+      "od-heritage-ratnagiri",
+      "od-heritage-lalitgiri"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [
+      "trail-buddhist-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Chitradurga Fort',
         sourceType: 'Government tourism',
@@ -424,6 +870,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-srirangapatana',
     slug: 'srirangapatana',
     name: 'Srirangapatana',
@@ -448,6 +895,36 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-barabati-fort",
+    "slug": "barabati-fort",
+    "name": "Barabati Fort",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Cuttack",
+    "category": "forts",
+    "categoryName": "Fort",
+    "shortDescription": "A medieval fort in Cuttack, the erstwhile capital of Odisha, with origins in the 9th–14th centuries, once housing a nine-storeyed palace known from historical accounts.",
+    "history": "The fort was built by the Soma dynasty (9th century) and later expanded by the Gangas and Gajapati kings. It served as the seat of Odishan kings for centuries until its destruction by Mughal forces. The Mahanadi moat is still visible.",
+    "culturalSignificance": "Barabati Fort is a symbol of Odishan sovereignty and resistance. The annual Barabati Stadium — built within the fort precinct — hosts international cricket matches, blending heritage and modern civic life.",
+    "architecture": "Earthen ramparts with a moat fed by the Mahanadi river. Remains of gateways and the base of the palace are visible. A small ASI museum is located within the complex.",
+    "historicalPeriod": "9th–14th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Entrance_of_Barabati_fort.jpg/1280px-Entrance_of_Barabati_fort.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Barabati_durga_Cuttack_Barabati_Fort_Front-1.JPG/1280px-Barabati_durga_Cuttack_Barabati_Fort_Front-1.JPG"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument.",
+    "relatedHeritageIds": [],
+    "relatedCultureIds": [
+      "od-culture-rath-yatra"
+    ],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Srirangapatana',
         sourceType: 'Government tourism',
@@ -457,6 +934,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-daria-daulat-bagh',
     slug: 'daria-daulat-bagh',
     name: 'Daria Daulat Bagh (Tipu Sultan’s Summer Palace)',
@@ -482,6 +960,36 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-khandagiri-jain",
+    "slug": "khandagiri-palace-of-kharavela",
+    "name": "Kharavela's Palace (Khandagiri)",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "forts",
+    "categoryName": "Fort & Palace",
+    "shortDescription": "The royal Jain palace-cave complex of Emperor Kharavela on Khandagiri Hill, featuring the double-storey Ananta Cave with rich sculptural programmes.",
+    "history": "Excavated during the reign of Kharavela (c. 169–130 BCE) as royal residential caves for Jain monks. The Ananta (Elephant) Cave on Khandagiri is the most elaborate double-storeyed cave in the complex.",
+    "culturalSignificance": "The site is a major Jain pilgrimage destination. A modern Jain temple at the summit draws pilgrims year-round and the entire hill hosts an annual fair during Mahavir Jayanti.",
+    "architecture": "Rock-cut double-storey Ananta Cave with intricately carved façade, female figures, geese, and elephants. Later painted interiors by Jain pilgrims.",
+    "historicalPeriod": "2nd century BCE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Udayagiri_and_Khandagiri_Caves_2024_04.jpg/1280px-Udayagiri_and_Khandagiri_Caves_2024_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Udayagiri_WIKI.JPG/1280px-Udayagiri_WIKI.JPG"
+],
+    "media": [],
+    "conservationInfo": "ASI-protected monument. Part of the Udayagiri-Khandagiri complex.",
+    "relatedHeritageIds": [
+      "od-heritage-udayagiri-khandagiri"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Tipu Sultan’s Summer Palace',
         sourceType: 'Government tourism',
@@ -492,6 +1000,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-bengaluru-palace',
     slug: 'bengaluru-palace',
     name: 'Bengaluru Palace',
@@ -517,6 +1026,38 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-chilika-lake",
+    "slug": "chilika-lake",
+    "name": "Chilika Lake",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Puri / Khurda / Ganjam districts",
+    "category": "natural-heritage",
+    "categoryName": "Natural Heritage",
+    "shortDescription": "Asia's largest brackish-water coastal lagoon and India's first Ramsar Wetland of International Importance, home to over a million migratory birds and the endangered Irrawaddy dolphin.",
+    "history": "Chilika has been a fishing and trading hub for millennia, mentioned in Ptolemy's Geographia. It was designated India's first Ramsar site in 1981. Ecological restoration efforts since 2000 have revived the lake after near-collapse.",
+    "culturalSignificance": "Chilika is central to the livelihood of over 200,000 fisherfolk communities. The Kalijai Temple on an island within the lake is a major pilgrimage site. The lake hosts the annual Chilika Bird Festival.",
+    "architecture": null,
+    "historicalPeriod": null,
+    "unescoStatus": "Ramsar Wetland of International Importance (1981)",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/94/Birds_eyeview_of_Chilika_Lake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mouth_of_Chilika_Lake.jpg/1280px-Mouth_of_Chilika_Lake.jpg"
+],
+    "media": [],
+    "conservationInfo": "Managed by Chilika Development Authority (CDA). Ramsar site since 1981.",
+    "relatedHeritageIds": [
+      "od-heritage-bhitarkanika"
+    ],
+    "relatedCultureIds": [
+      "od-culture-raja-parba"
+    ],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Bengaluru',
         sourceType: 'Government tourism',
@@ -532,6 +1073,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-melukote',
     slug: 'melukote',
     name: 'Melukote',
@@ -556,6 +1098,36 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-simlipal",
+    "slug": "simlipal-national-park",
+    "name": "Simlipal National Park & Biosphere Reserve",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Mayurbhanj district",
+    "category": "natural-heritage",
+    "categoryName": "Natural Heritage",
+    "shortDescription": "A UNESCO Biosphere Reserve and Project Tiger reserve in northern Odisha, sheltering tigers, elephants, leopards and over 300 bird species amid sal forests and waterfalls.",
+    "history": "Simlipal was declared a wildlife sanctuary in 1979, a Project Tiger reserve the same year, a National Park in 1980, and a UNESCO Biosphere Reserve in 2009.",
+    "culturalSignificance": "Simlipal is the traditional homeland of the Ho, Kolha, and Santali tribes. The rare Simlipal melanistic tigers — exhibiting pseudomelanistic stripe patterns — are found only here.",
+    "architecture": null,
+    "historicalPeriod": null,
+    "unescoStatus": "UNESCO Biosphere Reserve (2009)",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/be/Simlipal_tiger_reserve.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Palpala_River_near_lulung%2C_Similipal_National_Park.jpg/1280px-Palpala_River_near_lulung%2C_Similipal_National_Park.jpg"
+],
+    "media": [],
+    "conservationInfo": "Project Tiger reserve. UNESCO Biosphere Reserve. Managed by Odisha Forest Department.",
+    "relatedHeritageIds": [
+      "od-heritage-bhitarkanika"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Melukote',
         sourceType: 'Government tourism',
@@ -565,6 +1137,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-kavaledurga-fort',
     slug: 'kavaledurga-fort',
     name: 'Kavaledurga Fort',
@@ -590,6 +1163,36 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-bhitarkanika",
+    "slug": "bhitarkanika-mangroves",
+    "name": "Bhitarkanika National Park",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Kendrapara district",
+    "category": "natural-heritage",
+    "categoryName": "Natural Heritage",
+    "shortDescription": "India's second-largest mangrove ecosystem and a Ramsar wetland, home to the world's largest nesting population of saltwater crocodiles and Olive Ridley sea turtles.",
+    "history": "Bhitarkanika was declared a wildlife sanctuary in 1975, a national park in 1998, and a Ramsar site in 2002. It was the hunting reserve of the Bhanj royal family of Keonjhar.",
+    "culturalSignificance": "The nearby Gahirmatha Marine Sanctuary hosts the world's largest annual Olive Ridley sea turtle mass nesting (arribada), drawing global conservation attention.",
+    "architecture": null,
+    "historicalPeriod": null,
+    "unescoStatus": "Ramsar Wetland of International Importance (2002)",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Sunrise_at_Bhitarakanika.jpg/1280px-Sunrise_at_Bhitarakanika.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Bhitarkanika_Mangroves_Flora_and_Fauna_04.JPG/1280px-Bhitarkanika_Mangroves_Flora_and_Fauna_04.JPG"
+],
+    "media": [],
+    "conservationInfo": "National Park and Ramsar Wetland. Managed by Odisha Forest Department.",
+    "relatedHeritageIds": [
+      "od-heritage-chilika-lake"
+    ],
+    "relatedCultureIds": [],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Kavaledurga Fort',
         sourceType: 'Government tourism',
@@ -600,6 +1203,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-mirjan-fort',
     slug: 'mirjan-fort',
     name: 'Mirjan Fort',
@@ -622,6 +1226,42 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-puri-town",
+    "slug": "puri-sacred-town",
+    "name": "Puri — Sacred Town",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Puri district",
+    "category": "pilgrimage-towns",
+    "categoryName": "Pilgrimage Town",
+    "shortDescription": "One of the four sacred Char Dham pilgrimage towns of Hinduism, Puri is a living heritage city shaped by centuries of devotion to Lord Jagannath.",
+    "history": "Puri has been a pilgrimage town for over a millennium. Medieval pilgrims like Adi Shankaracharya, Ramananda, and Chaitanya Mahaprabhu visited and left their mark on the town's religious culture.",
+    "culturalSignificance": "The Rath Yatra, Snana Yatra, and numerous other annual rituals make Puri one of India's most active living heritage cities. The Swargadwar cremation ghat and the entire seafront carry deep religious meaning.",
+    "architecture": "A town shaped by the Jagannath Temple as its spiritual centre, with Matha (monastic institutions) established by different Vaishnava sects, and a seafront ghats system.",
+    "historicalPeriod": "8th century CE onwards",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Puri_sea_beach.jpg/1280px-Puri_sea_beach.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Puri_Ratha_Yatra.jpg/1280px-Puri_Ratha_Yatra.jpg"
+],
+    "media": [],
+    "conservationInfo": null,
+    "relatedHeritageIds": [
+      "od-heritage-jagannath-puri",
+      "od-heritage-konark"
+    ],
+    "relatedCultureIds": [
+      "od-culture-rath-yatra",
+      "od-culture-odisha-mahaprasad"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Heritage Sites',
         sourceType: 'Government tourism',
@@ -632,6 +1272,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-kittur-fort',
     slug: 'kittur-fort',
     name: 'Kittur Fort',
@@ -657,6 +1298,43 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-bhubaneswar-temple-city",
+    "slug": "bhubaneswar-temple-city",
+    "name": "Bhubaneswar — Temple City of India",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Khurda district",
+    "category": "pilgrimage-towns",
+    "categoryName": "Pilgrimage Town",
+    "shortDescription": "Known as the \"Temple City of India\", Bhubaneswar once contained over 7,000 temples and retains hundreds of surviving medieval Kalinga-style shrines, making it an open-air museum of Odishan temple architecture.",
+    "history": "A major religious centre since the 3rd century BCE (Jain caves, Ashokan edicts nearby), Bhubaneswar reached its peak of temple-building between the 7th and 12th centuries CE under the Somavamshi and Ganga dynasties.",
+    "culturalSignificance": "The Bindu Sagar tank at the centre of the old town — said to receive waters from all holy rivers of India — is flanked by hundreds of shrines. The Ekamra Kshetra pilgrimage circuit connects the major temples.",
+    "architecture": "Concentrated landscape of Kalinga-style temples including the Lingaraja, Rajarani, Mukteswar, Parasuramesvara, Brahmesvara, Sisiresvara, and dozens more, spanning a thousand years of architectural evolution.",
+    "historicalPeriod": "7th–12th century CE (primary)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/26/View_of_Ananta_Vasudeva_Temple_from_Bindusagar_-_July_2007.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg"
+],
+    "media": [],
+    "conservationInfo": "Multiple ASI-protected monuments within the city.",
+    "relatedHeritageIds": [
+      "od-heritage-lingaraja",
+      "od-heritage-rajarani",
+      "od-heritage-mukteswar",
+      "od-heritage-parasuramesvara"
+    ],
+    "relatedCultureIds": [
+      "od-culture-odissi"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Kittur Fort',
         sourceType: 'Government tourism',
@@ -666,6 +1344,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-manjarabad-fort',
     slug: 'manjarabad-fort',
     name: 'Manjarabad Fort',
@@ -691,6 +1370,40 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-odisha-state-museum",
+    "slug": "odisha-state-museum",
+    "name": "Odisha State Museum",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "museums",
+    "categoryName": "Museum",
+    "shortDescription": "The premier archaeological and cultural repository of Odisha, housing over 40,000 artefacts including sculptures, palm-leaf manuscripts, coins, natural history exhibits and tribal art.",
+    "history": "Established in 1932 and moved to its current building in 1960, the Odisha State Museum is the largest and most comprehensive museum in eastern India.",
+    "culturalSignificance": "The museum's collection of Buddhist sculptures from Ratnagiri, Lalitgiri, and Udayagiri, and its vast archive of Odia palm-leaf manuscripts, are invaluable repositories of the state's cultural heritage.",
+    "architecture": "A multi-gallery complex with dedicated sections for natural history, epigraphy, coins, arms, palm-leaf manuscripts, and art galleries.",
+    "historicalPeriod": null,
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7d/Bhubaneswar_State_Museum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Odisha_state_museum_gate%2C_Bhubaneswar%2C_Odisha.jpg/1280px-Odisha_state_museum_gate%2C_Bhubaneswar%2C_Odisha.jpg"
+],
+    "media": [],
+    "conservationInfo": "Operated by the Government of Odisha, Department of Culture.",
+    "relatedHeritageIds": [
+      "od-heritage-lalitgiri",
+      "od-heritage-ratnagiri"
+    ],
+    "relatedCultureIds": [
+      "od-culture-pattachitra",
+      "od-culture-palm-leaf-manuscript"
+    ],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Manjarabad Fort',
         sourceType: 'Government tourism',
@@ -700,6 +1413,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-sanganakallu',
     slug: 'sanganakallu',
     name: 'Sanganakallu',
@@ -723,6 +1437,40 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-handicrafts-museum",
+    "slug": "handicrafts-museum-bhubaneswar",
+    "name": "Odisha Handicrafts Museum (Kala Bhoomi)",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bhubaneswar",
+    "category": "museums",
+    "categoryName": "Museum",
+    "shortDescription": "A dedicated crafts museum in Bhubaneswar showcasing the full spectrum of Odisha's living craft traditions, from Pattachitra and silver filigree to Dhokra and tribal textiles.",
+    "history": "Established to document, preserve and promote the GI-tagged and traditional craft heritage of Odisha, the museum features live craft demonstrations and artist residencies.",
+    "culturalSignificance": "An important resource for craftspeople, researchers, and tourists to understand the depth and variety of Odishan craft traditions that have been passed down over centuries.",
+    "architecture": null,
+    "historicalPeriod": null,
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Craft_Museum_01.jpg/1280px-Craft_Museum_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Pottery_workshop_at_Odisha_Crafts_Museum_02.jpg/1280px-Pottery_workshop_at_Odisha_Crafts_Museum_02.jpg"
+],
+    "media": [],
+    "conservationInfo": "Operated by Odisha State Handicrafts Corporation.",
+    "relatedHeritageIds": [],
+    "relatedCultureIds": [
+      "od-culture-pattachitra",
+      "od-culture-silver-filigree",
+      "od-culture-dhokra"
+    ],
+    "trailIds": [
+      "trail-living-traditions-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Heritage Sites',
         sourceType: 'Government tourism',
@@ -733,6 +1481,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-barkur',
     slug: 'barkur',
     name: 'Barkur',
@@ -755,6 +1504,34 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-tara-tarini",
+    "slug": "tara-tarini-shrine",
+    "name": "Tara Tarini Shrine",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Ganjam district",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "An ancient hilltop shrine dedicated to twin goddesses Tara and Tarini, one of the oldest and most revered Shakti Peethas in Odisha overlooking the Rushikulya river.",
+    "history": "The shrine is one of the four Shakti Peethas of Odisha, with references in Puranic texts. The current hilltop temple was renovated in the medieval period and again by the Odisha government.",
+    "culturalSignificance": "Pilgrims travel from across Odisha, especially during Chaitra Parba, when hundreds of thousands ascend the hill. The goddess Tarini is worshipped as the state's Kula devi by many Odishan communities.",
+    "architecture": "Twin temples on a hilltop accessible via a cable car and steep steps. The main shrine is an Odishan-style temple with a sanctum housing the two-metre-tall stone images of the twin goddesses.",
+    "historicalPeriod": "Ancient (Puranic references)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Taratarini_maa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Taratarini_Temple%2C_Odisha.jpg/1280px-Taratarini_Temple%2C_Odisha.jpg"
+],
+    "media": [],
+    "conservationInfo": null,
+    "relatedHeritageIds": [],
+    "relatedCultureIds": [],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Heritage, History and Culture',
         sourceType: 'Government tourism',
@@ -765,6 +1542,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-basavakalyana',
     slug: 'basavakalyana',
     name: 'Basavakalyana',
@@ -787,6 +1565,34 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-kapilash-temple",
+    "slug": "kapilash-temple",
+    "name": "Kapilash Temple (Chandrasekhar)",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Dhenkanal district",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "A hilltop Shiva temple atop the Kapilash hill, also known as the \"Kailash of Odisha\", situated at 2,000 ft and housing one of Odisha's most important Shiva shrines.",
+    "history": "The temple is mentioned in medieval texts and associated with the Gajapati dynasty. The hill is considered sacred and is said to have been blessed by Parashurama.",
+    "culturalSignificance": "Kapilash draws large numbers of pilgrims during Shivaratri. The Chandrasekhar temple at the summit is one of Odisha's pancha-Shiva (five sacred Shiva) shrines.",
+    "architecture": "Kalinga-style temple at the summit of Kapilash hill, with a shikhara tower. The approach involves 1,272 rock-cut steps.",
+    "historicalPeriod": "Medieval (13th–15th century CE)",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Kapilasa_temple_Dhenkanal_Odisha4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kapilas_Chandrasekhar_mahadev_temple_from_hilltop.JPG/1280px-Kapilas_Chandrasekhar_mahadev_temple_from_hilltop.JPG"
+],
+    "media": [],
+    "conservationInfo": null,
+    "relatedHeritageIds": [],
+    "relatedCultureIds": [],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Heritage, History and Culture',
         sourceType: 'Government tourism',
@@ -797,6 +1603,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-talakadu',
     slug: 'talakadu',
     name: 'Talakadu',
@@ -819,6 +1626,36 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-nrusinghanath",
+    "slug": "nrusinghanath-temple",
+    "name": "Nrusinghanath Temple",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Bargarh district",
+    "category": "temples",
+    "categoryName": "Temple",
+    "shortDescription": "A medieval temple dedicated to Lord Narasimha (Nrusingha), nestled at the foot of the Gandhamardan hill in western Odisha, revered as a major Vaishnava pilgrimage site.",
+    "history": "The temple dates to the 12th–13th centuries CE. The Gandhamardan hill is considered one of the few places in India where the gandha (Shalparni) herb mentioned in the Ramayana grows.",
+    "culturalSignificance": "A major pilgrimage site for western Odisha, the temple is associated with tribal and Vaishnava traditions. The Gandhamardan range around it is a biodiversity hotspot.",
+    "architecture": "A Kalinga-style temple with local black stone, positioned against the forested backdrop of the Gandhamardan hills. A natural spring (Phurlijharan) flows nearby.",
+    "historicalPeriod": "12th–13th century CE",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Nrusinghanath_Temple.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Gate_to_Nrusinghnath.jpg/1280px-Gate_to_Nrusinghnath.jpg"
+],
+    "media": [],
+    "conservationInfo": null,
+    "relatedHeritageIds": [],
+    "relatedCultureIds": [
+      "od-culture-nuakhai"
+    ],
+    "trailIds": [],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Heritage, History and Culture',
         sourceType: 'Government tourism',
@@ -829,6 +1666,7 @@ export const verifiedHeritage = [
     lastVerified: '2026-08-26'
   },
   {
+<<<<<<< Updated upstream
     id: 'ka-heritage-shravanabelagola',
     slug: 'shravanabelagola',
     name: 'Shravanabelagola',
@@ -855,6 +1693,40 @@ export const verifiedHeritage = [
     trailIds: [],
     verificationStatus: 'verified',
     sources: [
+=======
+    "id": "od-heritage-jagannath-temple-puri-natamandap",
+    "slug": "jagannath-puri-natamandap",
+    "name": "Mukti Mandapa & Ananda Bazar, Puri",
+    "recordType": "heritage",
+    "state": "odisha",
+    "stateName": "Odisha",
+    "districtOrRegion": "Puri district",
+    "category": "temples",
+    "categoryName": "Temple Heritage Complex",
+    "shortDescription": "The Mukti Mandapa (liberation hall) and Ananda Bazar (bliss market) within the Jagannath Temple complex — where the world's largest open-air kitchen prepares Mahaprasad daily for over 10,000 devotees.",
+    "history": "The Ananda Bazar has operated continuously as a sacred kitchen for over 700 years, preparing 56 varieties of food offerings (Chhappan Bhog) using traditional clay pots and wood fires.",
+    "culturalSignificance": "The Mahaprasad of Jagannath Temple is considered the most egalitarian sacred meal in India — served without caste distinction, it has influenced social reform movements.",
+    "architecture": "The Ananda Bazar is a large open-air market within the temple precincts with hundreds of earthen pot stoves. The Mukti Mandapa is an important meeting hall for religious discourse.",
+    "historicalPeriod": "14th century CE onwards",
+    "unescoStatus": null,
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Jagannath_Temple_Puri.jpg/1280px-Jagannath_Temple_Puri.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Jagannath_Temple%2C_Puri_02.jpg/1280px-Jagannath_Temple%2C_Puri_02.jpg"
+],
+    "media": [],
+    "conservationInfo": "Managed by Shree Jagannath Temple Administration (SJTA).",
+    "relatedHeritageIds": [
+      "od-heritage-jagannath-puri"
+    ],
+    "relatedCultureIds": [
+      "od-culture-odisha-mahaprasad"
+    ],
+    "trailIds": [
+      "trail-sacred-odisha"
+    ],
+    "verificationStatus": "verified",
+    "sources": [
+>>>>>>> Stashed changes
       {
         sourceName: 'Karnataka Tourism — Shravanabelagola',
         sourceType: 'Government tourism',

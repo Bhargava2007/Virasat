@@ -321,9 +321,13 @@ import { allCulture } from '@/data/culture.js'
 import { allHeritage } from '@/data/heritage.js'
 import { cultureCategories } from '@/data/cultureCategories.js'
 import { states } from '@/data/states.js'
+<<<<<<< Updated upstream
 import { getRecordImage } from '@/utils/mediaHelper.js'
 import { usePassportStore } from '@/stores/passportStore.js'
 import { useSavedStore } from '@/stores/savedStore.js'
+=======
+import { getRecordImage, getRecordGalleryImages } from '@/utils/mediaHelper.js'
+>>>>>>> Stashed changes
 import { useQuasar } from 'quasar'
 
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
