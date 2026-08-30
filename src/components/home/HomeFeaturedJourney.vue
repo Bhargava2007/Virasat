@@ -194,8 +194,8 @@ const onCardLeave = event => {
   height: 100%;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 0, 0, 0.2) 70%,
+    rgba(15, 23, 32, 0.6) 0%,
+    rgba(15, 23, 32, 0.18) 70%,
     transparent 100%
   );
   pointer-events: none;
@@ -208,7 +208,7 @@ const onCardLeave = event => {
 }
 
 .featured-title {
-  color: #fdf8f5;
+  color: var(--color-base-900);
   font-family: var(--font-heading), 'Outfit', sans-serif;
   font-size: clamp(1.125rem, 5vw, 1.5rem);
   font-weight: 700;
@@ -216,7 +216,7 @@ const onCardLeave = event => {
 }
 
 .featured-subtitle {
-  color: rgba(255, 243, 236, 0.9);
+  color: var(--color-text-secondary);
   font-size: 0.8125rem;
   margin-top: 8px;
   line-height: 1.5;

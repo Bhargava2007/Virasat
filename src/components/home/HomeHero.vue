@@ -124,6 +124,7 @@ onMounted(() => {
   bottom: 0;
   height: 320px;
   z-index: 0;
+  background: transparent;
 }
 
 .hero-content {
@@ -131,11 +132,10 @@ onMounted(() => {
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(26, 26, 46, 0.92) 0%,
-    rgba(45, 58, 124, 0.88) 40%,
-    rgba(196, 99, 42, 0.9) 100%
+    rgba(246, 245, 242, 0.96) 0%,
+    rgba(246, 245, 242, 0.96) 100%
   );
-  padding: 48px 20px 32px;
+  padding: var(--space-4) var(--space-2) var(--space-3);
   text-align: center;
 }
 
@@ -144,17 +144,16 @@ onMounted(() => {
 }
 
 .hero-title {
-  color: #fdf8f5;
+  color: var(--color-base-900);
   font-family: var(--font-heading), 'Outfit', sans-serif;
   font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 700;
   margin: 0 0 8px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   letter-spacing: -0.5px;
 }
 
 .hero-tagline {
-  color: rgba(255, 243, 236, 0.85);
+  color: var(--color-text-secondary);
   font-size: clamp(0.875rem, 2vw, 1.0625rem);
   font-family: var(--font-body), 'Inter', sans-serif;
   margin: 0;
@@ -164,14 +163,14 @@ onMounted(() => {
 .accent-line {
   width: 40px;
   height: 3px;
-  background: #d4a843;
+  background: var(--color-accent);
   border-radius: 2px;
   margin: 16px auto;
-  box-shadow: 0 0 12px rgba(212, 168, 67, 0.4);
+  box-shadow: 0 0 10px rgba(191, 160, 99, 0.18);
 }
 
 .hero-search-wrapper {
-  margin-top: 24px;
+  margin-top: var(--space-3);
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;

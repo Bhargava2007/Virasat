@@ -22,9 +22,12 @@
     "postinstall": "quasar prepare --silent"
   },
   "dependencies": {
+    "@lucide/vue": "^1.37.0",
     "@quasar/extras": "^2.0.4",
     "gsap": "^3.12.2",
     "leaflet": "^1.9.4",
+    "lucide": "^1.37.0",
+    "lucide-vue-next": "^1.0.0",
     "quasar": "^2.27.0",
     "three": "^0.160.0",
     "vue": "^3.5.22",

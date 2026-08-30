@@ -9,7 +9,7 @@
         @focus="onCardHover"
         @blur="onCardLeave"
       >
-        <q-icon name="account_balance" class="card-icon" />
+        <LucideIcon name="bank" class="card-icon" :size="36" />
         <div class="card-content">
           <div class="card-title">Heritage</div>
           <div class="card-subtitle">Monuments & Sites</div>
@@ -24,7 +24,7 @@
         @focus="onCardHover"
         @blur="onCardLeave"
       >
-        <q-icon name="palette" class="card-icon" />
+        <LucideIcon name="palette" class="card-icon" :size="36" />
         <div class="card-content">
           <div class="card-title">Culture</div>
           <div class="card-subtitle">Arts & Traditions</div>
@@ -36,6 +36,7 @@
 
 <script setup>
 import gsap from 'gsap'
+import LucideIcon from '@/components/icons/LucideIcon.vue'
 
 const prefersReducedMotion = () => {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -136,12 +137,32 @@ const onCardLeave = event => {
   opacity: 1;
 }
 
-.heritage-card {
-  background: linear-gradient(145deg, #c4632a, #a84e1f);
+.heritage-card,
+.culture-card {
+  background: var(--color-card);
+  border: 1px solid rgba(16, 22, 28, 0.04);
 }
 
-.culture-card {
-  background: linear-gradient(145deg, #2d3a7c, #1e2760);
+.heritage-card::after {
+  content: '';
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  width: 6px;
+  height: 36px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+.culture-card::after {
+  content: '';
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  width: 6px;
+  height: 36px;
+  background: rgba(16, 22, 28, 0.06);
+  border-radius: 2px;
 }
 
 .card-icon {
