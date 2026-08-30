@@ -1,7 +1,7 @@
 <template>
   <div class="explore-preview-wrapper">
     <div class="header-row">
-      <h2 class="section-title">Explore Living Heritage Map</h2>
+      <h2 class="section-title">Explore/Experience sites and culture near you</h2>
       <router-link to="/explore/map" class="full-map-link">
         Full Screen Map & Filters
         <q-icon name="arrow_forward" size="14px" class="q-ml-xs" />
@@ -53,10 +53,10 @@ const handleMarkerClick = record => {
 }
 
 .section-title {
-  font-family: var(--font-heading), 'Outfit', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-text, #1a1a2e);
+  color: #fff;
   margin: 0;
 }
 

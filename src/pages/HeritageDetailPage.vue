@@ -505,12 +505,14 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
   &__gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      to top,
-      rgba(35, 18, 11, 0.95) 0%,
-      rgba(42, 24, 16, 0.6) 45%,
-      rgba(0, 0, 0, 0.25) 100%
-    );
+    background: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 25%),
+      linear-gradient(
+        to top,
+        rgba(35, 18, 11, 0.95) 0%,
+        rgba(42, 24, 16, 0.6) 45%,
+        rgba(0, 0, 0, 0.25) 100%
+      );
   }
 
   &__top-bar {

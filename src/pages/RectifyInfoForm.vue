@@ -126,7 +126,11 @@ const handleSubmit = async () => {
 }
 .form-card {
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  background: rgba(255, 248, 235, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 160, 23, 0.2);
+  box-shadow: 0 4px 24px rgba(74, 44, 30, 0.12);
 }
 .form-fields {
   display: flex;

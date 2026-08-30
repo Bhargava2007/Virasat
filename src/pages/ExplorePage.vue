@@ -324,6 +324,7 @@ const toggleState = state => {
     color: var(--color-text);
     margin: 0 0 6px 0;
     letter-spacing: -0.02em;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 4px #ffffff;
   }
 
   &__subtitle {
@@ -332,12 +333,14 @@ const toggleState = state => {
     color: var(--color-text-secondary);
     line-height: 1.45;
     margin: 0;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 4px #ffffff;
   }
 
   &__search {
     position: absolute;
-    left: 20px;
-    right: 20px;
+    left: 16px;
+    right: auto;
+    width: calc(100% - 32px);
     bottom: -24px;
     z-index: 10;
   }
@@ -405,68 +408,87 @@ const toggleState = state => {
   }
 
   &--heritage {
-    background: #fff1ed;
-    border: 1px solid rgba(184, 75, 42, 0.15);
+    background: linear-gradient(to bottom, rgba(44, 24, 0, 0.3), rgba(44, 24, 0, 0.8)), url('@/assets/hrtg.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(212, 160, 23, 0.3);
 
     .entry-card__icon-wrap {
-      background: #b84b2a;
+      background: rgba(184, 75, 42, 0.9);
       color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .entry-card__title {
-      color: #4a2c1e;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
 
     .entry-card__text {
-      color: #7a5c4e;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
 
     .entry-card__arrow {
       color: #b84b2a;
+      background: rgba(255, 255, 255, 0.95);
     }
   }
 
   &--culture {
-    background: #f3eef8;
-    border: 1px solid rgba(108, 75, 160, 0.15);
+    background: linear-gradient(to bottom, rgba(20, 10, 40, 0.3), rgba(20, 10, 40, 0.8)), url('@/assets/oddessyy.webp');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(108, 75, 160, 0.4);
 
     .entry-card__icon-wrap {
-      background: #6c4ba0;
+      background: rgba(108, 75, 160, 0.9);
       color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .entry-card__title {
-      color: #2c3e73;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
 
     .entry-card__text {
-      color: #5c5378;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
 
     .entry-card__arrow {
       color: #6c4ba0;
+      background: rgba(255, 255, 255, 0.95);
     }
   }
 
   &--map {
-    background: #e1f5fe;
-    border: 1px solid rgba(2, 119, 189, 0.15);
+    background: linear-gradient(to right, rgba(30, 18, 8, 0.55) 0%, rgba(30, 18, 8, 0.35) 50%, rgba(30, 18, 8, 0.55) 100%), url('@/assets/heritage_map_bg.png');
+    background-size: cover;
+    background-position: right center;
+    border: 1px solid rgba(212, 160, 23, 0.3);
+    overflow: hidden;
 
     .entry-card__icon-wrap {
-      background: #0277bd;
+      background: rgba(184, 75, 42, 0.9);
       color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .entry-card__title {
-      color: #01579b;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
 
     .entry-card__text {
-      color: #0277bd;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
 
     .entry-card__arrow {
-      color: #0277bd;
+      color: #b84b2a;
+      background: rgba(255, 255, 255, 0.95);
     }
   }
 
