@@ -4,7 +4,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer class="bottom-nav" bordered>
+    <div class="bottom-nav fixed-bottom" style="z-index: 2000;">
       <div class="bottom-nav__container">
         <router-link
           v-for="tab in tabs"
@@ -20,7 +20,7 @@
           <span class="bottom-nav__label">{{ tab.label }}</span>
         </router-link>
       </div>
-    </q-footer>
+    </div>
 
     <!-- Global AI Voice Guide FAB -->
     <div class="ai-orb-fab-container" v-if="!showVoiceGuide">
@@ -73,27 +73,37 @@ const isActive = tabRoute => {
 
 <style scoped lang="scss">
 .bottom-nav {
-  background: rgba(253, 248, 245, 0.94) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(74, 44, 30, 0.08) !important;
-  box-shadow: 0 -4px 20px rgba(74, 44, 30, 0.04);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-  max-width: 1200px;
-  left: 50% !important;
-  transform: translateX(-50%);
-
-  @media (max-width: 1200px) {
-    max-width: 100%;
-  }
+  /* Make the main footer wrapper transparent */
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding-bottom: env(safe-area-inset-bottom, 12px);
+  max-width: 100vw;
+  left: 0 !important;
+  transform: none;
+  pointer-events: none; /* Let clicks pass through the invisible parts */
 
   &__container {
+    pointer-events: auto; /* Re-enable clicks for the dock */
+    /* Chameleon Glass Dock Styling - adapts to ANY background color */
+    background: rgba(0, 0, 0, 0.3); /* Neutral translucent */
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 6px 0 4px;
+    max-width: 360px;
+    margin: 0 auto 16px; /* Floating margin */
+    padding: 8px 12px;
+    gap: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &__container:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   &__tab {
@@ -102,11 +112,11 @@ const isActive = tabRoute => {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #7a685d;
-    min-width: 56px;
-    padding: 4px 10px;
-    border-radius: 12px;
-    transition: all 0.2s ease;
+    color: rgba(255, 255, 255, 0.55); /* Neutral white for inactive */
+    min-width: 64px;
+    padding: 6px 8px;
+    border-radius: 20px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 
@@ -115,18 +125,23 @@ const isActive = tabRoute => {
     }
 
     &--active {
-      color: #b84b2a;
+      color: #ffffff; /* Bright white for active */
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
       .bottom-nav__icon {
-        background: rgba(184, 75, 42, 0.12);
-        border-radius: 20px;
-        padding: 4px 16px;
-        color: #b84b2a;
+        color: #ffffff;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
       }
 
       .bottom-nav__label {
         font-weight: 700;
-        color: #b84b2a;
+        color: #ffffff;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.6);
       }
     }
   }
@@ -135,6 +150,7 @@ const isActive = tabRoute => {
     font-size: 22px;
     transition: all 0.2s ease;
     margin-bottom: 2px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
   }
 
   &__label {
@@ -142,6 +158,7 @@ const isActive = tabRoute => {
     font-size: 0.625rem;
     font-weight: 500;
     letter-spacing: 0.01em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
   }
 }
 

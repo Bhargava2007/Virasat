@@ -1,0 +1,213 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Hind:wght@400;500&family=Noto+Serif+Bengali:wght@400;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#F5EFE0}
+.page{background:#F5EFE0;font-family:'Hind',sans-serif;width:100%}
+.hero{position:relative;height:240px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#3a1c71 0%,#6b3fa0 40%,#b07edc 100%);opacity:0.18}
+.hero-img{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='240'%3E%3Crect width='400' height='240' fill='%23c0813a'/%3E%3Ccircle cx='200' cy='120' r='110' fill='none' stroke='%23f5c97a' stroke-width='1.5' opacity='0.25'/%3E%3Ccircle cx='200' cy='120' r='80' fill='none' stroke='%23f5c97a' stroke-width='1' opacity='0.2'/%3E%3C/svg%3E");background-size:cover}
+.hero-overlay{position:absolute;inset:0;background:rgba(30,12,5,0.55)}
+.hero-text{position:relative;z-index:2;text-align:center}
+.hero-main{font-family:'Noto Serif Bengali',serif;font-size:52px;color:#fff;font-weight:700;letter-spacing:2px;line-height:1}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:17px;color:rgba(255,255,255,0.85);margin-top:8px;letter-spacing:3px;font-style:italic}
+.hero-line{width:60px;height:2px;background:#D4A017;margin:10px auto 0}
+.search-wrap{position:relative;z-index:2;margin-top:18px;display:flex;align-items:center;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.4);border-radius:30px;padding:8px 18px;width:340px;gap:8px}
+.search-wrap input{background:transparent;border:none;outline:none;color:#fff;font-family:'Hind',sans-serif;font-size:14px;flex:1;width:100%}
+.search-wrap input::placeholder{color:rgba(255,255,255,0.65)}
+
+.banner{width:100%;position:relative;overflow:hidden}
+.banner-bg-heritage{position:relative;height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.stone-bg{position:absolute;inset:0}
+.banner-overlay-heritage{position:absolute;inset:0;background:rgba(30,18,8,0.62)}
+.banner-title{position:relative;z-index:2;font-family:'Cinzel',serif;font-size:32px;font-weight:700;color:#fff;letter-spacing:8px;text-transform:uppercase}
+.banner-sub{position:relative;z-index:2;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:#F5C97A;letter-spacing:2px;margin-top:4px}
+
+.carousel-section{background:#1e1208;padding:0}
+.carousel-wrap{position:relative;height:220px;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px 40px;opacity:0;transition:opacity 0.7s ease}
+.slide.active{opacity:1}
+.slide-name{font-family:'Cinzel',serif;font-size:22px;color:#fff;font-weight:700;margin-bottom:10px}
+.slide-desc{font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.6;max-width:500px}
+.slide-btn{margin-top:16px;border:1px solid #fff;background:transparent;color:#fff;font-family:'Hind',sans-serif;font-size:11px;letter-spacing:2px;padding:7px 18px;cursor:pointer;text-transform:uppercase}
+.carousel-dots{display:flex;justify-content:center;gap:8px;padding:12px;background:#1e1208}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.25);cursor:pointer;transition:background 0.3s}
+.dot.active{background:#D4A017}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,0.5);font-size:22px;cursor:pointer;z-index:5;padding:8px 14px;font-family:monospace}
+.carousel-arrow.prev{left:4px}
+.carousel-arrow.next{right:4px}
+
+.banner-culture{background:#1a0a05;position:relative;height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:hidden}
+.culture-bg{position:absolute;inset:0}
+.banner-overlay-culture{position:absolute;inset:0;background:rgba(80,20,5,0.58)}
+.banner-title-culture{position:relative;z-index:2;font-family:'Cinzel',serif;font-size:32px;font-weight:700;color:#fff;letter-spacing:8px;text-transform:uppercase}
+.banner-sub-culture{position:relative;z-index:2;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:#F5A05A;letter-spacing:2px;margin-top:4px}
+
+.nav{background:#fff;display:flex;justify-content:center;gap:40px;padding:14px;border-top:0.5px solid #e0d5c5}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;font-family:'Hind',sans-serif;font-size:11px;color:#888;cursor:pointer}
+.nav-item.active{color:#C0441E}
+.nav-item i{font-size:20px}
+
+.map-section{background:#F5EFE0;padding:20px 24px}
+.map-label{font-family:'Cinzel',serif;font-size:15px;color:#3a1800;margin-bottom:14px;letter-spacing:1px}
+.map-placeholder{background:#e8dfd0;border-radius:8px;height:160px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;color:#8a6a3a;font-size:14px;border:1px solid #d0c0a0}
+</style>
+
+<div class="page">
+
+<div class="hero">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg">
+    <rect width="680" height="240" fill="#1a0e08"/>
+    <image href="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=680&q=60" width="680" height="240" preserveAspectRatio="xMidYMid slice" opacity="0.55"/>
+    <rect width="680" height="240" fill="rgba(20,8,2,0.38)"/>
+  </svg>
+  <div class="hero-text">
+    <div class="hero-main">বিরাসত</div>
+    <div class="hero-sub">Explore India's Heritage &amp; Living Culture</div>
+    <div class="hero-line"></div>
+  </div>
+  <div class="search-wrap">
+    <i class="ti ti-search" style="color:rgba(255,255,255,0.7);font-size:16px" aria-hidden="true"></i>
+    <input type="text" placeholder="Search monuments, festivals, arts...">
+    <i class="ti ti-arrow-right" style="color:rgba(255,255,255,0.7);font-size:16px" aria-hidden="true"></i>
+  </div>
+</div>
+
+<div class="banner-bg-heritage">
+  <svg class="stone-bg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 680 90" xmlns="http://www.w3.org/2000/svg">
+    <rect width="680" height="90" fill="#5C3010"/>
+    <g opacity="0.35" fill="none" stroke="#D4A017" stroke-width="0.6">
+      <path d="M0 15 Q34 5 68 15 Q102 25 136 15 Q170 5 204 15 Q238 25 272 15 Q306 5 340 15 Q374 25 408 15 Q442 5 476 15 Q510 25 544 15 Q578 5 612 15 Q646 25 680 15"/>
+      <path d="M0 30 Q34 20 68 30 Q102 40 136 30 Q170 20 204 30 Q238 40 272 30 Q306 20 340 30 Q374 40 408 30 Q442 20 476 30 Q510 40 544 30 Q578 20 612 30 Q646 40 680 30"/>
+      <path d="M0 45 Q34 35 68 45 Q102 55 136 45 Q170 35 204 45 Q238 55 272 45 Q306 35 340 45 Q374 55 408 45 Q442 35 476 45 Q510 55 544 45 Q578 35 612 45 Q646 55 680 45"/>
+      <path d="M0 60 Q34 50 68 60 Q102 70 136 60 Q170 50 204 60 Q238 70 272 60 Q306 50 340 60 Q374 70 408 60 Q442 50 476 60 Q510 70 544 60 Q578 50 612 60 Q646 70 680 60"/>
+      <path d="M0 75 Q34 65 68 75 Q102 85 136 75 Q170 65 204 75 Q238 85 272 75 Q306 65 340 75 Q374 85 408 75 Q442 65 476 75 Q510 85 544 75 Q578 65 612 75 Q646 85 680 75"/>
+    </g>
+    <g opacity="0.2" fill="none" stroke="#D4A017" stroke-width="0.5">
+      <circle cx="80" cy="45" r="18"/><circle cx="80" cy="45" r="12"/><circle cx="80" cy="45" r="6"/>
+      <circle cx="200" cy="45" r="18"/><circle cx="200" cy="45" r="12"/><circle cx="200" cy="45" r="6"/>
+      <circle cx="340" cy="45" r="20"/><circle cx="340" cy="45" r="13"/><circle cx="340" cy="45" r="6"/>
+      <circle cx="480" cy="45" r="18"/><circle cx="480" cy="45" r="12"/><circle cx="480" cy="45" r="6"/>
+      <circle cx="600" cy="45" r="18"/><circle cx="600" cy="45" r="12"/><circle cx="600" cy="45" r="6"/>
+    </g>
+    <g opacity="0.15" fill="#D4A017">
+      <polygon points="140,10 148,30 132,30"/><polygon points="240,60 248,80 232,80"/>
+      <polygon points="440,10 448,30 432,30"/><polygon points="540,60 548,80 532,80"/>
+    </g>
+    <rect width="680" height="90" fill="rgba(30,12,4,0.58)"/>
+  </svg>
+  <div class="banner-title">Heritage</div>
+  <div class="banner-sub">Witness the legacy of our people</div>
+</div>
+
+<div class="carousel-section">
+  <div class="carousel-wrap" id="carousel">
+    <div class="slide active">
+      <div class="slide-name">Parasuramesvara Temple</div>
+      <div class="slide-desc">The best-preserved and earliest surviving temple of Bhubaneswar (c. 650 CE), marking the beginning of the Kalinga temple-building tradition.</div>
+      <button class="slide-btn">Explore monument</button>
+    </div>
+    <div class="slide">
+      <div class="slide-name">Konark Sun Temple</div>
+      <div class="slide-desc">A 13th-century UNESCO World Heritage Site built in the form of a colossal chariot, adorned with exquisite stone carvings of celestial beings and erotic sculptures.</div>
+      <button class="slide-btn">Explore monument</button>
+    </div>
+    <div class="slide">
+      <div class="slide-name">Mukteshvara Temple</div>
+      <div class="slide-desc">Known as the gem of Odishan architecture, this 10th-century temple is celebrated for its ornate torana gateway and intricate sculptural reliefs.</div>
+      <button class="slide-btn">Explore monument</button>
+    </div>
+    <div class="slide">
+      <div class="slide-name">Lingaraja Temple</div>
+      <div class="slide-desc">The largest temple in Bhubaneswar, dedicated to Harihara — a fusion of Shiva and Vishnu — and a defining example of the Kalinga style at its zenith.</div>
+      <button class="slide-btn">Explore monument</button>
+    </div>
+    <button class="carousel-arrow prev" id="prev">&#8249;</button>
+    <button class="carousel-arrow next" id="next">&#8250;</button>
+  </div>
+  <div class="carousel-dots" id="dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<div class="banner-culture">
+  <svg class="culture-bg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 680 90" xmlns="http://www.w3.org/2000/svg">
+    <rect width="680" height="90" fill="#6B1A0A"/>
+    <g opacity="0.3" fill="none" stroke="#F5A05A" stroke-width="0.7">
+      <path d="M0 0 L45 45 L0 90" /><path d="M45 0 L90 45 L45 90"/>
+      <path d="M90 0 L135 45 L90 90"/><path d="M135 0 L180 45 L135 90"/>
+      <path d="M180 0 L225 45 L180 90"/><path d="M225 0 L270 45 L225 90"/>
+      <path d="M270 0 L315 45 L270 90"/><path d="M315 0 L360 45 L315 90"/>
+      <path d="M360 0 L405 45 L360 90"/><path d="M405 0 L450 45 L405 90"/>
+      <path d="M450 0 L495 45 L450 90"/><path d="M495 0 L540 45 L495 90"/>
+      <path d="M540 0 L585 45 L540 90"/><path d="M585 0 L630 45 L585 90"/>
+      <path d="M630 0 L675 45 L630 90"/>
+    </g>
+    <g opacity="0.18" fill="#F5A05A">
+      <circle cx="68" cy="45" r="8"/><circle cx="158" cy="45" r="8"/><circle cx="248" cy="45" r="8"/>
+      <circle cx="338" cy="45" r="8"/><circle cx="428" cy="45" r="8"/><circle cx="518" cy="45" r="8"/>
+      <circle cx="608" cy="45" r="8"/>
+    </g>
+    <g opacity="0.12" fill="none" stroke="#F5A05A" stroke-width="1.2">
+      <rect x="260" y="15" width="160" height="60" rx="30"/>
+      <rect x="280" y="25" width="120" height="40" rx="20"/>
+    </g>
+    <rect width="680" height="90" fill="rgba(60,10,2,0.55)"/>
+  </svg>
+  <div class="banner-title-culture">Culture</div>
+  <div class="banner-sub-culture">Experience the living traditions</div>
+</div>
+
+<div class="map-section">
+  <div class="map-label">Explore sites and culture near you</div>
+  <div class="map-placeholder">
+    <span>Interactive map — Heritage &amp; Culture sites</span>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="nav-item active">
+    <i class="ti ti-home" aria-hidden="true"></i>
+    <span>Home</span>
+  </div>
+  <div class="nav-item">
+    <i class="ti ti-compass" aria-hidden="true"></i>
+    <span>Explore</span>
+  </div>
+  <div class="nav-item">
+    <i class="ti ti-alert-triangle" aria-hidden="true"></i>
+    <span>Complaints</span>
+  </div>
+  <div class="nav-item">
+    <i class="ti ti-book" aria-hidden="true"></i>
+    <span>Stories</span>
+  </div>
+</div>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let cur = 0, timer;
+
+function goTo(n) {
+  slides[cur].classList.remove('active');
+  dots[cur].classList.remove('active');
+  cur = (n + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  dots[cur].classList.add('active');
+}
+
+function startTimer() {
+  clearInterval(timer);
+  timer = setInterval(() => goTo(cur + 1), 4000);
+}
+
+document.getElementById('next').addEventListener('click', () => { goTo(cur + 1); startTimer(); });
+document.getElementById('prev').addEventListener('click', () => { goTo(cur - 1); startTimer(); });
+dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); startTimer(); }));
+startTimer();
+</script>

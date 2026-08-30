@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <q-page class="stories-page">
     <!-- Header -->
     <header class="stories-header">
@@ -112,7 +112,7 @@ $gold: #C9962A;
 $muted: #6B5240;
 
 .stories-page {
-  background: $parchment;
+  background: transparent;
   min-height: 100vh;
   padding-bottom: 100px;
 }
@@ -122,15 +122,21 @@ $muted: #6B5240;
   position: relative;
   padding: 56px 24px 48px;
   overflow: hidden;
-  background: $ink;
+  background: #1e0a02;
+  background-image: url('@/assets/stories_header_bg.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
 
   &__bg-pattern {
     position: absolute;
     inset: 0;
-    opacity: 0.04;
-    background-image: repeating-linear-gradient(45deg, #fff 0px, #fff 1px, transparent 1px, transparent 50%);
-    background-size: 20px 20px;
+    background: linear-gradient(
+      to bottom,
+      rgba(20, 8, 2, 0.55) 0%,
+      rgba(20, 8, 2, 0.72) 100%
+    );
+    z-index: 1;
   }
 
   &__content {
@@ -405,11 +411,18 @@ $colors: (
   gap: 10px;
   max-width: 680px;
   margin: 24px auto 0;
-  padding: 0 24px;
+  padding: 16px 24px;
+  background: rgba(255, 248, 235, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 160, 23, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(74, 44, 30, 0.1);
 
   p {
     font-size: 0.8125rem;
-    color: $muted;
+    color: #4a2c1e;
+    font-weight: 500;
     line-height: 1.5;
     margin: 0;
   }

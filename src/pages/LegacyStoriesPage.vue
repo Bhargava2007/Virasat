@@ -409,11 +409,18 @@ $colors: (
   gap: 10px;
   max-width: 680px;
   margin: 24px auto 0;
-  padding: 0 24px;
+  padding: 16px 24px;
+  background: rgba(255, 248, 235, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 160, 23, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(74, 44, 30, 0.1);
 
   p {
     font-size: 0.8125rem;
-    color: $muted;
+    color: #4a2c1e;
+    font-weight: 500;
     line-height: 1.5;
     margin: 0;
   }

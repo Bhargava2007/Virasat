@@ -22,6 +22,7 @@
     "postinstall": "quasar prepare --silent"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@quasar/extras": "^2.0.4",
     "leaflet": "^1.9.4",
     "quasar": "^2.27.0",

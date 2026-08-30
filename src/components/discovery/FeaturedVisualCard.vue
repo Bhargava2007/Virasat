@@ -178,9 +178,9 @@ const containerStyle = computed(() => {
     inset: 0;
     background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.92) 0%,
-      rgba(0, 0, 0, 0.35) 60%,
-      rgba(0, 0, 0, 0.05) 100%
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.6) 70%,
+      rgba(0, 0, 0, 0) 100%
     );
     z-index: 1;
   }
