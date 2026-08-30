@@ -316,6 +316,8 @@
         </section>
       </main>
     </article>
+
+
   </q-page>
 </template>
 
@@ -1021,5 +1023,60 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
     line-height: 1.55;
     margin: 0;
   }
+}
+
+/* 3D ORB FAB */
+.ai-orb-fab {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  
+  &:hover {
+    transform: scale(1.1) rotateX(10deg) rotateY(10deg);
+  }
+}
+
+.ai-orb-fab .orb-core {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff8a65, #b84b2a);
+  box-shadow: inset -10px -10px 20px rgba(0,0,0,0.3),
+              0 10px 20px rgba(184, 75, 42, 0.5);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 4s ease-in-out infinite;
+}
+
+.ai-orb-fab .orb-glow {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184, 75, 42, 0.4) 0%, transparent 70%);
+  z-index: 1;
+  opacity: 0.5;
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.15); opacity: 0.8; }
 }
 </style>

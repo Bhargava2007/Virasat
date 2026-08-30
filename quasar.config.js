@@ -24,7 +24,13 @@ export default defineConfig((/* ctx */) => {
     },
 
     devServer: {
-      open: true
+      open: true,
+      proxy: {
+        '/api': {
+          target: 'http://localhost:11434',
+          changeOrigin: true
+        }
+      }
     },
 
     framework: {

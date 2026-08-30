@@ -21,13 +21,35 @@
         </router-link>
       </div>
     </q-footer>
+
+    <!-- Global AI Voice Guide FAB -->
+    <div class="ai-orb-fab-container" v-if="!showVoiceGuide">
+      <div 
+        class="ai-orb-fab" 
+        @click="showVoiceGuide = true"
+        aria-label="Start AI Audio Guide"
+      >
+        <div class="orb-core">
+          <q-icon name="record_voice_over" color="white" size="24px" />
+        </div>
+        <div class="orb-glow"></div>
+        <q-tooltip class="bg-brown-9" :offset="[10, 10]">
+          Start AI Assistant
+        </q-tooltip>
+      </div>
+    </div>
+
+    <VoiceTourGuide v-model="showVoiceGuide" />
   </q-layout>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useRoute } from 'vue-router'
+import VoiceTourGuide from '@/components/common/VoiceTourGuide.vue'
 
 const route = useRoute()
+const showVoiceGuide = ref(false)
 
 const tabs = [
   { label: 'Home', icon: 'o_home', iconActive: 'home', route: '/' },
@@ -121,5 +143,80 @@ const isActive = tabRoute => {
     font-weight: 500;
     letter-spacing: 0.01em;
   }
+}
+
+/* Global AI FAB Styles */
+.ai-orb-fab-container {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  z-index: 4000;
+  
+  @media (max-width: 600px) {
+    bottom: 90px;
+    right: 16px;
+  }
+}
+
+.ai-orb-fab {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  &:hover {
+    transform: scale(1.1) translateY(-4px);
+    
+    .orb-glow {
+      opacity: 0.8;
+      transform: scale(1.2);
+    }
+    
+    .orb-core {
+      box-shadow: 0 0 20px rgba(184, 75, 42, 0.6);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.orb-core {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d86b4a, #b84b2a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(184, 75, 42, 0.4);
+  transition: all 0.3s ease;
+}
+
+.orb-glow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184, 75, 42, 0.4) 0%, rgba(184, 75, 42, 0) 70%);
+  z-index: 1;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  animation: pulse-glow 3s infinite alternate;
+}
+
+@keyframes pulse-glow {
+  0% { transform: scale(0.9); opacity: 0.4; }
+  100% { transform: scale(1.1); opacity: 0.7; }
 }
 </style>
