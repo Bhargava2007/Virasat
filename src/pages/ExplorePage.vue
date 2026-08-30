@@ -38,7 +38,9 @@
       <div class="filter-group">
         <q-btn-group rounded outline class="type-btn-group full-width">
           <q-btn
-            :color="discovery.selectedType.value === 'all' ? 'primary' : 'grey-7'"
+            :color="
+              discovery.selectedType.value === 'all' ? 'primary' : 'grey-7'
+            "
             :outline="discovery.selectedType.value !== 'all'"
             label="All"
             @click="discovery.selectedType.value = 'all'"
@@ -46,7 +48,9 @@
             unelevated
           />
           <q-btn
-            :color="discovery.selectedType.value === 'heritage' ? 'primary' : 'grey-7'"
+            :color="
+              discovery.selectedType.value === 'heritage' ? 'primary' : 'grey-7'
+            "
             :outline="discovery.selectedType.value !== 'heritage'"
             label="Heritage"
             @click="discovery.selectedType.value = 'heritage'"
@@ -54,7 +58,9 @@
             unelevated
           />
           <q-btn
-            :color="discovery.selectedType.value === 'culture' ? 'primary' : 'grey-7'"
+            :color="
+              discovery.selectedType.value === 'culture' ? 'primary' : 'grey-7'
+            "
             :outline="discovery.selectedType.value !== 'culture'"
             label="Culture"
             @click="discovery.selectedType.value = 'culture'"
@@ -84,11 +90,18 @@
       </div>
 
       <!-- Dynamic Category Filter -->
-      <div v-if="discovery.availableCategories.value.length > 0" class="chip-scroll-row q-mt-md">
+      <div
+        v-if="discovery.availableCategories.value.length > 0"
+        class="chip-scroll-row q-mt-md"
+      >
         <q-chip
           clickable
-          :color="discovery.selectedCategory.value === '' ? 'secondary' : 'grey-3'"
-          :text-color="discovery.selectedCategory.value === '' ? 'white' : 'grey-8'"
+          :color="
+            discovery.selectedCategory.value === '' ? 'secondary' : 'grey-3'
+          "
+          :text-color="
+            discovery.selectedCategory.value === '' ? 'white' : 'grey-8'
+          "
           @click="discovery.selectedCategory.value = ''"
         >
           All Categories
@@ -97,9 +110,18 @@
           v-for="cat in discovery.availableCategories.value"
           :key="cat.id"
           clickable
-          :color="discovery.selectedCategory.value === cat.slug ? 'secondary' : 'grey-3'"
-          :text-color="discovery.selectedCategory.value === cat.slug ? 'white' : 'grey-8'"
-          @click="discovery.selectedCategory.value = discovery.selectedCategory.value === cat.slug ? '' : cat.slug"
+          :color="
+            discovery.selectedCategory.value === cat.slug
+              ? 'secondary'
+              : 'grey-3'
+          "
+          :text-color="
+            discovery.selectedCategory.value === cat.slug ? 'white' : 'grey-8'
+          "
+          @click="
+            discovery.selectedCategory.value =
+              discovery.selectedCategory.value === cat.slug ? '' : cat.slug
+          "
         >
           {{ cat.name }}
         </q-chip>
@@ -117,7 +139,9 @@
             </div>
             <div class="entry-card__body">
               <h2 class="entry-card__title">Heritage</h2>
-              <p class="entry-card__text">Monuments, forts, heritage sites & more</p>
+              <p class="entry-card__text"
+                >Monuments, forts, heritage sites & more</p
+              >
             </div>
             <div class="entry-card__arrow">
               <q-icon name="chevron_right" size="18px" />
@@ -137,13 +161,18 @@
             </div>
           </router-link>
 
-          <router-link to="/explore/map" class="entry-card entry-card--map full-width-card">
+          <router-link
+            to="/explore/map"
+            class="entry-card entry-card--map full-width-card"
+          >
             <div class="entry-card__icon-wrap">
               <q-icon name="map" size="22px" />
             </div>
             <div class="entry-card__body">
               <h2 class="entry-card__title">Living Heritage Map</h2>
-              <p class="entry-card__text">Explore India visually through an interactive map.</p>
+              <p class="entry-card__text"
+                >Explore India visually through an interactive map.</p
+              >
             </div>
             <div class="entry-card__arrow">
               <q-icon name="chevron_right" size="18px" />
@@ -154,17 +183,35 @@
 
       <!-- Featured Heritage -->
       <section class="section-spacing">
-        <SectionHeader title="Featured Heritage" actionLabel="View all" actionTo="/heritage" />
+        <SectionHeader
+          title="Featured Heritage"
+          actionLabel="View all"
+          actionTo="/heritage"
+        />
         <div class="featured-scroll-row">
-          <FeaturedVisualCard v-for="item in featuredHeritage" :key="item.id" :item="item" type="heritage" />
+          <FeaturedVisualCard
+            v-for="item in featuredHeritage"
+            :key="item.id"
+            :item="item"
+            type="heritage"
+          />
         </div>
       </section>
 
       <!-- Living Culture -->
       <section class="section-spacing">
-        <SectionHeader title="Living Culture" actionLabel="View all" actionTo="/culture" />
+        <SectionHeader
+          title="Living Culture"
+          actionLabel="View all"
+          actionTo="/culture"
+        />
         <div class="featured-scroll-row">
-          <FeaturedVisualCard v-for="item in featuredCulture" :key="item.id" :item="item" type="culture" />
+          <FeaturedVisualCard
+            v-for="item in featuredCulture"
+            :key="item.id"
+            :item="item"
+            type="culture"
+          />
         </div>
       </section>
     </template>
@@ -176,7 +223,13 @@
           <div class="text-subtitle2 text-weight-bold text-grey-8">
             {{ discovery.resultCount.value }} places and traditions found
           </div>
-          <q-btn flat dense color="primary" label="Clear Filters" @click="discovery.resetFilters()" />
+          <q-btn
+            flat
+            dense
+            color="primary"
+            label="Clear Filters"
+            @click="discovery.resetFilters()"
+          />
         </div>
 
         <div v-if="discovery.resultCount.value > 0" class="record-list">
@@ -187,12 +240,20 @@
             :item="item"
           />
         </div>
-        
+
         <div v-else class="empty-state">
           <q-icon name="search_off" class="empty-state__icon" />
           <h3 class="empty-state__title">No results found</h3>
-          <p class="empty-state__subtitle">Try adjusting your filters or search</p>
-          <q-btn outline color="primary" label="Clear Filters" class="q-mt-md" @click="discovery.resetFilters()" />
+          <p class="empty-state__subtitle"
+            >Try adjusting your filters or search</p
+          >
+          <q-btn
+            outline
+            color="primary"
+            label="Clear Filters"
+            class="q-mt-md"
+            @click="discovery.resetFilters()"
+          />
         </div>
       </section>
     </template>
@@ -249,7 +310,8 @@ const stateChipsWithIcons = computed(() => {
 })
 
 const toggleState = state => {
-  discovery.selectedState.value = discovery.selectedState.value === state.slug ? '' : state.slug
+  discovery.selectedState.value =
+    discovery.selectedState.value === state.slug ? '' : state.slug
 }
 </script>
 

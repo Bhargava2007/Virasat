@@ -170,8 +170,8 @@ function tryLoadTiles(providerIndex = 0) {
 
 // Bounding box for India to strictly constrain map scrolling/panning
 const INDIA_BOUNDS = L.latLngBounds(
-  [6.0, 68.0],   // Southwest corner (Lakshadweep / Kanyakumari)
-  [37.5, 97.5]   // Northeast corner (Ladakh / Arunachal Pradesh)
+  [6.0, 68.0], // Southwest corner (Lakshadweep / Kanyakumari)
+  [37.5, 97.5] // Northeast corner (Ladakh / Arunachal Pradesh)
 )
 
 onMounted(() => {

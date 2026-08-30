@@ -1,10 +1,19 @@
 <template>
   <q-page class="form-page">
     <div class="form-header">
-      <q-btn flat round icon="arrow_back" @click="$router.back()" class="back-btn" />
+      <q-btn
+        flat
+        round
+        icon="arrow_back"
+        @click="$router.back()"
+        class="back-btn"
+      />
       <div>
         <h1 class="form-title">Report Damage</h1>
-        <p class="form-subtitle">Upload a photo and details about monument damage you have witnessed</p>
+        <p class="form-subtitle"
+          >Upload a photo and details about monument damage you have
+          witnessed</p
+        >
       </div>
     </div>
 
@@ -56,7 +65,11 @@
               </template>
             </q-file>
             <div v-if="imagePreview" class="image-preview-wrap">
-              <img :src="imagePreview" class="image-preview" alt="damage preview" />
+              <img
+                :src="imagePreview"
+                class="image-preview"
+                alt="damage preview"
+              />
             </div>
           </div>
 
@@ -74,12 +87,20 @@
     <q-dialog v-model="successDialog">
       <q-card class="success-card">
         <q-card-section class="text-center">
-          <div style="font-size:3rem">??</div>
+          <div style="font-size: 3rem">??</div>
           <div class="text-h6 q-mt-md">Report Submitted!</div>
-          <p>Thank you for helping preserve heritage. Your report has been received.</p>
+          <p
+            >Thank you for helping preserve heritage. Your report has been
+            received.</p
+          >
         </q-card-section>
         <q-card-actions align="center">
-          <q-btn flat label="Go Back Home" color="primary" @click="$router.push('/')" />
+          <q-btn
+            flat
+            label="Go Back Home"
+            color="primary"
+            @click="$router.push('/')"
+          />
         </q-card-actions>
       </q-card>
     </q-dialog>
@@ -89,20 +110,32 @@
 <script setup>
 import { ref, watch } from 'vue'
 
-const form = ref({ name: '', contact: '', monument: '', location: '', description: '', image: null })
+const form = ref({
+  name: '',
+  contact: '',
+  monument: '',
+  location: '',
+  description: '',
+  image: null
+})
 const submitting = ref(false)
 const successDialog = ref(false)
 const imagePreview = ref(null)
 
-watch(() => form.value.image, (file) => {
-  if (file) {
-    const reader = new FileReader()
-    reader.onload = (e) => { imagePreview.value = e.target.result }
-    reader.readAsDataURL(file)
-  } else {
-    imagePreview.value = null
+watch(
+  () => form.value.image,
+  file => {
+    if (file) {
+      const reader = new FileReader()
+      reader.onload = e => {
+        imagePreview.value = e.target.result
+      }
+      reader.readAsDataURL(file)
+    } else {
+      imagePreview.value = null
+    }
   }
-})
+)
 
 const handleSubmit = async () => {
   submitting.value = true
@@ -124,7 +157,9 @@ const handleSubmit = async () => {
   gap: 12px;
   margin-bottom: 24px;
 }
-.back-btn { margin-top: 4px; }
+.back-btn {
+  margin-top: 4px;
+}
 .form-title {
   font-family: var(--font-heading), Outfit, sans-serif;
   font-size: 1.75rem;
@@ -139,7 +174,7 @@ const handleSubmit = async () => {
 }
 .form-card {
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 .form-fields {
   display: flex;

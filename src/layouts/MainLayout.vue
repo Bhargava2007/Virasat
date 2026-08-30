@@ -37,8 +37,18 @@ const tabs = [
     iconActive: 'explore',
     route: '/explore'
   },
-  { label: 'Complaints', icon: 'o_report_problem', iconActive: 'report_problem', route: '/complaints' },
-  { label: 'Stories', icon: 'o_menu_book', iconActive: 'menu_book', route: '/stories' }
+  {
+    label: 'Complaints',
+    icon: 'o_report_problem',
+    iconActive: 'report_problem',
+    route: '/complaints'
+  },
+  {
+    label: 'Stories',
+    icon: 'o_menu_book',
+    iconActive: 'menu_book',
+    route: '/stories'
+  }
 ]
 
 const isActive = tabRoute => {

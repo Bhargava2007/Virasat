@@ -8,7 +8,8 @@
     @keydown.enter="navigateToDetail"
   >
     <div class="related-card__media">
-      <img loading="lazy"
+      <img
+        loading="lazy"
         v-if="imageUrl && !imageError"
         :src="imageUrl"
         :alt="item.name"

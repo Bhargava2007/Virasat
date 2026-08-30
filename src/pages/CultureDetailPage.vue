@@ -221,7 +221,11 @@
               :key="idx"
               class="gallery-item"
             >
-              <img :src="imgItem.url" :alt="imgItem.title || record.name" loading="lazy" />
+              <img
+                :src="imgItem.url"
+                :alt="imgItem.title || record.name"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>

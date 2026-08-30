@@ -19,7 +19,11 @@
       class="search-bar__clear"
       @click="clearInput"
     />
-    <div class="search-bar__filter-btn" aria-label="Search" @click="handleEnter">
+    <div
+      class="search-bar__filter-btn"
+      aria-label="Search"
+      @click="handleEnter"
+    >
       <q-icon name="arrow_forward" size="18px" v-if="actionIcon === 'arrow'" />
       <q-icon name="filter_list" size="18px" v-else />
     </div>
@@ -115,7 +119,7 @@ const clearInput = () => {
 
   &__icon {
     flex-shrink: 0;
-    
+
     .search-bar--light & {
       color: #8c786c;
     }
@@ -128,14 +132,18 @@ const clearInput = () => {
     flex-shrink: 0;
     cursor: pointer;
     margin-right: 6px;
-    
+
     .search-bar--light & {
       color: #9e8e85;
-      &:hover { color: var(--color-text); }
+      &:hover {
+        color: var(--color-text);
+      }
     }
     .search-bar--dark & {
       color: rgba(255, 255, 255, 0.7);
-      &:hover { color: #ffffff; }
+      &:hover {
+        color: #ffffff;
+      }
     }
   }
 
@@ -157,7 +165,7 @@ const clearInput = () => {
         background: rgba(184, 75, 42, 0.08);
       }
     }
-    
+
     .search-bar--dark & {
       color: #ffffff;
       &:hover {

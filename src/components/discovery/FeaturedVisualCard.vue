@@ -9,7 +9,8 @@
   >
     <!-- Image / Placeholder Canvas -->
     <div class="featured-visual-card__image-container" :style="containerStyle">
-      <img loading="lazy"
+      <img
+        loading="lazy"
         v-if="imageUrl && !imageError"
         :src="imageUrl"
         :alt="item.name"
@@ -154,7 +155,6 @@ const containerStyle = computed(() => {
     height: 100%;
     object-fit: cover;
   }
-
 
   .verified-badge-card {
     position: absolute;

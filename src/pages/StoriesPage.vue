@@ -10,7 +10,8 @@
         <p class="stories-header__eyebrow">Oral History of Odisha</p>
         <h1 class="stories-header__title">Stories</h1>
         <p class="stories-header__subtitle">
-          Timeless folk tales, legends &amp; oral histories — preserved before they fade into silence
+          Timeless folk tales, legends &amp; oral histories — preserved before
+          they fade into silence
         </p>
         <div class="story-count-badge">
           <span>{{ stories.length }} Verified Stories</span>
@@ -76,7 +77,10 @@
     <!-- Source Footer -->
     <div class="source-footer">
       <q-icon name="verified_user" size="18px" color="positive" />
-      <p>All stories are sourced from verified academic publications, temple chronicles, and documented oral traditions of Odisha.</p>
+      <p
+        >All stories are sourced from verified academic publications, temple
+        chronicles, and documented oral traditions of Odisha.</p
+      >
     </div>
   </q-page>
 </template>
@@ -105,11 +109,11 @@ const goToStory = slug => {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
 
-$ink: #1E1309;
-$parchment: #FDF8F0;
-$accent: #B84B2A;
-$gold: #C9962A;
-$muted: #6B5240;
+$ink: #1e1309;
+$parchment: #fdf8f0;
+$accent: #b84b2a;
+$gold: #c9962a;
+$muted: #6b5240;
 
 .stories-page {
   background: $parchment;
@@ -129,7 +133,13 @@ $muted: #6B5240;
     position: absolute;
     inset: 0;
     opacity: 0.04;
-    background-image: repeating-linear-gradient(45deg, #fff 0px, #fff 1px, transparent 1px, transparent 50%);
+    background-image: repeating-linear-gradient(
+      45deg,
+      #fff 0px,
+      #fff 1px,
+      transparent 1px,
+      transparent 50%
+    );
     background-size: 20px 20px;
   }
 
@@ -144,7 +154,7 @@ $muted: #6B5240;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     letter-spacing: 0.12em;
     text-transform: uppercase;
     margin: 0 0 16px;
@@ -159,12 +169,14 @@ $muted: #6B5240;
     letter-spacing: -0.01em;
     line-height: 1.1;
 
-    @media (max-width: 480px) { font-size: 2.25rem; }
+    @media (max-width: 480px) {
+      font-size: 2.25rem;
+    }
   }
 
   &__subtitle {
     font-size: 1rem;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     line-height: 1.6;
     margin: 0 0 28px;
   }
@@ -174,8 +186,8 @@ $muted: #6B5240;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,8 +197,8 @@ $muted: #6B5240;
 
 .story-count-badge {
   display: inline-block;
-  background: rgba(201,150,42,0.18);
-  border: 1px solid rgba(201,150,42,0.35);
+  background: rgba(201, 150, 42, 0.18);
+  border: 1px solid rgba(201, 150, 42, 0.35);
   color: $gold;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -199,7 +211,7 @@ $muted: #6B5240;
 // === FILTER BAR ===
 .filter-bar {
   background: #fff;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -207,7 +219,9 @@ $muted: #6B5240;
   top: 0;
   z-index: 10;
 
-  &::-webkit-scrollbar { display: none; }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &__inner {
     display: flex;
@@ -218,7 +232,7 @@ $muted: #6B5240;
 }
 
 .filter-pill {
-  border: 1.5px solid rgba(74,44,30,0.18);
+  border: 1.5px solid rgba(74, 44, 30, 0.18);
   background: transparent;
   border-radius: 100px;
   padding: 6px 16px;
@@ -251,21 +265,40 @@ $muted: #6B5240;
 
 // Color themes
 $colors: (
-  1: (#B84B2A, rgba(184,75,42,0.08)),
-  2: (#3B5BDB, rgba(59,91,219,0.08)),
-  3: (#2D6A4F, rgba(45,106,79,0.08)),
-  4: (#B5680C, rgba(181,104,12,0.08)),
-  5: (#7048B8, rgba(112,72,184,0.08)),
+  1: (
+    #b84b2a,
+    rgba(184, 75, 42, 0.08)
+  ),
+  2: (
+    #3b5bdb,
+    rgba(59, 91, 219, 0.08)
+  ),
+  3: (
+    #2d6a4f,
+    rgba(45, 106, 79, 0.08)
+  ),
+  4: (
+    #b5680c,
+    rgba(181, 104, 12, 0.08)
+  ),
+  5: (
+    #7048b8,
+    rgba(112, 72, 184, 0.08)
+  )
 );
 
 @each $n, $vals in $colors {
   .story-card--color-#{$n} {
-    .story-card__accent  { background: nth($vals, 1); }
+    .story-card__accent {
+      background: nth($vals, 1);
+    }
     .story-card__category {
       color: nth($vals, 1);
       background: nth($vals, 2);
     }
-    .story-card__cta { color: nth($vals, 1); }
+    .story-card__cta {
+      color: nth($vals, 1);
+    }
   }
 }
 
@@ -273,18 +306,22 @@ $colors: (
   background: #fff;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(0,0,0,0.09);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.09);
   }
-  &:active { transform: scale(0.98); }
+  &:active {
+    transform: scale(0.98);
+  }
 
   &__accent {
     height: 5px;
@@ -359,7 +396,7 @@ $colors: (
     gap: 8px;
     margin-bottom: 14px;
     padding-bottom: 14px;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     flex-wrap: wrap;
   }
 
@@ -380,7 +417,7 @@ $colors: (
     font-size: 0.7rem;
     font-weight: 600;
     color: #888;
-    background: #F5F0EB;
+    background: #f5f0eb;
     padding: 3px 8px;
     border-radius: 4px;
     white-space: nowrap;
@@ -395,7 +432,9 @@ $colors: (
     font-weight: 700;
     transition: gap 0.2s;
   }
-  &:hover &__cta { gap: 9px; }
+  &:hover &__cta {
+    gap: 9px;
+  }
 }
 
 // === SOURCE FOOTER ===

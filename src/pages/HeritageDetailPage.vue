@@ -140,25 +140,47 @@
             <q-icon name="engineering" size="20px" class="section-icon" />
             Construction Story
           </h2>
-          <p v-if="record.constructionDetails.commissioner" class="detail-section__subtext q-mb-sm">
-            <strong>Commissioned by:</strong> {{ record.constructionDetails.commissioner }}
+          <p
+            v-if="record.constructionDetails.commissioner"
+            class="detail-section__subtext q-mb-sm"
+          >
+            <strong>Commissioned by:</strong>
+            {{ record.constructionDetails.commissioner }}
           </p>
-          <p v-if="record.constructionDetails.duration" class="detail-section__subtext q-mb-sm">
-            <strong>Construction Period:</strong> {{ record.constructionDetails.duration }}
+          <p
+            v-if="record.constructionDetails.duration"
+            class="detail-section__subtext q-mb-sm"
+          >
+            <strong>Construction Period:</strong>
+            {{ record.constructionDetails.duration }}
           </p>
-          <p v-if="record.constructionDetails.craftspeople" class="detail-section__subtext q-mb-sm">
-            <strong>Craftspeople & Artisans:</strong> {{ record.constructionDetails.craftspeople }}
+          <p
+            v-if="record.constructionDetails.craftspeople"
+            class="detail-section__subtext q-mb-sm"
+          >
+            <strong>Craftspeople & Artisans:</strong>
+            {{ record.constructionDetails.craftspeople }}
           </p>
-          <p v-if="record.constructionDetails.materials" class="detail-section__subtext q-mb-sm">
-            <strong>Materials Used:</strong> {{ record.constructionDetails.materials }}
+          <p
+            v-if="record.constructionDetails.materials"
+            class="detail-section__subtext q-mb-sm"
+          >
+            <strong>Materials Used:</strong>
+            {{ record.constructionDetails.materials }}
           </p>
-          <p v-if="record.constructionDetails.process" class="detail-section__text q-mt-sm">
+          <p
+            v-if="record.constructionDetails.process"
+            class="detail-section__text q-mt-sm"
+          >
             {{ record.constructionDetails.process }}
           </p>
         </section>
 
         <!-- HISTORICAL TIMELINE SECTION -->
-        <section v-if="record.timelineEvents && record.timelineEvents.length > 0" class="detail-section">
+        <section
+          v-if="record.timelineEvents && record.timelineEvents.length > 0"
+          class="detail-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="timeline" size="20px" class="section-icon" />
             Historical Timeline
@@ -179,7 +201,10 @@
         </section>
 
         <!-- NOTABLE EVENTS SECTION -->
-        <section v-if="record.notableEvents && record.notableEvents.length > 0" class="detail-section">
+        <section
+          v-if="record.notableEvents && record.notableEvents.length > 0"
+          class="detail-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="event_note" size="20px" class="section-icon" />
             Notable Events
@@ -193,7 +218,9 @@
               <div class="notable-event-card__header">
                 <q-icon name="stars" size="16px" class="q-mr-xs text-amber-7" />
                 <span class="notable-event-card__title">{{ evt.title }}</span>
-                <span v-if="evt.year" class="notable-event-card__year">{{ evt.year }}</span>
+                <span v-if="evt.year" class="notable-event-card__year">{{
+                  evt.year
+                }}</span>
               </div>
               <p class="notable-event-card__desc">{{ evt.description }}</p>
             </div>
@@ -201,13 +228,18 @@
         </section>
 
         <!-- TRADITIONS & CULTURE BORN HERE -->
-        <section v-if="record.traditionsSpawned && record.traditionsSpawned.length > 0" class="detail-section traditions-section">
+        <section
+          v-if="record.traditionsSpawned && record.traditionsSpawned.length > 0"
+          class="detail-section traditions-section"
+        >
           <h2 class="detail-section__heading">
             <q-icon name="auto_stories" size="20px" class="section-icon" />
             Traditions & Culture Born Here
           </h2>
           <p class="detail-section__subtext q-mb-md">
-            How this site influenced the living culture around it — traditions, art forms, food, and rituals that emerged from or because of this place.
+            How this site influenced the living culture around it — traditions,
+            art forms, food, and rituals that emerged from or because of this
+            place.
           </p>
           <div class="traditions-list">
             <div
@@ -216,7 +248,10 @@
               class="tradition-card"
             >
               <div class="tradition-card__icon">
-                <q-icon :name="item.icon || 'fiber_manual_record'" size="20px" />
+                <q-icon
+                  :name="item.icon || 'fiber_manual_record'"
+                  size="20px"
+                />
               </div>
               <div class="tradition-card__body">
                 <h4 class="tradition-card__name">{{ item.name }}</h4>
@@ -248,7 +283,11 @@
               :key="idx"
               class="gallery-item"
             >
-              <img :src="imgItem.url" :alt="imgItem.title || record.name" loading="lazy" />
+              <img
+                :src="imgItem.url"
+                :alt="imgItem.title || record.name"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
@@ -883,26 +922,30 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
     background: rgba(184, 75, 42, 0.15);
   }
 
-  &:last-child::before { display: none; }
+  &:last-child::before {
+    display: none;
+  }
 
   &__dot {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #B84B2A;
+    background: #b84b2a;
     border: 3px solid #fff3ec;
     flex-shrink: 0;
     margin-top: 2px;
     box-shadow: 0 0 0 2px rgba(184, 75, 42, 0.2);
   }
 
-  &__content { flex: 1; }
+  &__content {
+    flex: 1;
+  }
 
   &__year {
     font-family: var(--font-heading);
     font-size: 0.75rem;
     font-weight: 800;
-    color: #B84B2A;
+    color: #b84b2a;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     display: block;
@@ -928,7 +971,7 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
 .notable-event-card {
   background: #fffaf7;
   border: 1px solid rgba(184, 75, 42, 0.1);
-  border-left: 3px solid #B84B2A;
+  border-left: 3px solid #b84b2a;
   border-radius: 8px;
   padding: 12px 14px;
 
@@ -950,7 +993,7 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
   &__year {
     font-family: var(--font-body);
     font-size: 0.75rem;
-    color: #B84B2A;
+    color: #b84b2a;
     font-weight: 600;
     background: #fff3ec;
     padding: 2px 8px;
@@ -986,14 +1029,16 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
     height: 40px;
     border-radius: 10px;
     background: rgba(184, 75, 42, 0.1);
-    color: #B84B2A;
+    color: #b84b2a;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
 
-  &__body { flex: 1; }
+  &__body {
+    flex: 1;
+  }
 
   &__name {
     font-family: var(--font-heading);
@@ -1009,7 +1054,7 @@ const hasGallery = computed(() => galleryItems.value.length > 0)
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #B84B2A;
+    color: #b84b2a;
     display: block;
     margin-bottom: 6px;
   }

@@ -144,6 +144,20 @@ h6 {
   background: var(--color-primary);
 }
 
+/* Page Transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+}
+
+.page-leave-to {
+  opacity: 0;
+}
+
 /* Discovery Utilities */
 
 .discovery-page {
@@ -215,6 +229,18 @@ h6 {
     font-size: 0.875rem;
     color: var(--color-text-secondary);
     margin: 0;
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 

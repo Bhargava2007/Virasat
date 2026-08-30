@@ -13,7 +13,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Bhubaneswar Cultural Hub (Rabindra Mandap)',
     sourceName: 'Odisha Tourism / Sangeet Natak Akademi',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/odissi.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/odissi.html'
   },
   {
     id: 'od-culture-chhau',
@@ -40,7 +41,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Khurda (Paika Akhada Heritage Centre)',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/performing-arts/paika-akhada.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/performing-arts/paika-akhada.html'
   },
 
   // PURI — FESTIVALS & RELIGIOUS CULTURE
@@ -69,16 +71,18 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Raghurajpur Craft Village, Puri district',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
   },
   {
     id: 'od-culture-pattachitra',
-    latitude: 19.8110,
+    latitude: 19.811,
     longitude: 85.8267,
     precision: 'city',
     locationLabel: 'Raghurajpur Heritage Craft Village',
     sourceName: 'Odisha Tourism / GI Registry',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
   },
   {
     id: 'od-culture-applique-pipili',
@@ -87,7 +91,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Pipili Village, Puri district',
     sourceName: 'GI Registry / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/pipili-applique-work.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/pipili-applique-work.html'
   },
   {
     id: 'od-culture-ikat-khandua',
@@ -107,7 +112,8 @@ export const cultureCoordinates = [
     precision: 'site',
     locationLabel: 'Konark Dance Festival Grounds, Konark Sun Temple',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/konark-dance-festival.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/konark-dance-festival.html'
   },
 
   // CUTTACK — SILVER FILIGREE & DURGA PUJA
@@ -118,7 +124,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Cuttack Silver Street (Tarini Chowk Area)',
     sourceName: 'GI Registry / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/silver-filigree.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/silver-filigree.html'
   },
   {
     id: 'od-culture-durga-puja-odisha',
@@ -127,7 +134,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Cuttack — Mahanadi Ghats Durga Puja Grounds',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/durga-puja.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/durga-puja.html'
   },
 
   // SAMBALPUR — TEXTILES & FOLK TRADITIONS
@@ -136,9 +144,10 @@ export const cultureCoordinates = [
     latitude: 21.4669,
     longitude: 83.9756,
     precision: 'city',
-    locationLabel: 'Sambalpur Weavers\' Colony (Sonepur Road)',
+    locationLabel: "Sambalpur Weavers' Colony (Sonepur Road)",
     sourceName: 'GI Registry / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/sambalpuri-saree.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/sambalpuri-saree.html'
   },
   {
     id: 'od-culture-nuakhai',
@@ -147,7 +156,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Sambalpur City Centre (Nuakhai Festival Hub)',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/nuakhai.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/nuakhai.html'
   },
   {
     id: 'od-culture-dalkhai',
@@ -156,7 +166,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Bargarh — Dalkhai Folk Culture Hub',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/dalkhai.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/dalkhai.html'
   },
   {
     id: 'od-culture-sambalpuri-folk-music',
@@ -187,7 +198,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Dhenkanal — Dhokra Artisan Cluster',
     sourceName: 'Crafts Council of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/dhokra.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/dhokra.html'
   },
 
   // BHUBANESWAR — PALM LEAF MANUSCRIPT & CUISINE
@@ -207,7 +219,8 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Puri — Odishan Cuisine Hub',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine.html'
   },
 
   // STATEWIDE FESTIVALS
@@ -218,6 +231,7 @@ export const cultureCoordinates = [
     precision: 'city',
     locationLabel: 'Bhubaneswar (Raja Festival Centre)',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/raja-festival.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/raja-festival.html'
   }
 ]

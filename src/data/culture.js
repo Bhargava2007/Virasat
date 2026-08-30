@@ -4,7 +4,6 @@
  * 25 culture records covering classical arts, folk traditions, festivals, crafts & textiles.
  */
 export const verifiedCulture = [
-
   // ─────────────────────────────────────────────────────────
   // CLASSICAL & FOLK DANCE
   // ─────────────────────────────────────────────────────────
@@ -41,8 +40,15 @@ export const verifiedCulture = [
     media: [],
     relatedPlaces: ['Bhubaneswar', 'Puri', 'Konark'],
     relatedFestivals: ['Konark Dance Festival', 'Mukteswar Dance Festival'],
-    relatedHeritageIds: ['od-heritage-konark', 'od-heritage-jagannath-puri', 'od-heritage-mukteswar'],
-    relatedCultureIds: ['od-culture-gotipua', 'od-culture-konark-dance-festival'],
+    relatedHeritageIds: [
+      'od-heritage-konark',
+      'od-heritage-jagannath-puri',
+      'od-heritage-mukteswar'
+    ],
+    relatedCultureIds: [
+      'od-culture-gotipua',
+      'od-culture-konark-dance-festival'
+    ],
     trailIds: ['trail-living-traditions-odisha'],
     verificationStatus: 'verified',
     sources: [
@@ -54,7 +60,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Odissi',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/odissi.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/odissi.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -76,7 +83,7 @@ export const verifiedCulture = [
     originHistory:
       'Chhau dance traditions are found in Odisha (Mayurbhanj), Jharkhand (Seraikela), and West Bengal (Purulia). The Mayurbhanj style, practiced by the royal family and tribal communities, is performed without masks and emphasises vigorous martial movements.',
     culturalSignificance:
-      'Inscribed on UNESCO\'s Representative List of Intangible Cultural Heritage in 2010 (jointly with Seraikela and Purulia Chhau). The Chaitra Parba festival is the primary context for Chhau performances.',
+      "Inscribed on UNESCO's Representative List of Intangible Cultural Heritage in 2010 (jointly with Seraikela and Purulia Chhau). The Chaitra Parba festival is the primary context for Chhau performances.",
     keyElements: [
       'Martial acrobatics',
       'Inverted spins',
@@ -148,7 +155,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Gotipua',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/gotipua.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/gotipua.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -169,7 +177,7 @@ export const verifiedCulture = [
     category: 'festivals',
     categoryName: 'Festival',
     shortDescription:
-      'The world\'s largest chariot festival, held annually in Puri, where the three towering wooden chariots of Lord Jagannath, Balabhadra, and Subhadra are drawn by hundreds of thousands of devotees.',
+      "The world's largest chariot festival, held annually in Puri, where the three towering wooden chariots of Lord Jagannath, Balabhadra, and Subhadra are drawn by hundreds of thousands of devotees.",
     originHistory:
       'The Rath Yatra has been held at Puri for over a millennium and is considered one of the oldest surviving festivals in India. Historical accounts by travellers like Marco Polo (14th century) and Ibn Battuta describe the festival.',
     culturalSignificance:
@@ -201,7 +209,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Rath Yatra',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/rath-yatra.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/rath-yatra.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -219,11 +228,11 @@ export const verifiedCulture = [
     category: 'festivals',
     categoryName: 'Festival',
     shortDescription:
-      'An annual five-day classical dance festival held against the backdrop of the UNESCO-listed Konark Sun Temple, showcasing India\'s eight classical dance forms.',
+      "An annual five-day classical dance festival held against the backdrop of the UNESCO-listed Konark Sun Temple, showcasing India's eight classical dance forms.",
     originHistory:
       'The Konark Dance Festival was inaugurated in 1986 by the Odisha Tourism Development Corporation. It is held every year from December 1–5 against the moonlit backdrop of the Konark Sun Temple.',
     culturalSignificance:
-      'The festival is one of India\'s premier classical dance events, drawing performers and audiences from across India and internationally. The temple setting enhances the spiritual resonance of the performances.',
+      "The festival is one of India's premier classical dance events, drawing performers and audiences from across India and internationally. The temple setting enhances the spiritual resonance of the performances.",
     keyElements: [
       'Five-day programme',
       'All eight classical dance forms of India',
@@ -244,7 +253,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Konark Dance Festival',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/konark-dance-festival.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/konark-dance-festival.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -288,7 +298,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Raja Parba',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/raja-festival.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/raja-festival.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -332,7 +343,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Nuakhai',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/nuakhai.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/nuakhai.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -350,14 +362,14 @@ export const verifiedCulture = [
     category: 'festivals',
     categoryName: 'Festival',
     shortDescription:
-      'Odisha\'s unique celebration of Durga Puja, marked by elaborate locally crafted idols, distinctive Odishan puja rituals, and spectacular Kumari (virgin girl) worship traditions.',
+      "Odisha's unique celebration of Durga Puja, marked by elaborate locally crafted idols, distinctive Odishan puja rituals, and spectacular Kumari (virgin girl) worship traditions.",
     originHistory:
-      'Durga Puja has been celebrated in Odisha for centuries, with the Cuttack Mahanadi Ghats hosting some of the oldest and most spectacular celebrations. Cuttack is particularly famed for its silver filigree decorations on the goddess\'s idol.',
+      "Durga Puja has been celebrated in Odisha for centuries, with the Cuttack Mahanadi Ghats hosting some of the oldest and most spectacular celebrations. Cuttack is particularly famed for its silver filigree decorations on the goddess's idol.",
     culturalSignificance:
       'The Cuttack Durga Puja, famous for its massive silver ornament (Chandanis) on the idols, draws millions of visitors. The Khudurukuni Osha (a separate Odishan goddess ritual) is observed alongside Durga Puja by Odishan women.',
     keyElements: [
       'Silver filigree (Chandani) idol decorations (Cuttack)',
-      'Khudurukuni Osha women\'s ritual',
+      "Khudurukuni Osha women's ritual",
       'Kumari Puja (virgin worship)',
       'Magnificent puja pandals',
       'Odishan bhog (sacred food offerings)'
@@ -376,7 +388,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Durga Puja',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/durga-puja.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/festivals-and-events/durga-puja.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -417,7 +430,10 @@ export const verifiedCulture = [
     media: [],
     relatedPlaces: ['Raghurajpur', 'Puri'],
     relatedFestivals: ['Rath Yatra'],
-    relatedHeritageIds: ['od-heritage-jagannath-puri', 'od-heritage-handicrafts-museum'],
+    relatedHeritageIds: [
+      'od-heritage-jagannath-puri',
+      'od-heritage-handicrafts-museum'
+    ],
     relatedCultureIds: ['od-culture-palm-leaf-manuscript'],
     trailIds: ['trail-living-traditions-odisha'],
     verificationStatus: 'verified',
@@ -430,7 +446,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Raghurajpur Craft Village',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/raghurajpur.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -448,7 +465,7 @@ export const verifiedCulture = [
     category: 'arts-crafts',
     categoryName: 'Arts & Crafts',
     shortDescription:
-      'Cuttack\'s world-renowned filigree craft — delicate ornamental work made by twisting and weaving fine silver wire into elaborate jewellery, ornaments and decorative objects. Holds GI Tag.',
+      "Cuttack's world-renowned filigree craft — delicate ornamental work made by twisting and weaving fine silver wire into elaborate jewellery, ornaments and decorative objects. Holds GI Tag.",
     originHistory:
       'Cuttack\'s silver filigree craft dates back to the 5th century CE. It reached its pinnacle under the Gajapati kings. Today Cuttack is known as the "Silver City" and its filigree is exported worldwide.',
     culturalSignificance:
@@ -466,7 +483,10 @@ export const verifiedCulture = [
     media: [],
     relatedPlaces: ['Cuttack'],
     relatedFestivals: ['Durga Puja'],
-    relatedHeritageIds: ['od-heritage-barabati-fort', 'od-heritage-handicrafts-museum'],
+    relatedHeritageIds: [
+      'od-heritage-barabati-fort',
+      'od-heritage-handicrafts-museum'
+    ],
     relatedCultureIds: ['od-culture-durga-puja-odisha'],
     trailIds: ['trail-living-traditions-odisha'],
     verificationStatus: 'verified',
@@ -479,7 +499,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Silver Filigree',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/silver-filigree.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/silver-filigree.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -515,7 +536,10 @@ export const verifiedCulture = [
     media: [],
     relatedPlaces: ['Pipili', 'Puri'],
     relatedFestivals: ['Rath Yatra'],
-    relatedHeritageIds: ['od-heritage-jagannath-puri', 'od-heritage-handicrafts-museum'],
+    relatedHeritageIds: [
+      'od-heritage-jagannath-puri',
+      'od-heritage-handicrafts-museum'
+    ],
     relatedCultureIds: ['od-culture-pattachitra'],
     trailIds: ['trail-living-traditions-odisha'],
     verificationStatus: 'verified',
@@ -528,7 +552,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Pipili',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/pipili-applique-work.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/pipili-applique-work.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -546,7 +571,7 @@ export const verifiedCulture = [
     category: 'arts-crafts',
     categoryName: 'Arts & Crafts',
     shortDescription:
-      'One of the world\'s oldest metal casting traditions (over 4,000 years old), using the lost-wax (cire perdue) technique to produce tribal-style figures, animals and decorative objects in brass.',
+      "One of the world's oldest metal casting traditions (over 4,000 years old), using the lost-wax (cire perdue) technique to produce tribal-style figures, animals and decorative objects in brass.",
     originHistory:
       'Dhokra casting dates to the Indus Valley Civilisation (c. 2500 BCE, with the Mohenjo-daro "Dancing Girl" being the earliest known example). In Odisha, the Dhokra Damar craftspeople have practised this tradition for millennia.',
     culturalSignificance:
@@ -577,7 +602,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Dhokra Craft',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/dhokra.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/dhokra.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -613,7 +639,10 @@ export const verifiedCulture = [
     media: [],
     relatedPlaces: ['Raghurajpur', 'Bhubaneswar'],
     relatedFestivals: [],
-    relatedHeritageIds: ['od-heritage-odisha-state-museum', 'od-heritage-handicrafts-museum'],
+    relatedHeritageIds: [
+      'od-heritage-odisha-state-museum',
+      'od-heritage-handicrafts-museum'
+    ],
     relatedCultureIds: ['od-culture-pattachitra'],
     trailIds: ['trail-living-traditions-odisha'],
     verificationStatus: 'verified',
@@ -626,7 +655,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Palm-Leaf Manuscript',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/palm-leaf-manuscript.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/palm-leaf-manuscript.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -679,7 +709,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Sambalpuri Weaving',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/sambalpuri-saree.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/crafts/sambalpuri-saree.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -845,7 +876,7 @@ export const verifiedCulture = [
     category: 'cuisine',
     categoryName: 'Cuisine',
     shortDescription:
-      'The sacred food offering (Mahaprasad) of the Jagannath Temple — prepared in the world\'s largest kitchen using 752 earthen pots stacked in a wood-fire system, serving up to 56 bhog varieties for 10,000+ devotees daily.',
+      "The sacred food offering (Mahaprasad) of the Jagannath Temple — prepared in the world's largest kitchen using 752 earthen pots stacked in a wood-fire system, serving up to 56 bhog varieties for 10,000+ devotees daily.",
     originHistory:
       'The Ananda Bazar kitchen of Jagannath Temple has operated for over 700 years. 500+ Suara caste cooks prepare food using only earthen pots and wood fire according to strict ritual rules set in the temple Niti (code).',
     culturalSignificance:
@@ -863,7 +894,10 @@ export const verifiedCulture = [
     media: [],
     relatedPlaces: ['Puri'],
     relatedFestivals: ['Rath Yatra'],
-    relatedHeritageIds: ['od-heritage-jagannath-puri', 'od-heritage-jagannath-temple-puri-natamandap'],
+    relatedHeritageIds: [
+      'od-heritage-jagannath-puri',
+      'od-heritage-jagannath-temple-puri-natamandap'
+    ],
     relatedCultureIds: ['od-culture-odisha-cuisine'],
     trailIds: ['trail-sacred-odisha'],
     verificationStatus: 'verified',
@@ -876,7 +910,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Mahaprasad',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine/mahaprasad.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine/mahaprasad.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -898,7 +933,7 @@ export const verifiedCulture = [
     originHistory:
       'Odishan culinary tradition was shaped by the Jagannath temple food code (saatvik, without onion or garlic), the fertile delta of the Mahanadi/Brahmani rivers, and centuries of coastal trade. Odisha claims origin of the Rasagola (disputed with West Bengal).',
     culturalSignificance:
-      'The GI tag for Odisha Rasagola was awarded in 2019, settling a long-running dispute. Chhena Poda (roasted cottage cheese dessert) is Odisha\'s unique sweet, said to be the favourite of Lord Jagannath. Poda Pitha is the iconic Raja festival food.',
+      "The GI tag for Odisha Rasagola was awarded in 2019, settling a long-running dispute. Chhena Poda (roasted cottage cheese dessert) is Odisha's unique sweet, said to be the favourite of Lord Jagannath. Poda Pitha is the iconic Raja festival food.",
     keyElements: [
       'Dalma (lentils with vegetables)',
       'Pakhala (fermented rice in water)',
@@ -927,7 +962,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Cuisine',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/cuisine.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -948,7 +984,7 @@ export const verifiedCulture = [
     category: 'performing-arts',
     categoryName: 'Performing Arts',
     shortDescription:
-      'The traditional martial art of Odisha\'s Paika warrior community — a blend of combat techniques, acrobatics, and rhythmic sword-and-shield dance that powered the Paika Revolt of 1817 against British rule.',
+      "The traditional martial art of Odisha's Paika warrior community — a blend of combat techniques, acrobatics, and rhythmic sword-and-shield dance that powered the Paika Revolt of 1817 against British rule.",
     originHistory:
       'Paika (meaning "foot soldier") martial arts has ancient roots in Odisha\'s military traditions under the Gajapati kingdom. The Paika Revolt of 1817, led by Buxi Jagabandhu, was the first armed resistance against British rule in India — predating the 1857 War of Independence.',
     culturalSignificance:
@@ -974,7 +1010,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Paika Akhada',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/performing-arts/paika-akhada.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/performing-arts/paika-akhada.html'
       }
     ],
     lastVerified: '2026-08-29'
@@ -1018,7 +1055,8 @@ export const verifiedCulture = [
       {
         sourceName: 'Odisha Tourism — Dalkhai',
         sourceType: 'Government tourism',
-        sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/dalkhai.html'
+        sourceUrl:
+          'https://odishatourism.gov.in/content/tourism/en/explore/art-and-culture/dance-forms/dalkhai.html'
       }
     ],
     lastVerified: '2026-08-29'

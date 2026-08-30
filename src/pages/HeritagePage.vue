@@ -63,10 +63,18 @@
     <!-- Counter & Results -->
     <section class="section-spacing results-section">
       <div class="row items-center justify-between q-mb-md">
-        <div class="counter-heading__text text-subtitle2 text-weight-bold text-grey-8">
+        <div
+          class="counter-heading__text text-subtitle2 text-weight-bold text-grey-8"
+        >
           {{ discovery.resultCount.value }} sites found
         </div>
-        <q-btn flat dense color="primary" label="Clear Filters" @click="discovery.resetFilters()" />
+        <q-btn
+          flat
+          dense
+          color="primary"
+          label="Clear Filters"
+          @click="discovery.resetFilters()"
+        />
       </div>
 
       <div v-if="discovery.resultCount.value > 0" class="record-list">
@@ -79,8 +87,16 @@
       <div v-else class="empty-state">
         <q-icon name="search_off" class="empty-state__icon" />
         <h3 class="empty-state__title">No heritage sites found</h3>
-        <p class="empty-state__subtitle">Try adjusting your filters or search</p>
-        <q-btn outline color="primary" label="Clear Filters" class="q-mt-md" @click="discovery.resetFilters()" />
+        <p class="empty-state__subtitle"
+          >Try adjusting your filters or search</p
+        >
+        <q-btn
+          outline
+          color="primary"
+          label="Clear Filters"
+          class="q-mt-md"
+          @click="discovery.resetFilters()"
+        />
       </div>
     </section>
   </q-page>
@@ -112,11 +128,13 @@ const handleBack = () => {
 }
 
 const toggleCategory = cat => {
-  discovery.selectedCategory.value = discovery.selectedCategory.value === cat.slug ? '' : cat.slug
+  discovery.selectedCategory.value =
+    discovery.selectedCategory.value === cat.slug ? '' : cat.slug
 }
 
 const toggleState = state => {
-  discovery.selectedState.value = discovery.selectedState.value === state.slug ? '' : state.slug
+  discovery.selectedState.value =
+    discovery.selectedState.value === state.slug ? '' : state.slug
 }
 </script>
 

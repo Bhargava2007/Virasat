@@ -16,7 +16,6 @@ import HomeCategoryCards from '@/components/home/HomeCategoryCards.vue'
 import HomeExplorePreview from '@/components/home/HomeExplorePreview.vue'
 import HomeFeaturedJourney from '@/components/home/HomeFeaturedJourney.vue'
 import HomePreserveCTA from '@/components/home/HomePreserveCTA.vue'
-
 </script>
 
 <style scoped>

@@ -1,10 +1,18 @@
 <template>
   <q-page class="form-page">
     <div class="form-header">
-      <q-btn flat round icon="arrow_back" @click="$router.back()" class="back-btn" />
+      <q-btn
+        flat
+        round
+        icon="arrow_back"
+        @click="$router.back()"
+        class="back-btn"
+      />
       <div>
         <h1 class="form-title">Rectify Information</h1>
-        <p class="form-subtitle">Submit a formal request to correct heritage data</p>
+        <p class="form-subtitle"
+          >Submit a formal request to correct heritage data</p
+        >
       </div>
     </div>
 
@@ -71,12 +79,20 @@
     <q-dialog v-model="successDialog">
       <q-card class="success-card">
         <q-card-section class="text-center">
-          <div style="font-size:3rem">?</div>
+          <div style="font-size: 3rem">?</div>
           <div class="text-h6 q-mt-md">Request Submitted!</div>
-          <p>Thank you. Your rectification request has been received. We will review it shortly.</p>
+          <p
+            >Thank you. Your rectification request has been received. We will
+            review it shortly.</p
+          >
         </q-card-section>
         <q-card-actions align="center">
-          <q-btn flat label="Go Back Home" color="primary" @click="$router.push('/')" />
+          <q-btn
+            flat
+            label="Go Back Home"
+            color="primary"
+            @click="$router.push('/')"
+          />
         </q-card-actions>
       </q-card>
     </q-dialog>
@@ -86,8 +102,22 @@
 <script setup>
 import { ref } from 'vue'
 
-const form = ref({ name: '', email: '', role: null, monument: '', currentInfo: '', correction: '', source: '' })
-const roleOptions = ['Local Resident', 'Historian', 'Researcher', 'Academic', 'Other']
+const form = ref({
+  name: '',
+  email: '',
+  role: null,
+  monument: '',
+  currentInfo: '',
+  correction: '',
+  source: ''
+})
+const roleOptions = [
+  'Local Resident',
+  'Historian',
+  'Researcher',
+  'Academic',
+  'Other'
+]
 const submitting = ref(false)
 const successDialog = ref(false)
 
@@ -111,7 +141,9 @@ const handleSubmit = async () => {
   gap: 12px;
   margin-bottom: 24px;
 }
-.back-btn { margin-top: 4px; }
+.back-btn {
+  margin-top: 4px;
+}
 .form-title {
   font-family: var(--font-heading), Outfit, sans-serif;
   font-size: 1.75rem;
@@ -126,7 +158,7 @@ const handleSubmit = async () => {
 }
 .form-card {
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 .form-fields {
   display: flex;

@@ -2,27 +2,34 @@
   <q-page class="complaints-page">
     <div class="complaints-header">
       <h1 class="page-title">Complaints</h1>
-      <p class="page-subtitle">Dispute heritage information or report monument damage</p>
+      <p class="page-subtitle"
+        >Dispute heritage information or report monument damage</p
+      >
     </div>
     <div class="complaints-cards">
       <div class="complaint-card" @click="$router.push('/complaints/rectify')">
         <div class="card-icon">??</div>
         <h2>Rectify Information</h2>
-        <p>If you are a local or historian and wish to dispute or correct information mentioned on the site, submit a formal request here.</p>
+        <p
+          >If you are a local or historian and wish to dispute or correct
+          information mentioned on the site, submit a formal request here.</p
+        >
         <q-btn flat label="Submit Request" color="primary" />
       </div>
       <div class="complaint-card" @click="$router.push('/complaints/report')">
         <div class="card-icon">??</div>
         <h2>Report Damage</h2>
-        <p>If you are visiting a monument and notice damage, upload an image and description so it can be reported to the authorities.</p>
+        <p
+          >If you are visiting a monument and notice damage, upload an image and
+          description so it can be reported to the authorities.</p
+        >
         <q-btn flat label="Report Now" color="negative" />
       </div>
     </div>
   </q-page>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .complaints-page {
@@ -51,22 +58,26 @@
   gap: 24px;
 }
 @media (max-width: 600px) {
-  .complaints-cards { grid-template-columns: 1fr; }
+  .complaints-cards {
+    grid-template-columns: 1fr;
+  }
 }
 .complaint-card {
   background: var(--color-surface-raised, #fff);
   border-radius: 20px;
   padding: 32px 24px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .complaint-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
 }
 .card-icon {
   font-size: 2.5rem;

@@ -62,17 +62,22 @@
           <h3>Verified Oral History</h3>
         </div>
         <p>
-          This story is part of Odisha's documented oral tradition, sourced from:
+          This story is part of Odisha's documented oral tradition, sourced
+          from:
           <em>{{ story.source }}</em>
         </p>
         <p class="verification-box__disclaimer">
-          Oral histories may vary between communities and tellings. This version represents one of the most widely documented narratives of this tale.
+          Oral histories may vary between communities and tellings. This version
+          represents one of the most widely documented narratives of this tale.
         </p>
       </div>
 
       <!-- Navigation to more stories -->
       <div class="more-stories">
-        <button class="more-stories__btn" @click="$router.push({ name: 'stories' })">
+        <button
+          class="more-stories__btn"
+          @click="$router.push({ name: 'stories' })"
+        >
           <q-icon name="arrow_back" size="16px" />
           Explore More Stories
         </button>
@@ -138,7 +143,7 @@ const formattedContent = computed(() => {
 
 // ============ BASE ============
 .story-reading-page {
-  background: #FFFDF9;
+  background: #fffdf9;
   min-height: 100vh;
   padding-bottom: 80px;
 }
@@ -152,19 +157,21 @@ const formattedContent = computed(() => {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #1E1309;
+  color: #1e1309;
   transition: transform 0.15s;
 
-  &:active { transform: scale(0.9); }
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 // ============ STICKY BAR ============
@@ -174,14 +181,14 @@ const formattedContent = computed(() => {
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(255,253,249,0.95);
+  background: rgba(255, 253, 249, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding: 14px 70px 14px 70px;
   font-family: 'Playfair Display', serif;
   font-size: 0.9375rem;
   font-weight: 700;
-  color: #1E1309;
+  color: #1e1309;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -210,7 +217,7 @@ const formattedContent = computed(() => {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    color: #B84B2A;
+    color: #b84b2a;
     margin-bottom: 32px;
     opacity: 0.6;
   }
@@ -227,19 +234,21 @@ const formattedContent = computed(() => {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 900;
-    color: #1E1309;
+    color: #1e1309;
     margin: 0 0 20px;
     line-height: 1.15;
     letter-spacing: -0.02em;
 
-    @media (max-width: 480px) { font-size: 2.25rem; }
+    @media (max-width: 480px) {
+      font-size: 2.25rem;
+    }
   }
 
   &__excerpt {
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 1.125rem;
-    color: #6B5240;
+    color: #6b5240;
     line-height: 1.7;
     margin: 0 0 28px;
     max-width: 520px;
@@ -254,7 +263,7 @@ const formattedContent = computed(() => {
     gap: 16px;
     font-size: 0.8125rem;
     font-weight: 600;
-    color: #9B8070;
+    color: #9b8070;
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
@@ -277,13 +286,13 @@ const formattedContent = computed(() => {
 
   &--category {
     background: rgba(184, 75, 42, 0.1);
-    color: #B84B2A;
+    color: #b84b2a;
     border: 1px solid rgba(184, 75, 42, 0.2);
   }
 
   &--era {
     background: rgba(201, 150, 42, 0.1);
-    color: #C9962A;
+    color: #c9962a;
     border: 1px solid rgba(201, 150, 42, 0.2);
   }
 }
@@ -295,7 +304,7 @@ const formattedContent = computed(() => {
 }
 
 .meta-divider {
-  color: #D4C0B0;
+  color: #d4c0b0;
 }
 
 // ============ SECTION DIVIDER ============
@@ -310,14 +319,14 @@ const formattedContent = computed(() => {
   span:last-child {
     flex: 1;
     height: 1px;
-    background: linear-gradient(to right, transparent, #D4C0B0, transparent);
+    background: linear-gradient(to right, transparent, #d4c0b0, transparent);
   }
 
   .divider-dot {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #C9962A;
+    background: #c9962a;
     flex: none;
   }
 }
@@ -332,7 +341,7 @@ const formattedContent = computed(() => {
     font-family: 'Lora', serif;
     font-size: 1.125rem;
     line-height: 1.85;
-    color: #2E1F14;
+    color: #2e1f14;
     margin: 0 0 28px;
 
     @media (max-width: 480px) {
@@ -349,24 +358,24 @@ const formattedContent = computed(() => {
     line-height: 0.78;
     padding-right: 10px;
     padding-top: 8px;
-    color: #B84B2A;
+    color: #b84b2a;
     display: block;
   }
 
   em {
     font-style: italic;
-    color: #5C3D2A;
+    color: #5c3d2a;
   }
 
   strong {
     font-weight: 700;
-    color: #1E1309;
+    color: #1e1309;
   }
 }
 
 // ============ VERIFICATION BOX ============
 .verification-box {
-  background: #F5FAF0;
+  background: #f5faf0;
   border: 1px solid rgba(46, 125, 50, 0.2);
   border-radius: 16px;
   padding: 24px;
@@ -382,7 +391,7 @@ const formattedContent = computed(() => {
       font-family: 'Playfair Display', serif;
       font-size: 1.125rem;
       font-weight: 700;
-      color: #1B5E20;
+      color: #1b5e20;
       margin: 0;
     }
   }
@@ -391,7 +400,7 @@ const formattedContent = computed(() => {
     font-family: 'Lora', serif;
     font-size: 0.9375rem;
     line-height: 1.6;
-    color: #2E5539;
+    color: #2e5539;
     margin: 0 0 12px;
 
     em {
@@ -402,7 +411,7 @@ const formattedContent = computed(() => {
 
   &__disclaimer {
     font-size: 0.8125rem !important;
-    color: #5D8966 !important;
+    color: #5d8966 !important;
     border-top: 1px solid rgba(46, 125, 50, 0.1);
     padding-top: 12px;
     margin-top: 12px !important;
@@ -419,7 +428,7 @@ const formattedContent = computed(() => {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #1E1309;
+    background: #1e1309;
     color: #fff;
     border: none;
     border-radius: 100px;
@@ -430,7 +439,9 @@ const formattedContent = computed(() => {
     transition: opacity 0.2s;
     font-family: 'Playfair Display', serif;
 
-    &:active { opacity: 0.85; }
+    &:active {
+      opacity: 0.85;
+    }
   }
 }
 </style>

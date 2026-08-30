@@ -13,7 +13,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Lingaraja Temple, Old Town Bhubaneswar',
     sourceName: 'Archaeological Survey of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/lingaraj-temple.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/lingaraj-temple.html'
   },
   {
     id: 'od-heritage-rajarani',
@@ -91,7 +92,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Udayagiri & Khandagiri Caves, Bhubaneswar',
     sourceName: 'Archaeological Survey of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/udayagiri-and-khandagiri.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/udayagiri-and-khandagiri.html'
   },
   {
     id: 'od-heritage-dhauligiri',
@@ -100,7 +102,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Dhauligiri Rock Edicts & Shanti Stupa',
     sourceName: 'Archaeological Survey of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/dhauli.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/dhauli.html'
   },
   {
     id: 'od-heritage-lalitgiri',
@@ -109,7 +112,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Lalitgiri Buddhist Complex, Cuttack district',
     sourceName: 'Archaeological Survey of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/lalitgiri.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/lalitgiri.html'
   },
   {
     id: 'od-heritage-ratnagiri',
@@ -118,7 +122,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Ratnagiri Buddhist Complex, Jajpur district',
     sourceName: 'Archaeological Survey of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/ratnagiri.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/art-and-archeological-sites/ratnagiri.html'
   },
   {
     id: 'od-heritage-udayagiri-boudh',
@@ -138,12 +143,13 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Barabati Fort, Cuttack',
     sourceName: 'Archaeological Survey of India / Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/forts-and-palaces/barabati-fort.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/forts-and-palaces/barabati-fort.html'
   },
   {
     id: 'od-heritage-khandagiri-jain',
     latitude: 20.2634,
-    longitude: 85.7760,
+    longitude: 85.776,
     precision: 'site',
     locationLabel: 'Khandagiri Hill Jain Caves, Bhubaneswar',
     sourceName: 'Archaeological Survey of India',
@@ -187,7 +193,8 @@ export const heritageCoordinates = [
     precision: 'city',
     locationLabel: 'Bhubaneswar Old Town (Ekamra Kshetra)',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/destinations/heritage-destinations/bhubaneswar.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/destinations/heritage-destinations/bhubaneswar.html'
   },
 
   // MUSEUMS
@@ -218,7 +225,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Tara Tarini Shrine, Ganjam district',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/tara-tarini.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/tara-tarini.html'
   },
   {
     id: 'od-heritage-kapilash-temple',
@@ -227,7 +235,8 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Kapilash Temple, Dhenkanal district',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/kapilash-temple.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/kapilash-temple.html'
   },
   {
     id: 'od-heritage-nrusinghanath',
@@ -236,6 +245,7 @@ export const heritageCoordinates = [
     precision: 'site',
     locationLabel: 'Nrusinghanath Temple, Bargarh district',
     sourceName: 'Odisha Tourism',
-    sourceUrl: 'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/nrusinghanath-temple.html'
+    sourceUrl:
+      'https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples/nrusinghanath-temple.html'
   }
 ]

@@ -7,8 +7,9 @@ export const legacyStories = [
     region: 'Gajapati District (Saura Tribe)',
     estimatedEra: 'Ancient Oral Tradition',
     readTime: '3 min read',
-    excerpt: 'Long ago, according to the Saura tribe, all humans had long, sweeping tails like the great monkeys. This is the story of how they were lost.',
-    source: 'Verrier Elwin\'s Tribal Myths of Orissa',
+    excerpt:
+      'Long ago, according to the Saura tribe, all humans had long, sweeping tails like the great monkeys. This is the story of how they were lost.',
+    source: "Verrier Elwin's Tribal Myths of Orissa",
     content: `Long before the written word, when the hills of the Eastern Ghats were still young, the Saura people say that humans were not as they are today. In those days, men and women possessed long, sweeping tails.
 
 These tails were magnificent, often adorned and used much like a third limb. However, they were also quite cumbersome. When people gathered around the fire to listen to the shamans, they had to sit carefully, wrapping their tails around their legs so as not to sweep the ashes into the flames.
@@ -29,7 +30,8 @@ To this day, the Saura people point to the base of the spine as the mark of Kitt
     region: 'Satyabadi, Puri',
     estimatedEra: '16th Century',
     readTime: '4 min read',
-    excerpt: 'A young man\'s devotion compelled Lord Krishna himself to walk hundreds of miles to testify in a village dispute.',
+    excerpt:
+      "A young man's devotion compelled Lord Krishna himself to walk hundreds of miles to testify in a village dispute.",
     source: 'Odia Folklore and Temple Chronicles',
     content: `In a small village near Puri lived a poor but devout young man. He was deeply in love with the daughter of the village headman. The headman, aware of the boy's poverty, sneered at him and promised his daughter's hand only if the boy could bring the greatest witness in the land to vouch for his worth.
 
@@ -50,12 +52,13 @@ True to his word, the Lord remained there as a stone witness (Sakhi). The villag
   {
     id: 'story_003',
     slug: 'dharmapada-and-the-sun-temple',
-    title: 'Dharmapada\'s Sacrifice',
+    title: "Dharmapada's Sacrifice",
     category: 'Historical Folklore',
     region: 'Konark',
     estimatedEra: '13th Century',
     readTime: '5 min read',
-    excerpt: 'The heartbreaking legend of a 12-year-old boy who saved 1,200 master craftsmen from execution by placing the final stone on the Sun Temple.',
+    excerpt:
+      'The heartbreaking legend of a 12-year-old boy who saved 1,200 master craftsmen from execution by placing the final stone on the Sun Temple.',
     source: 'Madala Panji & Oral Tradition',
     content: `In the 13th century, King Narasimhadeva I of the Eastern Ganga Dynasty commissioned the grandest temple ever conceived: the Sun Temple at Konark, designed as a massive stone chariot for the Sun God, Surya. Twelve hundred of the finest artisans of Kalinga labored for twelve years to build it, led by the master architect, Bisu Maharana.
 
@@ -79,7 +82,8 @@ Today, Dharmapada remains the ultimate symbol of supreme sacrifice and architect
     region: 'Cuttack/Bhubaneswar',
     estimatedEra: 'Medieval Period',
     readTime: '3 min read',
-    excerpt: 'A tale of a powerful Tantric washerwoman whose supernatural abilities were feared and revered across ancient Odisha.',
+    excerpt:
+      'A tale of a powerful Tantric washerwoman whose supernatural abilities were feared and revered across ancient Odisha.',
     source: 'Folk Ballads & Temple Lore',
     content: `In the medieval folklore of Odisha, few figures are as mysterious as Nitei Dhobani. A washerwoman by trade, she was said to be a master of the Tantric arts, possessing powers that rivaled the greatest mystics of the era.
 
@@ -103,7 +107,8 @@ Nitei Dhobani is still remembered in the rituals and folk songs of rural Odisha 
     region: 'Coastal Odisha',
     estimatedEra: 'Ancient Maritime Era',
     readTime: '4 min read',
-    excerpt: 'The foundational story of the Khudurukuni Osha festival, reflecting Odisha\'s glorious maritime past (Bali Jatra) through the trials of a young girl.',
+    excerpt:
+      "The foundational story of the Khudurukuni Osha festival, reflecting Odisha's glorious maritime past (Bali Jatra) through the trials of a young girl.",
     source: 'Khudurukuni Osha Vrata Katha',
     content: `Long ago, in the prosperous maritime empire of Kalinga, lived a wealthy merchant (Sadhab) who had seven robust sons and one deeply loved daughter named Tapoi.
 
@@ -131,7 +136,8 @@ This story gave birth to the 'Khudurukuni Osha', a festival celebrated by young 
     region: 'Puri',
     estimatedEra: '15th Century',
     readTime: '4 min read',
-    excerpt: 'How Lord Jagannath and Lord Balabhadra rode into battle on black and white horses to defend the honor of their king.',
+    excerpt:
+      'How Lord Jagannath and Lord Balabhadra rode into battle on black and white horses to defend the honor of their king.',
     source: 'Madala Panji & Temple Paintings',
     content: `During the reign of King Purushottama Deva of the Gajapati dynasty, a marriage was proposed between the King and Padmavati, the beautiful princess of Kanchi (in modern-day Tamil Nadu).
 
@@ -157,7 +163,8 @@ The Gajapati forces crushed Kanchi, and the King brought Princess Padmavati back
     region: 'Ganjam (Kondh Tribe)',
     estimatedEra: 'Ancient',
     readTime: '3 min read',
-    excerpt: 'The tribal origins of Goddess Tara Tarini, born from the bond between two sisters and the rugged hills of Ganjam.',
+    excerpt:
+      'The tribal origins of Goddess Tara Tarini, born from the bond between two sisters and the rugged hills of Ganjam.',
     source: 'Kondh Oral Traditions',
     content: `On the Kumari hills beside the Rushikulya River in Ganjam stands the shrine of Tara Tarini, one of the oldest pilgrimage centers of the mother goddess in India. While mainstream Hinduism reveres them as forms of Shakti, the local Kondh and Savara tribes have a much more intimate, earthy oral history.
 
@@ -179,7 +186,8 @@ The legend of Tara Tarini is a beautiful reminder of how tribal heroines who ser
     region: 'Chilika Lake',
     estimatedEra: '18th Century',
     readTime: '3 min read',
-    excerpt: 'The tragic story of a young bride swallowed by a storm, whose spirit now protects the fishermen of Asia\'s largest brackish water lagoon.',
+    excerpt:
+      "The tragic story of a young bride swallowed by a storm, whose spirit now protects the fishermen of Asia's largest brackish water lagoon.",
     source: 'Local folklore of Chilika',
     content: `Chilika Lake, a vast and shimmering lagoon on the coast of Odisha, holds many secrets, but none as deeply felt as the legend of Kalijai.
 
@@ -203,7 +211,8 @@ Today, a temple stands on a rocky island in the middle of Chilika dedicated to G
     region: 'Berhampur',
     estimatedEra: '18th Century',
     readTime: '3 min read',
-    excerpt: 'Unlike distant deities, Maa Budhi Thakurani is treated as a daughter returning to her father\'s house, a folklore that drives a massive biennial festival.',
+    excerpt:
+      "Unlike distant deities, Maa Budhi Thakurani is treated as a daughter returning to her father's house, a folklore that drives a massive biennial festival.",
     source: 'Oral Traditions of Silk Weavers (Dera Community)',
     content: `In the bustling silk-weaving city of Berhampur, the goddess is not viewed merely as a supreme creator, but as a beloved daughter. 
 
@@ -225,8 +234,9 @@ For the entire month, the city treats her not as a distant deity, but as a pampe
     region: 'Western Odisha',
     estimatedEra: 'Unknown',
     readTime: '4 min read',
-    excerpt: 'A classic Odia fairy tale of curses, magical transformations, and a princess who had to bake a cake of ash to save her husband.',
-    source: 'Kathani (Grandma\'s Bedtime Stories)',
+    excerpt:
+      'A classic Odia fairy tale of curses, magical transformations, and a princess who had to bake a cake of ash to save her husband.',
+    source: "Kathani (Grandma's Bedtime Stories)",
     content: `Long ago, a childless king and queen prayed for a son. They were granted one, but with a terrible curse: the boy was born as a snake. They named him Halahala Kumar and kept him hidden in the palace.
 
 When it was time for him to marry, the King tricked a neighboring kingdom into giving their beautiful princess. On the wedding night, the princess was horrified to find a snake in her bedchamber. But to her amazement, the snake shed its skin, revealing a handsome young prince.
@@ -246,12 +256,13 @@ Moved by her absolute devotion and the magic of her tears, the Snake Queen relea
   {
     id: 'story_011',
     slug: 'bonda-origin-myth',
-    title: 'The Bonda\'s Sky Curse',
+    title: "The Bonda's Sky Curse",
     category: 'Tribal Myth',
     region: 'Malkangiri (Bonda Tribe)',
     estimatedEra: 'Ancient Oral Tradition',
     readTime: '3 min read',
-    excerpt: 'The Bonda people of Malkangiri say they were once celestial beings, cast down from the sky as punishment for a single act of carelessness.',
+    excerpt:
+      'The Bonda people of Malkangiri say they were once celestial beings, cast down from the sky as punishment for a single act of carelessness.',
     source: 'Ethnographic Studies of Malkangiri Tribals',
     content: `The Bonda people of Malkangiri, one of India's most ancient tribal communities, carry within their oral tradition a breathtaking account of their origins.
 
@@ -277,7 +288,8 @@ To this day, the Bonda resist outside intrusion into their hills with fierce ind
     region: 'Puri',
     estimatedEra: 'Medieval Era',
     readTime: '3 min read',
-    excerpt: 'During the first ever Rath Yatra, the great chariot of Lord Jagannath refused to move for three days — a legend that still shapes how the festival is performed today.',
+    excerpt:
+      'During the first ever Rath Yatra, the great chariot of Lord Jagannath refused to move for three days — a legend that still shapes how the festival is performed today.',
     source: 'Madala Panji (Temple Records of Puri)',
     content: `The first Rath Yatra, the magnificent chariot festival of Puri, is perhaps the most celebrated religious event in Odisha. But the oral tradition recorded in the Madala Panji — the ancient chronicle of the Jagannath Temple — speaks of a terrifying incident during the very first procession.
 
@@ -303,7 +315,8 @@ It is believed that the Lord would not move until a mother's love called him for
     region: 'Bhubaneswar',
     estimatedEra: 'Circa 7th–11th Century',
     readTime: '4 min read',
-    excerpt: 'Once called the "City of a Thousand Temples," Bhubaneswar\'s oral tradition holds that seven sister deities guard the city from seven directions — and only when all seven shrines are active can the city prosper.',
+    excerpt:
+      'Once called the "City of a Thousand Temples," Bhubaneswar\'s oral tradition holds that seven sister deities guard the city from seven directions — and only when all seven shrines are active can the city prosper.',
     source: 'Local Temple Lore, ASI Documentation',
     content: `Bhubaneswar was once celebrated as Ekamra Kshetra — the sacred mango grove — a city of extraordinary spiritual density with, at its peak, over five hundred temples. Among the local priests and the old families of Ekamra Kshetra, a specific oral tradition is passed down about the city's protection.
 
@@ -320,13 +333,14 @@ Archaeologists have indeed found seven satellite shrines positioned around the c
   {
     id: 'story_014',
     slug: 'chilika-mermaid-fishermen',
-    title: 'The Fisher King\'s Daughter',
+    title: "The Fisher King's Daughter",
     category: 'Folk Legend',
     region: 'Chilika Lake',
     estimatedEra: 'Pre-Modern',
     readTime: '3 min read',
-    excerpt: 'Fishermen of Chilika have long spoken of a half-human, half-fish spirit who would trade safe passage across the lake for offerings of moonlit flowers.',
-    source: 'Chilika Fishermen\'s Oral Tradition',
+    excerpt:
+      'Fishermen of Chilika have long spoken of a half-human, half-fish spirit who would trade safe passage across the lake for offerings of moonlit flowers.',
+    source: "Chilika Fishermen's Oral Tradition",
     content: `The fishermen of Chilika Lake, who know the lake's moods better than any scientist, have passed down for centuries the story of the Fisher King's daughter.
 
 Her name was Nila, and she was the daughter of the king of the water spirits who ruled the deep channels at the center of the lake. She was born during a full moon night, which the fishermen say is why she was drawn to moonlight all her life.
@@ -351,7 +365,8 @@ To this day, before a big fishing expedition, the older fishermen of Chilika vil
     region: 'Jhankad, Cuttack',
     estimatedEra: '15th Century',
     readTime: '4 min read',
-    excerpt: 'How a low-caste, illiterate man became the father of Odia literature after Goddess Sarala appeared in his dream and touched his tongue with her blessing.',
+    excerpt:
+      'How a low-caste, illiterate man became the father of Odia literature after Goddess Sarala appeared in his dream and touched his tongue with her blessing.',
     source: 'Odia Literary History, Sarala Mahabharata Preface',
     content: `The father of Odia literature, Sarala Das, was born in the 15th century in a small village in Cuttack district. By all worldly measures, he was an unlikely candidate for immortality. He belonged to a low-caste community. He was a farmer. He had received no formal education and some accounts say he could not even read or write.
 
@@ -375,7 +390,8 @@ Scholars cannot fully explain how an illiterate farmer wrote one of the most com
     region: 'Kapilash, Dhenkanal',
     estimatedEra: 'Ancient',
     readTime: '3 min read',
-    excerpt: 'On the summit of Kapilash hill lives a five-faced Shiva — and the legend of why he faces all four directions plus the sky at once.',
+    excerpt:
+      'On the summit of Kapilash hill lives a five-faced Shiva — and the legend of why he faces all four directions plus the sky at once.',
     source: 'Kapilash Temple Oral Tradition',
     content: `High on the summit of Kapilash hill in Dhenkanal, the Chandrasekhar Shiva temple shelters one of Odisha's most unusual deities: Panchamukhi Shiva — the five-faced Lord. Unlike most Shivalingas, this one has five distinct faces carved on it, each facing a different cardinal direction and one facing upward to the sky.
 
@@ -399,7 +415,8 @@ The sage Kapila resumed his meditation. The hill was named after him — Kapilas
     region: 'Koraput (Gadaba Tribe)',
     estimatedEra: 'Ancient Oral Tradition',
     readTime: '3 min read',
-    excerpt: 'The Gadaba tribe of Koraput say their music is not composed but remembered — every song is a fragment of the first song ever sung at the creation of the world.',
+    excerpt:
+      'The Gadaba tribe of Koraput say their music is not composed but remembered — every song is a fragment of the first song ever sung at the creation of the world.',
     source: 'Koraput Tribal Oral Traditions (M.K. Mishra Collection)',
     content: `The Gadaba people of Koraput, famous across Odisha for their intricate music and the haunting beauty of their songs, have a remarkable oral account of where their music comes from.
 
@@ -413,17 +430,18 @@ Dividing the infinite song among themselves — each family, each clan, each vil
 
 This is why, among the Gadaba people, there are singers for birth, for planting, for harvest, for death, for illness, for love, and for every transition of human life. Each occasion has its specific song, and each song is treated not as entertainment but as sacred maintenance — a responsibility to keep the world from trembling.
 
-When Gadaba youth are taught their community's songs, they are told: "You are not learning music. You are learning your duty."`,
+When Gadaba youth are taught their community's songs, they are told: "You are not learning music. You are learning your duty."`
   },
   {
     id: 'story_018',
     slug: 'queen-lilavati',
-    title: 'Queen Lilavati\'s Test',
+    title: "Queen Lilavati's Test",
     category: 'Historical Folklore',
     region: 'Sambalpur',
     estimatedEra: '16th Century',
     readTime: '4 min read',
-    excerpt: 'A legendary queen of the Chauhan dynasty who would not marry any prince who could not solve three riddles — and whose riddles changed the political history of western Odisha.',
+    excerpt:
+      'A legendary queen of the Chauhan dynasty who would not marry any prince who could not solve three riddles — and whose riddles changed the political history of western Odisha.',
     source: 'Chauhan Dynasty Chronicles & Sambalpur Oral Tradition',
     content: `In the 16th century, the Chauhan kingdom of western Odisha produced one of the most celebrated queens in regional oral tradition: Lilavati, daughter of King Balram Dev.
 
@@ -441,7 +459,7 @@ A young scholar from a minor family — not a prince at all, but the son of the 
 
 Lilavati married him. The couple's descendants went on to forge the most stable administration western Odisha had seen in generations, because the queen had understood something rare: that the man who could answer those questions had the right values to build a just kingdom.
 
-The three riddles are still repeated today among the teachers and scholars of Sambalpur as the "Questions of Lilavati."`,
+The three riddles are still repeated today among the teachers and scholars of Sambalpur as the "Questions of Lilavati."`
   },
   {
     id: 'story_019',
@@ -451,7 +469,8 @@ The three riddles are still repeated today among the teachers and scholars of Sa
     region: 'Mayurbhanj',
     estimatedEra: 'Unknown',
     readTime: '3 min read',
-    excerpt: 'In the great bamboo forests of Mayurbhanj, it is said a protective spirit lives who will guide lost travelers home — but only if they respect the forest.',
+    excerpt:
+      'In the great bamboo forests of Mayurbhanj, it is said a protective spirit lives who will guide lost travelers home — but only if they respect the forest.',
     source: 'Mayurbhanj Tribal Oral History',
     content: `In the dense bamboo forests of Mayurbhanj, where sunlight barely reaches the ground and the wind through the hollow bamboo creates an eerie, musical whistling, people say a spirit walks.
 
@@ -467,18 +486,19 @@ The bamboo around him began to sway, though there was no wind. A single shaft of
 
 His family had given him up for dead. When he tried to take others to find the path the next day, it was gone — just solid forest floor.
 
-"Bansadevi only shows the way to those who ask with humility," his grandmother told him. "She has no interest in helping people who think they know better than the forest."`,
+"Bansadevi only shows the way to those who ask with humility," his grandmother told him. "She has no interest in helping people who think they know better than the forest."`
   },
   {
     id: 'story_020',
     slug: 'the-weaver-and-the-moon',
-    title: 'The Weaver Who Stole the Moon\'s Pattern',
+    title: "The Weaver Who Stole the Moon's Pattern",
     category: 'Cultural Legend',
     region: 'Nuapatna, Cuttack',
     estimatedEra: 'Medieval',
     readTime: '3 min read',
-    excerpt: 'The origin story of Odisha\'s famous Ikat fabric — how a master weaver learned to capture the patterns of moonlight on water in thread.',
-    source: 'Ikat Weavers\' Oral Tradition, Nuapatna',
+    excerpt:
+      "The origin story of Odisha's famous Ikat fabric — how a master weaver learned to capture the patterns of moonlight on water in thread.",
+    source: "Ikat Weavers' Oral Tradition, Nuapatna",
     content: `In Nuapatna, the weaving village on the banks of the Mahanadi, the grandmothers of the weaving families tell a story about how the distinctive tie-dye patterns of Ikat fabric were born.
 
 Long ago, a master weaver named Dinabandhu sat by the river one full moon night, unable to sleep. He was in despair. He had been commissioned to create a length of silk so beautiful that the queen would cry when she saw it. He had tried a hundred patterns and none satisfied him.
@@ -495,7 +515,7 @@ The fabric he produced had no hard edges, no perfectly repeating pattern. The co
 
 "Your Majesty," said Dinabandhu, "it is the pattern of the moon on a moving river. There is no name for it, because it is never the same twice."
 
-This fabric — now known worldwide as Odisha Ikat or Bandha — remains one of India's most prized textiles, and the technique of resist-dyeing threads before weaving is still practiced in Nuapatna exactly as Dinabandhu devised it.`,
+This fabric — now known worldwide as Odisha Ikat or Bandha — remains one of India's most prized textiles, and the technique of resist-dyeing threads before weaving is still practiced in Nuapatna exactly as Dinabandhu devised it.`
   },
   {
     id: 'story_021',
@@ -505,7 +525,8 @@ This fabric — now known worldwide as Odisha Ikat or Bandha — remains one of 
     region: 'Koraput (Kond Tribe)',
     estimatedEra: 'Ancient',
     readTime: '3 min read',
-    excerpt: 'According to the Kond tribe, the first Desia dance was performed to keep a dying god alive — and if it stops entirely, the forest will die with him.',
+    excerpt:
+      'According to the Kond tribe, the first Desia dance was performed to keep a dying god alive — and if it stops entirely, the forest will die with him.',
     source: 'Documented by M.K. Mishra, Folklore Foundation',
     content: `The Desia dance of Koraput, performed by tribal communities in full ceremonial dress through the harvest season, is one of Odisha's most spectacular visual traditions. But among the Kond people who originated it, it is not merely a dance. It is a life-support ritual.
 
@@ -517,7 +538,7 @@ Kunti called the entire community together. They dressed in their most magnifice
 
 They danced for three days and three nights. On the third morning, a trembling was felt through the ground. The forests began to glow. The rivers swelled. Dharani Penu had been roused by their joy.
 
-Since then, the Desia dance is performed every year at harvest — not just to celebrate but to remind the earth god that there is still joy above ground, that his work is still appreciated, and that the life he sustains is still beautiful.`,
+Since then, the Desia dance is performed every year at harvest — not just to celebrate but to remind the earth god that there is still joy above ground, that his work is still appreciated, and that the life he sustains is still beautiful.`
   },
   {
     id: 'story_022',
@@ -527,8 +548,9 @@ Since then, the Desia dance is performed every year at harvest — not just to c
     region: 'Puri',
     estimatedEra: 'Unknown',
     readTime: '3 min read',
-    excerpt: 'On the cremation beach at Puri, there is a stone that no one has been able to move for centuries. The legend of why it cannot be moved is stranger than you expect.',
-    source: 'Puri Coastal Fishermen\'s Oral History',
+    excerpt:
+      'On the cremation beach at Puri, there is a stone that no one has been able to move for centuries. The legend of why it cannot be moved is stranger than you expect.',
+    source: "Puri Coastal Fishermen's Oral History",
     content: `On the stretch of beach at Puri known as Swargadwar — the "Gateway to Heaven" — where tens of thousands of Hindu cremations have taken place across centuries, there is an unremarkable-looking flat stone half-buried in the sand.
 
 What is remarkable about this stone is what happens when someone tries to move it.
@@ -543,7 +565,7 @@ He had no family with him. No one knew his name. The fishermen performed his cre
 
 That night, a figure appeared in the dream of the head fisherman. "I have been waiting to die in this sacred place my whole life," said the figure. "I am grateful beyond words. I will stay here as its guardian." In the morning, a flat stone had appeared where the pilgrim had sat to watch the sunrise.
 
-The fishermen say the stone is the pilgrim's presence — and that anyone who disturbs it disrespects the dead of Swargadwar.`,
+The fishermen say the stone is the pilgrim's presence — and that anyone who disturbs it disrespects the dead of Swargadwar.`
   },
   {
     id: 'story_023',
@@ -553,7 +575,8 @@ The fishermen say the stone is the pilgrim's presence — and that anyone who di
     region: 'Koraput',
     estimatedEra: 'Ancient',
     readTime: '3 min read',
-    excerpt: 'The Kondh people say the red laterite soil of Koraput is not merely iron-rich earth — it is the blood of their first ancestor who gave his life so the land would be fertile.',
+    excerpt:
+      'The Kondh people say the red laterite soil of Koraput is not merely iron-rich earth — it is the blood of their first ancestor who gave his life so the land would be fertile.',
     source: 'Kondh Oral Traditions',
     content: `Travelers who visit Koraput are immediately struck by the extraordinary color of its soil — a deep, burning red that seems almost alive in the afternoon sun. Scientists explain it as the presence of iron oxide in the laterite rock. The Kondh tribal people of Koraput have a different explanation that goes far deeper.
 
@@ -569,18 +592,19 @@ Penu Dei said simply: "I have kept the seeds alive. Now I will become the soil t
 
 She lay down on the grey earth of Koraput and gave her life in prayer. Where her blood touched the earth, the soil turned red and rich and fertile. Within a season, the land was producing food beyond what they had ever known.
 
-The Kondh say that when they work the red soil of Koraput, they are tending to Penu Dei's gift. They add: the redder the soil, the richer the memory of her sacrifice.`,
+The Kondh say that when they work the red soil of Koraput, they are tending to Penu Dei's gift. They add: the redder the soil, the richer the memory of her sacrifice.`
   },
   {
     id: 'story_024',
     slug: 'odisha-elephant-highway',
-    title: 'The Elephant King\'s Road',
+    title: "The Elephant King's Road",
     category: 'Folk Legend',
     region: 'Similipal, Mayurbhanj',
     estimatedEra: 'Pre-colonial',
     readTime: '3 min read',
-    excerpt: 'The straight forest paths of Similipal were not made by humans — they were made by generations of elephant herds following a single legendary white elephant to water.',
-    source: 'Similipal Forest Dwellers\' Oral History',
+    excerpt:
+      'The straight forest paths of Similipal were not made by humans — they were made by generations of elephant herds following a single legendary white elephant to water.',
+    source: "Similipal Forest Dwellers' Oral History",
     content: `Deep in the Similipal Tiger Reserve in Mayurbhanj — one of India's largest and most ancient forests — the forest rangers and the Mankidia tribal communities who have lived within Similipal for generations speak of an invisible geography: the Elephant King's Road.
 
 It is said that centuries ago, the elephant herds of Similipal were led by a magnificent white elephant — an albino who the Mankidia called Hathiraj, the Elephant King. White elephants were considered sacred in ancient Odisha, associated with divine protection, and this one was enormous even by elephant standards.
@@ -593,7 +617,7 @@ When the British colonial foresters arrived in the 19th century and tried to map
 
 Their guides told them: "The elephants made these roads hundreds of years ago. We just follow where the Elephant King walked."
 
-The tradition of following these ancient elephant corridors is so strong that the Mankidia say: "Build your village where the elephant walks, and you will never thirst."`,
+The tradition of following these ancient elephant corridors is so strong that the Mankidia say: "Build your village where the elephant walks, and you will never thirst."`
   },
   {
     id: 'story_025',
@@ -603,7 +627,8 @@ The tradition of following these ancient elephant corridors is so strong that th
     region: 'Ganjam',
     estimatedEra: 'Ancient',
     readTime: '4 min read',
-    excerpt: 'The origin legend of the Pabitra Osha festival — how a devoted woman\'s fasting caused the stars themselves to descend and feed her family.',
+    excerpt:
+      "The origin legend of the Pabitra Osha festival — how a devoted woman's fasting caused the stars themselves to descend and feed her family.",
     source: 'Ganjam Osha Ritual Traditions',
     content: `In the ancient ritual calendar of coastal Odisha, the Pabitra Osha — the "Sacred Fast" — holds a special place among women's observances. Its origin story, told by grandmothers to granddaughters as they prepare for the fast, is one of the most magical in Odia oral tradition.
 
@@ -621,6 +646,6 @@ The children ate. The husband woke, inexplicably recovered. By morning, neighbor
 
 No one in the village had done it in the night.
 
-The oral tradition says the sixteen cosmic forces she had worshiped for years had descended as sixteen small lights to feed and shelter one family who had never stopped believing in them even when there was no evidence they were listening.`,
+The oral tradition says the sixteen cosmic forces she had worshiped for years had descended as sixteen small lights to feed and shelter one family who had never stopped believing in them even when there was no evidence they were listening.`
   }
-];
+]

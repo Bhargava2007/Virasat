@@ -2,11 +2,13 @@
   <div class="trails-preview-wrapper">
     <div class="section-header">
       <h2 class="section-title">Cultural Trails</h2>
-      <router-link to="/trails" class="view-all-link">View All &rarr;</router-link>
+      <router-link to="/trails" class="view-all-link"
+        >View All &rarr;</router-link
+      >
     </div>
     <div class="trails-scroll-row">
-      <div 
-        v-for="trail in featuredTrails" 
+      <div
+        v-for="trail in featuredTrails"
         :key="trail.id"
         class="trail-card"
         @click="goToTrail(trail.slug)"
@@ -20,7 +22,10 @@
         <div class="trail-overlay"></div>
         <div class="trail-content">
           <div class="trail-title">{{ trail.title }}</div>
-          <div class="trail-subtitle">{{ trail.stops.length }} Locations &bull; {{ trail.orderType.replace('-', ' ') }}</div>
+          <div class="trail-subtitle"
+            >{{ trail.stops.length }} Locations &bull;
+            {{ trail.orderType.replace('-', ' ') }}</div
+          >
         </div>
       </div>
     </div>
@@ -35,7 +40,7 @@ import { culturalTrails } from '@/data/trails.js'
 const router = useRouter()
 const featuredTrails = computed(() => culturalTrails.slice(0, 3))
 
-const goToTrail = (slug) => {
+const goToTrail = slug => {
   router.push(`/trails/${slug}`)
 }
 </script>
@@ -112,7 +117,12 @@ const goToTrail = (slug) => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.1) 60%,
+    transparent 100%
+  );
 }
 
 .trail-content {

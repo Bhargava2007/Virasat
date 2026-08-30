@@ -62,7 +62,7 @@ export function useDiscovery(config = {}) {
     onMounted(() => {
       const q = route.query
       if (q.search && typeof q.search === 'string') searchQuery.value = q.search
-      
+
       if (!fixedType && q.type && ['heritage', 'culture'].includes(q.type)) {
         selectedType.value = q.type
       }
@@ -77,32 +77,39 @@ export function useDiscovery(config = {}) {
     })
 
     // Watchers to update URL
-    watch([searchQuery, selectedType, selectedState, selectedCategory], () => {
-      const query = { ...route.query }
+    watch(
+      [searchQuery, selectedType, selectedState, selectedCategory],
+      () => {
+        const query = { ...route.query }
 
-      if (searchQuery.value) query.search = searchQuery.value
-      else delete query.search
+        if (searchQuery.value) query.search = searchQuery.value
+        else delete query.search
 
-      if (!fixedType) {
-        if (selectedType.value !== 'all') query.type = selectedType.value
-        else delete query.type
-      }
+        if (!fixedType) {
+          if (selectedType.value !== 'all') query.type = selectedType.value
+          else delete query.type
+        }
 
-      if (selectedState.value) query.state = selectedState.value
-      else delete query.state
+        if (selectedState.value) query.state = selectedState.value
+        else delete query.state
 
-      if (selectedCategory.value) query.category = selectedCategory.value
-      else delete query.category
+        if (selectedCategory.value) query.category = selectedCategory.value
+        else delete query.category
 
-      router.replace({ query })
-    }, { deep: true })
+        router.replace({ query })
+      },
+      { deep: true }
+    )
   }
 
   // Core Search Logic
   const filteredResults = computed(() => {
     return unifiedCatalogue.filter(record => {
       // 1. Type Filter
-      if (selectedType.value !== 'all' && record.record_type !== selectedType.value) {
+      if (
+        selectedType.value !== 'all' &&
+        record.record_type !== selectedType.value
+      ) {
         return false
       }
 
@@ -112,22 +119,42 @@ export function useDiscovery(config = {}) {
       }
 
       // 3. Category Filter
-      if (selectedCategory.value && record.category !== selectedCategory.value) {
+      if (
+        selectedCategory.value &&
+        record.category !== selectedCategory.value
+      ) {
         return false
       }
 
       // 4. Search Query (Case Insensitive)
       if (searchQuery.value.trim()) {
         const queryStr = searchQuery.value.toLowerCase().trim()
-        
-        const matchesName = record.name?.toLowerCase().includes(queryStr) || record.title?.toLowerCase().includes(queryStr)
-        const matchesState = record.state?.toLowerCase().includes(queryStr)
-        const matchesCategory = record.category?.toLowerCase().includes(queryStr)
-        const matchesLocation = record.district?.toLowerCase().includes(queryStr) || record.region?.toLowerCase().includes(queryStr)
-        const matchesDesc = record.shortDescription?.toLowerCase().includes(queryStr) || record.summary?.toLowerCase().includes(queryStr)
-        const matchesTags = record.tags?.some(tag => tag.toLowerCase().includes(queryStr))
 
-        if (!matchesName && !matchesState && !matchesCategory && !matchesLocation && !matchesDesc && !matchesTags) {
+        const matchesName =
+          record.name?.toLowerCase().includes(queryStr) ||
+          record.title?.toLowerCase().includes(queryStr)
+        const matchesState = record.state?.toLowerCase().includes(queryStr)
+        const matchesCategory = record.category
+          ?.toLowerCase()
+          .includes(queryStr)
+        const matchesLocation =
+          record.district?.toLowerCase().includes(queryStr) ||
+          record.region?.toLowerCase().includes(queryStr)
+        const matchesDesc =
+          record.shortDescription?.toLowerCase().includes(queryStr) ||
+          record.summary?.toLowerCase().includes(queryStr)
+        const matchesTags = record.tags?.some(tag =>
+          tag.toLowerCase().includes(queryStr)
+        )
+
+        if (
+          !matchesName &&
+          !matchesState &&
+          !matchesCategory &&
+          !matchesLocation &&
+          !matchesDesc &&
+          !matchesTags
+        ) {
           return false
         }
       }

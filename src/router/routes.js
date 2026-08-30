@@ -29,9 +29,21 @@ const routes = [
         component: () => import('@/pages/CultureDetailPage.vue')
       },
       // Complaints section (replaces former Trails)
-      { path: 'complaints', name: 'complaints', component: () => import('@/pages/ComplaintsPage.vue') },
-      { path: 'complaints/rectify', name: 'complaint-rectify', component: () => import('@/pages/RectifyInfoForm.vue') },
-      { path: 'complaints/report', name: 'complaint-report', component: () => import('@/pages/ReportDamageForm.vue') },
+      {
+        path: 'complaints',
+        name: 'complaints',
+        component: () => import('@/pages/ComplaintsPage.vue')
+      },
+      {
+        path: 'complaints/rectify',
+        name: 'complaint-rectify',
+        component: () => import('@/pages/RectifyInfoForm.vue')
+      },
+      {
+        path: 'complaints/report',
+        name: 'complaint-report',
+        component: () => import('@/pages/ReportDamageForm.vue')
+      },
       {
         path: 'explore',
         name: 'explore',
@@ -42,8 +54,16 @@ const routes = [
         name: 'explore-map',
         component: () => import('@/pages/LivingHeritageMapPage.vue')
       },
-      { path: 'stories', name: 'stories', component: () => import('@/pages/StoriesPage.vue') },
-      { path: 'stories/:slug', name: 'story-detail', component: () => import('@/pages/StoryDetailPage.vue') }
+      {
+        path: 'stories',
+        name: 'stories',
+        component: () => import('@/pages/StoriesPage.vue')
+      },
+      {
+        path: 'stories/:slug',
+        name: 'story-detail',
+        component: () => import('@/pages/StoryDetailPage.vue')
+      }
     ]
   },
 
