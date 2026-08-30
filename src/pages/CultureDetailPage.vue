@@ -299,7 +299,7 @@ import { allCulture } from '@/data/culture.js'
 import { allHeritage } from '@/data/heritage.js'
 import { cultureCategories } from '@/data/cultureCategories.js'
 import { states } from '@/data/states.js'
-import { getRecordImage } from '@/utils/mediaHelper.js'
+import { getRecordImage, getRecordGalleryImages } from '@/utils/mediaHelper.js'
 import { useQuasar } from 'quasar'
 
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
