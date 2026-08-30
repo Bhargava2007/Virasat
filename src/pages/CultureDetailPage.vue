@@ -300,8 +300,6 @@ import { allHeritage } from '@/data/heritage.js'
 import { cultureCategories } from '@/data/cultureCategories.js'
 import { states } from '@/data/states.js'
 import { getRecordImage, getRecordGalleryImages } from '@/utils/mediaHelper.js'
-import { usePassportStore } from '@/stores/passportStore.js'
-import { useSavedStore } from '@/stores/savedStore.js'
 import { useQuasar } from 'quasar'
 
 import CategoryFallbackArt from '@/components/common/CategoryFallbackArt.vue'
